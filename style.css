@@ -1,4 +1,14 @@
 body{
     background-color:#1A1A1D;
     color:white;
+    font-family:serif;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:80%;
+    margin:auto;
+    background-color:rosybrown;
+    padding:40px;
 }
