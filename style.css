@@ -109,8 +109,46 @@ body{
     list-style: none;
     text-align: center;
     padding: 10px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
 }
-.header > nav > ul > li > a{
-    color: white;
+.header > nav > ul > li > a {
+    color: black;
     text-decoration: none;
+    position: relative;
+    top: 1vh;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #FF20FF, #A800FF);
+    font-weight: bold;
+    border: 2px solid black;
 }
+.header > nav > ul > li > a:hover{
+    background: linear-gradient(135deg, #A800FF ,  #FF20FF);
+}
+
+.header > nav > ul > li > select{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #FF20FF, #A800FF);
+    font-weight: bold;
+    border: 2px solid black;
+}
+.header > nav > ul > li > select:hover{
+    background: linear-gradient(135deg, #A800FF ,  #FF00FF);
+}
+.header > nav > ul > li > select > option{
+    color: black;
+    text-decoration: none;
+    background: #0B8793;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+
+}
+
