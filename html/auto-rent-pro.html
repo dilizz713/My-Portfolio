@@ -13,18 +13,24 @@
     <link rel="stylesheet" href="../assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 <body>
-<header>
-    <img src="../assets/logo.png" alt="logo" width="50">
+<header class="header">
+    <img src="../assets/logo1.png" alt="logo" width="50">
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li>
-                <a href="about.html">About</a><br>
-                <a href="educational-qualifications.html">Educational Qualifications</a>
+                <select onchange="location = this.value;">
+                    <option value="" selected disabled>About</option>
+                    <option value="about.html">About</option>
+                    <option value="educational-qualifications.html">Educational Qualifications</option>
+                </select>
             </li>
             <li>
-                <a href="about.html#skills">Skills</a><br>
-                <a href="certificates.html">Certificates</a>
+                <select onchange="location = this.value;">
+                    <option value="" selected disabled>Skills</option>
+                    <option value="about.html#skills">Skills</option>
+                    <option value="certificates.html">Certificates</option>
+                </select>
             </li>
             <li><a href="about.html#portfolio">Portfolio</a></li>
             <li><a href="about.html#service">Service</a></li>
