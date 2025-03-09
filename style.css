@@ -55,9 +55,6 @@ body {
 }
 
 .container > div:first-child > p > .highlight {
-    /*background: linear-gradient(45deg, #FF885B, #FF6B3C, #CC5530, #9C27B0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
     color: #B958A5;
     font-size: 45px;
     font-weight: bold;
@@ -140,30 +137,31 @@ body {
     top: 1vh;
     padding: 5px 10px 5px 10px;
     border-radius: 15px;
-    background: linear-gradient(135deg, #360033, #0B8793);
     font-weight: bold;
-    border: 2px solid  #A800FF;
 }
 
 .header > nav > ul > li > a:hover {
-    background: linear-gradient(135deg, #A800FF, #FF20FF);
+    background: linear-gradient(135deg, #360033, #0B8793);
+    border: 1px solid wheat;
 }
 
 .header > nav > ul > li > select {
+    background: transparent;
     text-align: center;
     color: wheat;
     text-decoration: none;
     position: relative;
     padding: 5px 10px 5px 10px;
     border-radius: 15px;
-    background: linear-gradient(135deg, #360033, #0B8793);
+ /*   background: linear-gradient(135deg, #360033, #0B8793);*/
     font-weight: bold;
-    border: 2px solid  #A800FF;
+    border: none;
 }
 
 .header > nav > ul > li > select:hover {
-    background: linear-gradient(135deg, #A800FF, #FF00FF);
-    color: black;
+    background: linear-gradient(135deg, #360033, #0B8793);
+    color: wheat;
+    border: 1px solid wheat;
 }
 
 .header > nav > ul > li > select > option {
