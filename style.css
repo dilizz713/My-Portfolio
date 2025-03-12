@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(135deg, #360033, #0B8793);
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    min-width: 300px;
+    min-height: 500px;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    width: 100%;
+    height: 100vh;
+}
+.container > div:nth-child(1), .container > div:nth-child(2){
+    width: 50vw;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top:0;
+}
+.container > div:nth-child(1) > h1{
+    position: relative;
+    font-size: 64px;
+    top:50px;
+    color: white;
+   padding-left:20px ;
+
+}
+.container > div:nth-child(1) > p{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    top:100px;
+    padding-left:50px ;
+
+}
+.container > div:nth-child(1) > p > .highlight{
+    font-size: 45px;
+    font-weight: bold;
+    color: #B958A5;
+
+}
+.container > div:nth-child(1) > a > button{
+    position: relative;
+    font-size: 20px;
+    top:180px;
+    background:  linear-gradient(135deg, #FF20FF, #A800FF);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 2px black solid;
+    width: 242px;
+
+}
+.container > div:nth-child(1) > a > button:hover{
+    background: linear-gradient(135deg, #A800FF, #FF00FF);
+
+}
+
+.container > div:nth-child(2) > img{
+    position: relative;
+    top:100px;
+    width: 60%;
+    height: auto;
+}
