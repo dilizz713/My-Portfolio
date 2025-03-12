@@ -123,6 +123,7 @@ body{
     .container > div:nth-child(2) > img{
         top:15px;
         margin: auto;
+        padding-left: 0;
     }
 
 
