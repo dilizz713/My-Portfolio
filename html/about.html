@@ -53,7 +53,9 @@
                 user-friendly web experiences. With a deep love for technology and an eye for design,
                 I specialize in building modern, responsive websites that bring ideas to life.
             </p>
-            <a href="#more-about-me"><button>More About Me</button></a>
+            <a href="#more-about-me">
+                <button>More About Me</button>
+            </a>
         </div>
 
         <!-- more about me-->
@@ -100,84 +102,171 @@
 
 <!-- skills section-->
 <section id="skills">
-    <form oninput="result.value=parseInt(java.value)">
-        <h3>Java</h3>
-        <input type="range" min="0" max="100" id="java" name="java">
-        <br>
-        <img src="../assets/java.png" alt="java" width="50">
-        <br>
-        <span>
-                <output name="result">0</output>
-                <span>%</span>
-        </span>
-    </form>
-    <form oninput="result.value=parseInt(html5.value)">
-        <h3>HTML5</h3>
-        <input type="range" min="0" max="100" id="html5" name="html5">
-        <br>
-        <img src="../assets/html5.png" alt="html5" width="50">
-        <br>
-        <span>
-                <output name="result">0</output>
-                <span>%</span>
-        </span>
-    </form>
-    <form oninput="result.value=parseInt(css.value)">
-        <h3>CSS</h3>
-        <input type="range" min="0" max="100" id="css" name="css">
-        <br>
-        <img src="../assets/css.png" alt="css" width="50">
-        <br>
-        <span>
-                <output name="result">0</output>
-                <span>%</span>
-        </span>
-    </form>
-    <form oninput="result.value=parseInt(js.value)">
-        <h3>JS</h3>
-        <input type="range" min="0" max="100" id="js" name="js">
-        <br>
-        <img src="../assets/js.png" alt="js" width="50">
-        <br>
-        <span>
-                <output name="result">0</output>
-                <span>%</span>
-        </span>
-    </form>
-    <form oninput="result.value=parseInt(git.value)">
-        <h3>GIT</h3>
-        <input type="range" min="0" max="100" id="git" name="git">
-        <br>
-        <img src="../assets/git.png" alt="git" width="50">
-        <br>
-        <span>
-                <output name="result">0</output>
-                <span>%</span>
-        </span>
-    </form>
-    <form oninput="result.value=parseInt(ui.value)">
-        <h3>UI/UX</h3>
-        <input type="range" min="0" max="100" id="ui" name="ui">
-        <br>
-        <img src="../assets/figma.png" alt="ui" width="50">
-        <br>
-        <span>
-                <output name="result">0</output>
-                <span>%</span>
-        </span>
-    </form>
-    <form oninput="result.value=parseInt(python.value)">
-        <h3>Python</h3>
-        <input type="range" min="0" max="100" id="python" name="python">
-        <br>
-        <img src="../assets/python.png" alt="python" width="50">
-        <br>
-        <span>
-                <output name="result">0</output>
-                <span>%</span>
-        </span>
-    </form>
-    <div class="middle-circle">Skills</div>
+    <!-- <form oninput="result.value=parseInt(java.value)">
+         <h3>Java</h3>
+         <input type="range" min="0" max="100" id="java" name="java">
+         <br>
+         <img src="../assets/java.png" alt="java" width="50">
+         <br>
+         <span>
+                 <output name="result">0</output>
+                 <span>%</span>
+         </span>
+     </form>
+     <form oninput="result.value=parseInt(html5.value)">
+         <h3>HTML5</h3>
+         <input type="range" min="0" max="100" id="html5" name="html5">
+         <br>
+         <img src="../assets/html5.png" alt="html5" width="50">
+         <br>
+         <span>
+                 <output name="result">0</output>
+                 <span>%</span>
+         </span>
+     </form>
+     <form oninput="result.value=parseInt(css.value)">
+         <h3>CSS</h3>
+         <input type="range" min="0" max="100" id="css" name="css">
+         <br>
+         <img src="../assets/css.png" alt="css" width="50">
+         <br>
+         <span>
+                 <output name="result">0</output>
+                 <span>%</span>
+         </span>
+     </form>
+     <form oninput="result.value=parseInt(js.value)">
+         <h3>JS</h3>
+         <input type="range" min="0" max="100" id="js" name="js">
+         <br>
+         <img src="../assets/js.png" alt="js" width="50">
+         <br>
+         <span>
+                 <output name="result">0</output>
+                 <span>%</span>
+         </span>
+     </form>
+     <form oninput="result.value=parseInt(git.value)">
+         <h3>GIT</h3>
+         <input type="range" min="0" max="100" id="git" name="git">
+         <br>
+         <img src="../assets/git.png" alt="git" width="50">
+         <br>
+         <span>
+                 <output name="result">0</output>
+                 <span>%</span>
+         </span>
+     </form>
+     <form oninput="result.value=parseInt(ui.value)">
+         <h3>UI/UX</h3>
+         <input type="range" min="0" max="100" id="ui" name="ui">
+         <br>
+         <img src="../assets/figma.png" alt="ui" width="50">
+         <br>
+         <span>
+                 <output name="result">0</output>
+                 <span>%</span>
+         </span>
+     </form>
+     <form oninput="result.value=parseInt(python.value)">
+         <h3>Python</h3>
+         <input type="range" min="0" max="100" id="python" name="python">
+         <br>
+         <img src="../assets/python.png" alt="python" width="50">
+         <br>
+         <span>
+                 <output name="result">0</output>
+                 <span>%</span>
+         </span>
+     </form>
+     <div class="middle-circle">Skills</div>-->
+    <div class="skills-content">
+        <div>
+            <div class="vertical-line"></div>
+            <div class="java-content">
+                <div class="language"><p>JAVA</p></div>
+                <div class="arrow-head"></div>
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <img src="../assets/java.png" alt="java">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sql-content">
+                <div class="language"><p>MYSQL</p></div>
+                <div class="arrow-head"></div>
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <img src="../assets/mysql.png" alt="sql">
+                    </div>
+                </div>
+            </div>
+
+            <div class="html-content">
+                <div class="language"><p>HTML5</p></div>
+                <div class="arrow-head"></div>
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <img src="../assets/html5.png" alt="html">
+                    </div>
+                </div>
+            </div>
+
+            <div class="css-content">
+                <div class="language"><p>CSS</p></div>
+                <div class="arrow-head"></div>
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <img src="../assets/css.png" alt="css">
+                    </div>
+                </div>
+            </div>
+
+            <div class="js-content">
+                <div class="language"><p>JS</p></div>
+                <div class="arrow-head"></div>
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <img src="../assets/js.png" alt="js">
+                    </div>
+                </div>
+            </div>
+
+            <div class="git-content">
+                <div class="language"><p>GIT</p></div>
+                <div class="arrow-head"></div>
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <img src="../assets/git.png" alt="git">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-ux-content">
+                <div class="language"><p>UI/UX</p></div>
+                <div class="arrow-head"></div>
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <img src="../assets/figma.png" alt="ui-ux">
+                    </div>
+                </div>
+            </div>
+
+            <div class="python-content">
+                <div class="language"><p>PYTHON</p></div>
+                <div class="arrow-head"></div>
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <img src="../assets/python.png" alt="python">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
 </section>
 
 <!-- portfolio section-->

@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.home , .about-section{
-    background:linear-gradient(135deg, #360033, #0B8793);
+.home, .about-section, #skills , #portfolio {
+    background: linear-gradient(135deg, #360033, #0B8793);
     position: relative;
     width: 100%;
     height: 100vh;
@@ -14,52 +14,59 @@
     min-height: 500px;
     /*overflow-x:hidden;*/
 }
-.container{
+
+.container {
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(2, 1fr);
     width: 100%;
     height: 100vh;
 }
-.container > div:nth-child(1), .container > div:nth-child(2){
+
+.container > div:nth-child(1), .container > div:nth-child(2) {
     width: 50vw;
     text-align: left;
     justify-content: left;
     position: relative;
-    top:0;
+    top: 0;
 
 }
-.container > div:nth-child(1) > h1{
+
+.container > div:nth-child(1) > h1 {
     position: relative;
     font-size: 64px;
-    top:80px;
+    top: 80px;
     color: white;
     padding-left: 150px;
 
 
 }
-.container > div:nth-child(1) > p{
+
+.container > div:nth-child(1) > p {
     color: white;
     position: relative;
     font-size: 30px;
-    top:100px;
+    top: 100px;
     padding-left: 150px;
 
 }
-.container > div:nth-child(1) > p > .highlight{
+
+.container > div:nth-child(1) > p > .highlight {
     font-size: 40px;
     font-weight: bold;
     color: #B958A5;
 
 }
-.container > div:nth-child(1) > a{
+
+.container > div:nth-child(1) > a {
     padding-left: 150px;
 }
-.container > div:nth-child(1) > a > button{
+
+.container > div:nth-child(1) > a > button {
     position: relative;
     font-size: 25px;
     font-weight: bold;
-    top:180px;
-    background:  linear-gradient(135deg, #FF20FF, #A800FF);
+    top: 180px;
+    background: linear-gradient(135deg, #FF20FF, #A800FF);
     padding: 10px;
     border-radius: 15px;
     border: 2px black solid;
@@ -67,21 +74,22 @@
 
 
 }
-.container > div:nth-child(1) > a > button:hover{
+
+.container > div:nth-child(1) > a > button:hover {
     background: linear-gradient(135deg, #A800FF, #FF00FF);
 
 }
 
-.container > div:nth-child(2) > img{
+.container > div:nth-child(2) > img {
     position: relative;
-    top:100px;
+    top: 100px;
     width: 70%;
     height: auto;
     padding-left: 50px;
 }
 
 /*------------------------------HEADER--------------------------------*/
-.header{
+.header {
     position: fixed;
     width: 100%;
     height: 10vh;
@@ -91,7 +99,8 @@
     z-index: 10;
 
 }
-.header > img{
+
+.header > img {
     position: absolute;
     top: 0;
     left: 0;
@@ -99,11 +108,13 @@
     margin: 10px;
 
 }
+
 .header > nav > ul {
     display: flex;
     text-align: center;
     justify-content: center;
 }
+
 .header > nav > ul li {
     list-style: none;
     text-align: center;
@@ -111,6 +122,7 @@
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
+
 .header > nav > ul > li > a {
     color: wheat;
     text-decoration: none;
@@ -122,10 +134,12 @@
     border-bottom: 2px black solid;
 
 }
+
 .header > nav > ul > li > a:hover {
     background: linear-gradient(135deg, #360033, #0B8793);
     border: 1px solid wheat;
 }
+
 .header > nav > ul > li > select {
     background: transparent;
     text-align: center;
@@ -138,11 +152,13 @@
     border: none;
     border-bottom: 2px black solid;
 }
+
 .header > nav > ul > li > select:hover {
     background: linear-gradient(135deg, #360033, #0B8793);
     color: wheat;
     border: 1px solid wheat;
 }
+
 .header > nav > ul > li > select > option {
     color: black;
     text-decoration: none;
@@ -151,45 +167,52 @@
     border: none;
     width: 100%;
 }
-#menu-bar{
+
+#menu-bar {
     position: absolute;
     right: 2vw;
     top: 4vh;
     display: none;
 }
-#about{
+
+#about {
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(2, 1fr);
     width: 100%;
     height: 90vh;
 }
+
 #about > div:nth-child(1), #about > div:nth-child(2) {
     text-align: left;
     justify-content: left;
     position: relative;
-    top:10vh;
+    top: 10vh;
 }
-#about > div:nth-child(1){
+
+#about > div:nth-child(1) {
     width: 30vw;
 }
-#about > div:nth-child(2){
+
+#about > div:nth-child(2) {
     width: 70vw;
 }
+
 #about > div:nth-child(1) > img {
     position: relative;
-    top:100px;
+    top: 80px;
     width: 350px;
     height: auto;
-    margin-left: 30px;
+    margin-left: 120px;
     border-radius: 15px;
     border-right: 2px black solid;
     border-bottom: 2px black solid;
     overflow: hidden;
 }
+
 #about > div:nth-child(2) > h2 {
     position: relative;
     font-size: 50px;
-    top:80px;
+    top: 120px;
     color: whitesmoke;
     padding-left: 150px;
 }
@@ -197,36 +220,387 @@
 #about > div:nth-child(2) > h1 {
     position: relative;
     font-size: 80px;
-    top:60px;
+    top: 60px;
     color: whitesmoke;
-    padding-left: 150px;
-}
-#about > div:nth-child(2) > p{
-    color: whitesmoke;
-    position: relative;
-    font-size: 20px;
-    top:60px;
-    padding-left: 150px;
-    padding-right:30px;
-}
-#about > div:nth-child(2) > a{
     padding-left: 150px;
 }
 
-#about > div:nth-child(2) > a > button{
+#about > div:nth-child(2) > p {
+    color: whitesmoke;
+    position: relative;
+    font-size: 20px;
+    top: 50px;
+    padding-left: 150px;
+    padding-right: 30px;
+}
+
+#about > div:nth-child(2) > a {
+    padding-left: 150px;
+}
+
+#about > div:nth-child(2) > a > button {
     position: relative;
     font-size: 20px;
     font-weight: bold;
-    top:100px;
+    top: 100px;
     padding: 10px;
-    background:  linear-gradient(135deg, #FF20FF, #A800FF);
+    background: linear-gradient(135deg, #FF20FF, #A800FF);
     border-radius: 15px;
     border: 2px black solid;
     width: 242px;
 }
-#about > div:nth-child(2) > a > button:hover{
+
+#about > div:nth-child(2) > a > button:hover {
     background: linear-gradient(135deg, #A800FF, #FF00FF);
 }
+
+/*------------------------------------SKILLS------------------------*/
+.skills-content {
+    position: sticky;
+    top:0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.skills-content > div{
+   /* position: sticky;
+    top: 0;*/
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+
+}
+.skills-content > div > .vertical-line {
+   position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1%;
+    height: 100%;
+    border: 1px solid white;
+
+}
+.skills-content > div > .java-content {
+    display: flex;
+    width: 50%;
+    height: 26%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+}
+.skills-content > div > .sql-content {
+    display: flex;
+    width: 50%;
+    height: 26%;
+    position: absolute;
+    top: 15%;
+    right: 50%;
+
+}
+.skills-content > div > .html-content {
+    display: flex;
+    width: 50%;
+    height: 26%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+
+}
+.skills-content > div > .css-content {
+    display: flex;
+    width: 50%;
+    height: 26%;
+    position: absolute;
+    top: 45%;
+    right: 50%;
+
+}
+.skills-content > div > .js-content {
+    display: flex;
+    width: 50%;
+    height: 26%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+}
+.skills-content > div > .git-content {
+    display: flex;
+    width: 50%;
+    height: 26%;
+    position: absolute;
+    top: 75%;
+    right: 50%;
+
+}
+.skills-content > div > .ui-ux-content {
+    display: flex;
+    width: 50%;
+    height: 26%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+
+}
+.skills-content > div > .python-content {
+    display: flex;
+    width: 50%;
+    height: 26%;
+    position: absolute;
+    top: 105%;
+    right: 50%;
+
+}
+.skills-content > div > .java-content > .language{
+    position: absolute;
+    top:42%;
+    bottom: 10%;
+    left: 0;
+    width: 50%;
+    height: 27%;
+    background: green;
+    border-right: none;
+}
+.skills-content > div > .sql-content > .language{
+    position: absolute;
+    top:42%;
+    bottom: 10%;
+    right: 0;
+    width: 50%;
+    height: 27%;
+    background: green;
+    border-left: none;
+}
+.skills-content > div > .html-content > .language{
+    position: absolute;
+    top:42%;
+    bottom: 10%;
+    left: 0;
+    width: 50%;
+    height: 27%;
+    background: green;
+    border-right: none;
+}
+.skills-content > div > .css-content > .language{
+    position: absolute;
+    top:42%;
+    bottom: 10%;
+    right: 0;
+    width: 50%;
+    height: 27%;
+    background: green;
+    border-left: none;
+}
+.skills-content > div > .js-content > .language{
+    position: absolute;
+    top:42%;
+    bottom: 10%;
+    left: 0;
+    width: 50%;
+    height: 27%;
+    background: green;
+    border-right: none;
+}
+.skills-content > div > .git-content > .language{
+    position: absolute;
+    top:42%;
+    bottom: 10%;
+    right: 0;
+    width: 50%;
+    height: 27%;
+    background: green;
+    border-left: none;
+}
+.skills-content > div > .ui-ux-content > .language{
+    position: absolute;
+    top:42%;
+    bottom: 10%;
+    left: 0;
+    width: 50%;
+    height: 27%;
+    background: green;
+    border-right: none;
+}
+.skills-content > div > .python-content > .language{
+    position: absolute;
+    top:42%;
+    bottom: 10%;
+    right: 0;
+    width: 50%;
+    height: 27%;
+    background: green;
+    border-left: none;
+}
+.skills-content > div > .java-content > .language > p,
+.skills-content > div > .sql-content > .language > p,
+.skills-content > div > .html-content > .language > p,
+.skills-content > div > .css-content > .language > p,
+.skills-content > div > .js-content > .language > p,
+.skills-content > div > .git-content > .language > p,
+.skills-content > div > .ui-ux-content > .language > p,
+.skills-content > div > .python-content > .language > p
+{
+    color: white;
+    position: relative;
+    top: 15%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skills-content > div > .java-content >  .arrow-head,
+.skills-content > div > .html-content >  .arrow-head,
+.skills-content > div > .js-content >  .arrow-head,
+.skills-content > div > .ui-ux-content >  .arrow-head
+{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid green;
+    border-bottom: 25px solid transparent;
+}
+.skills-content > div > .sql-content >  .arrow-head,
+.skills-content > div > .css-content >  .arrow-head,
+.skills-content > div > .git-content >  .arrow-head,
+.skills-content > div > .python-content >  .arrow-head
+{
+    position: absolute;
+    top: 42%;
+    right: 50%;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid green;
+    border-bottom: 25px solid transparent;
+}
+.skills-content > div > .java-content > .outer-circle{
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    width:150px;
+    height: 150px;
+    border: 3px black solid;
+    border-radius: 50%;
+}
+.skills-content > div > .sql-content > .outer-circle{
+    position: absolute;
+    top: 8%;
+    right: 60%;
+    width:150px;
+    height: 150px;
+    border: 3px black solid;
+    border-radius: 50%;
+}
+.skills-content > div > .html-content > .outer-circle{
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    width:150px;
+    height: 150px;
+    border: 3px black solid;
+    border-radius: 50%;
+}
+.skills-content > div > .css-content > .outer-circle{
+    position: absolute;
+    top: 8%;
+    right: 60%;
+    width:150px;
+    height: 150px;
+    border: 3px black solid;
+    border-radius: 50%;
+}
+.skills-content > div > .js-content > .outer-circle{
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    width:150px;
+    height: 150px;
+    border: 3px black solid;
+    border-radius: 50%;
+}
+.skills-content > div > .git-content > .outer-circle{
+    position: absolute;
+    top: 8%;
+    right: 60%;
+    width:150px;
+    height: 150px;
+    border: 3px black solid;
+    border-radius: 50%;
+}
+.skills-content > div > .ui-ux-content > .outer-circle{
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    width:150px;
+    height: 150px;
+    border: 3px black solid;
+    border-radius: 50%;
+}
+.skills-content > div > .python-content > .outer-circle{
+    position: absolute;
+    top: 8%;
+    right: 60%;
+    width:150px;
+    height: 150px;
+    border: 3px black solid;
+    border-radius: 50%;
+}
+.skills-content > div > .java-content > .outer-circle > .inner-circle ,
+.skills-content > div > .sql-content > .outer-circle > .inner-circle,
+.skills-content > div > .html-content > .outer-circle > .inner-circle,
+.skills-content > div > .css-content > .outer-circle > .inner-circle,
+.skills-content > div > .js-content > .outer-circle > .inner-circle,
+.skills-content > div > .git-content > .outer-circle > .inner-circle,
+.skills-content > div > .ui-ux-content > .outer-circle > .inner-circle,
+.skills-content > div > .python-content > .outer-circle > .inner-circle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width:120px;
+    height: 120px;
+    border: 3px red solid;
+    border-radius: 50%;
+}
+
+.skills-content > div > .java-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .sql-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .html-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .css-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .js-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .git-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .ui-ux-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .python-content > .outer-circle > .inner-circle > img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width:80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -238,112 +612,213 @@
 
 /*-----------------------------MEDIA------------------------------------*/
 @media all and (max-width: 500px) {
-    .home{
+    .home {
         min-width: 300px;
         min-height: 500px;
     }
-    .container{
+
+    .container {
         grid-template-columns:1fr;
         width: 100%;
     }
 
-    .container > div:nth-child(1) , .container > div:nth-child(2){
+    .container > div:nth-child(1), .container > div:nth-child(2) {
         width: 100vw;
         height: 100%;
         text-align: center;
         justify-content: center;
 
     }
-    .container > div:nth-child(1) > h1{
+
+    .container > div:nth-child(1) > h1 {
         font-size: 40px;
-        top:10px;
+        top: 10px;
         padding: 10px;
     }
-    .container > div:nth-child(1) > p{
+
+    .container > div:nth-child(1) > p {
         font-size: 20px;
-        top:10px;
+        top: 10px;
         padding: 10px;
     }
-    .container > div:nth-child(1) > p > .highlight{
+
+    .container > div:nth-child(1) > p > .highlight {
         font-size: 25px;
     }
-    .container > div:nth-child(1) > a{
+
+    .container > div:nth-child(1) > a {
         padding-left: 0;
     }
-    .container > div:nth-child(1) > a > button{
+
+    .container > div:nth-child(1) > a > button {
         top: 30px;
         padding: 5px;
         font-size: 16px;
         width: 150px;
     }
-    .container > div:nth-child(2) > img{
-        top:15px;
+
+    .container > div:nth-child(2) > img {
+        top: 15px;
         margin: auto;
         padding-left: 0;
     }
 
-    .about-section{
+    .about-section {
         min-width: 300px;
         min-height: 500px;
     }
-    .header{
+
+    .header {
         height: 8vh;
     }
+
     .header > nav > ul {
-       display: none;
+        display: none;
     }
-    .header > img{
+
+    .header > img {
         width: 40px;
     }
-    #menu-bar{
+
+    #menu-bar {
         position: absolute;
         right: 2vw;
         top: 2.5vh;
         display: block;
     }
-    #about{
+
+    #about {
         grid-template-columns:1fr;
         width: 100%;
         height: 92vh;
     }
-    #about > div:nth-child(1), #about > div:nth-child(2){
+
+    #about > div:nth-child(1), #about > div:nth-child(2) {
         width: 100vw;
         height: 100%;
         text-align: center;
         justify-content: center;
-        top:8vh;
+        top: 8vh;
     }
-    #about > div:nth-child(1) > img{
+
+    #about > div:nth-child(1) > img {
         top: 10px;
         margin: auto;
         width: 200px;
 
     }
-    #about > div:nth-child(2) > h2{
+
+    #about > div:nth-child(2) > h2 {
         font-size: 30px;
-       padding: 0;
-        top:10px;
+        padding: 0;
+        top: 10px;
 
     }
-    #about > div:nth-child(2) > h1{
+
+    #about > div:nth-child(2) > h1 {
         font-size: 40px;
         padding: 0;
-        top:10px;
+        top: 10px;
     }
-    #about > div:nth-child(2) > p{
+
+    #about > div:nth-child(2) > p {
         font-size: 20px;
         padding: 0;
-        top:10px;
+        top: 10px;
     }
-    #about > div:nth-child(2) > a{
+
+    #about > div:nth-child(2) > a {
         padding-left: 0;
     }
-    #about > div:nth-child(2) > a > button{
-        top:35px;
+
+    #about > div:nth-child(2) > a > button {
+        top: 35px;
         width: 200px;
         font-size: 18px;
     }
 
+    .skills-content > div > .java-content > .language,
+    .skills-content > div > .sql-content > .language ,
+    .skills-content > div > .html-content > .language ,
+    .skills-content > div > .css-content > .language ,
+    .skills-content > div > .js-content > .language ,
+    .skills-content > div > .git-content > .language ,
+    .skills-content > div > .ui-ux-content > .language ,
+    .skills-content > div > .python-content > .language
+    {
+        width: 30%;
+        height: 15%;
+    }
+    .skills-content > div > .java-content > .language > p,
+    .skills-content > div > .sql-content > .language > p,
+    .skills-content > div > .html-content > .language > p,
+    .skills-content > div > .css-content > .language > p,
+    .skills-content > div > .js-content > .language > p,
+    .skills-content > div > .git-content > .language > p,
+    .skills-content > div > .ui-ux-content > .language > p,
+    .skills-content > div > .python-content > .language > p{
+        font-size: 16px;
+    }
+    .skills-content > div > .java-content >  .arrow-head,
+    .skills-content > div > .html-content >  .arrow-head,
+    .skills-content > div > .js-content >  .arrow-head,
+    .skills-content > div > .ui-ux-content >  .arrow-head
+    {
+        left: 30%;
+        border-top: 15px solid transparent;
+        border-left: 50px solid green;
+        border-bottom: 15px solid transparent;
+    }
+    .skills-content > div > .sql-content >  .arrow-head,
+    .skills-content > div > .css-content >  .arrow-head,
+    .skills-content > div > .git-content >  .arrow-head,
+    .skills-content > div > .python-content >  .arrow-head{
+        right: 30%;
+        border-top: 15px solid transparent;
+        border-right: 50px solid green;
+        border-bottom: 15px solid transparent;
+    }
+
+    .skills-content > div > .java-content > .outer-circle ,
+    .skills-content > div > .html-content > .outer-circle ,
+    .skills-content > div > .js-content > .outer-circle ,
+    .skills-content > div > .ui-ux-content > .outer-circle
+     {
+        top: 22%;
+        left: 55%;
+        width:100px;
+        height: 100px;
+    }
+    .skills-content > div > .sql-content > .outer-circle ,
+    .skills-content > div > .css-content > .outer-circle ,
+    .skills-content > div > .git-content > .outer-circle ,
+    .skills-content > div > .python-content > .outer-circle{
+        top: 22%;
+        right: 55%;
+        width:100px;
+        height: 100px;
+    }
+    .skills-content > div > .java-content > .outer-circle > .inner-circle ,
+    .skills-content > div > .sql-content > .outer-circle > .inner-circle ,
+    .skills-content > div > .html-content > .outer-circle > .inner-circle,
+    .skills-content > div > .css-content > .outer-circle > .inner-circle ,
+    .skills-content > div > .js-content > .outer-circle > .inner-circle ,
+    .skills-content > div > .git-content > .outer-circle > .inner-circle,
+    .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle ,
+    .skills-content > div > .python-content > .outer-circle > .inner-circle{
+        width:80px;
+        height: 80px;
+    }
+    .skills-content > div > .java-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .sql-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .html-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .css-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .js-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .git-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .python-content > .outer-circle > .inner-circle > img{
+        width: 50px;
+    }
 
 
 
