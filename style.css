@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     width: 100%;
-   /* height: 100vh;*/
+    height: 100vh;
 }
 
 .container > div:nth-child(1), .container > div:nth-child(2) {
@@ -271,169 +271,97 @@
 
 }
 .skills-content > div > .vertical-line {
-   /*position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;*/
-
     width: 1%;
-    border: 1px solid white;
+    border: 1px solid wheat;
+    background: wheat;
 
 }
-.skills-content > div > .java-content {
+.skills-content > div > .java-content,
+.skills-content > div > .sql-content,
+.skills-content > div > .html-content,
+.skills-content > div > .css-content,
+.skills-content > div > .js-content,
+.skills-content > div > .git-content,
+.skills-content > div > .ui-ux-content,
+.skills-content > div > .python-content{
     display: flex;
     width: 50%;
     height: 26%;
     position: absolute;
+}
+
+.skills-content > div > .java-content {
     top: 0;
     left: 50%;
 
+
 }
 .skills-content > div > .sql-content {
-    display: flex;
-    width: 50%;
-    height: 26%;
-    position: absolute;
     top: 15%;
     right: 50%;
 
 }
 .skills-content > div > .html-content {
-    display: flex;
-    width: 50%;
-    height: 26%;
-    position: absolute;
     top: 30%;
     left: 50%;
 
 }
 .skills-content > div > .css-content {
-    display: flex;
-    width: 50%;
-    height: 26%;
-    position: absolute;
     top: 45%;
     right: 50%;
 
 }
 .skills-content > div > .js-content {
-    display: flex;
-    width: 50%;
-    height: 26%;
-    position: absolute;
     top: 60%;
     left: 50%;
 
 }
 .skills-content > div > .git-content {
-    display: flex;
-    width: 50%;
-    height: 26%;
-    position: absolute;
     top: 75%;
     right: 50%;
 
 }
 .skills-content > div > .ui-ux-content {
-    display: flex;
-    width: 50%;
-    height: 26%;
-    position: absolute;
     top: 90%;
     left: 50%;
 
 }
 .skills-content > div > .python-content {
-    display: flex;
-    width: 50%;
-    height: 26%;
-    position: absolute;
     top: 105%;
     right: 50%;
 
 }
-.skills-content > div > .java-content > .language{
+.skills-content > div > .java-content > .language,
+.skills-content > div > .html-content > .language,
+.skills-content > div > .js-content > .language,
+.skills-content > div > .ui-ux-content > .language
+{
     position: absolute;
     top:42%;
     bottom: 10%;
     left: 0;
     width: 50%;
-    height: 27%;
+    height: 15%;
     background: green;
     border-right: none;
+    border-radius: 10px 0 0 10px;
 }
-.skills-content > div > .sql-content > .language{
+.skills-content > div > .sql-content > .language,
+.skills-content > div > .css-content > .language,
+.skills-content > div > .git-content > .language,
+.skills-content > div > .python-content > .language
+{
     position: absolute;
     top:42%;
     bottom: 10%;
     right: 0;
     width: 50%;
-    height: 27%;
+    height: 15%;
     background: green;
     border-left: none;
+    border-radius: 0 10px 10px 0;
 }
-.skills-content > div > .html-content > .language{
-    position: absolute;
-    top:42%;
-    bottom: 10%;
-    left: 0;
-    width: 50%;
-    height: 27%;
-    background: green;
-    border-right: none;
-}
-.skills-content > div > .css-content > .language{
-    position: absolute;
-    top:42%;
-    bottom: 10%;
-    right: 0;
-    width: 50%;
-    height: 27%;
-    background: green;
-    border-left: none;
-}
-.skills-content > div > .js-content > .language{
-    position: absolute;
-    top:42%;
-    bottom: 10%;
-    left: 0;
-    width: 50%;
-    height: 27%;
-    background: green;
-    border-right: none;
-}
-.skills-content > div > .git-content > .language{
-    position: absolute;
-    top:42%;
-    bottom: 10%;
-    right: 0;
-    width: 50%;
-    height: 27%;
-    background: green;
-    border-left: none;
-}
-.skills-content > div > .ui-ux-content > .language{
-    position: absolute;
-    top:42%;
-    bottom: 10%;
-    left: 0;
-    width: 50%;
-    height: 27%;
-    background: green;
-    border-right: none;
-}
-.skills-content > div > .python-content > .language{
-    position: absolute;
-    top:42%;
-    bottom: 10%;
-    right: 0;
-    width: 50%;
-    height: 27%;
-    background: green;
-    border-left: none;
-}
+
 .skills-content > div > .java-content > .language > p,
 .skills-content > div > .sql-content > .language > p,
 .skills-content > div > .html-content > .language > p,
@@ -446,7 +374,7 @@
     color: white;
     position: relative;
     top: 15%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -456,13 +384,13 @@
 .skills-content > div > .ui-ux-content >  .arrow-head
 {
     position: absolute;
-    top: 42%;
+    top: 41%;
     left: 50%;
     width: 0;
     height: 0;
-    border-top: 25px solid transparent;
+    border-top: 17px solid transparent;
     border-left: 50px solid green;
-    border-bottom: 25px solid transparent;
+    border-bottom: 17px solid transparent;
 }
 .skills-content > div > .sql-content >  .arrow-head,
 .skills-content > div > .css-content >  .arrow-head,
@@ -470,15 +398,19 @@
 .skills-content > div > .python-content >  .arrow-head
 {
     position: absolute;
-    top: 42%;
+    top: 41%;
     right: 50%;
     width: 0;
     height: 0;
-    border-top: 25px solid transparent;
+    border-top: 17px solid transparent;
     border-right: 50px solid green;
-    border-bottom: 25px solid transparent;
+    border-bottom: 17px solid transparent;
 }
-.skills-content > div > .java-content > .outer-circle{
+.skills-content > div > .java-content > .outer-circle,
+.skills-content > div > .html-content > .outer-circle,
+.skills-content > div > .js-content > .outer-circle,
+.skills-content > div > .ui-ux-content > .outer-circle
+{
     position: absolute;
     top: 8%;
     left: 60%;
@@ -487,7 +419,11 @@
     border: 3px black solid;
     border-radius: 50%;
 }
-.skills-content > div > .sql-content > .outer-circle{
+.skills-content > div > .sql-content > .outer-circle,
+.skills-content > div > .css-content > .outer-circle,
+.skills-content > div > .git-content > .outer-circle,
+.skills-content > div > .python-content > .outer-circle
+{
     position: absolute;
     top: 8%;
     right: 60%;
@@ -496,60 +432,7 @@
     border: 3px black solid;
     border-radius: 50%;
 }
-.skills-content > div > .html-content > .outer-circle{
-    position: absolute;
-    top: 8%;
-    left: 60%;
-    width:150px;
-    height: 150px;
-    border: 3px black solid;
-    border-radius: 50%;
-}
-.skills-content > div > .css-content > .outer-circle{
-    position: absolute;
-    top: 8%;
-    right: 60%;
-    width:150px;
-    height: 150px;
-    border: 3px black solid;
-    border-radius: 50%;
-}
-.skills-content > div > .js-content > .outer-circle{
-    position: absolute;
-    top: 8%;
-    left: 60%;
-    width:150px;
-    height: 150px;
-    border: 3px black solid;
-    border-radius: 50%;
-}
-.skills-content > div > .git-content > .outer-circle{
-    position: absolute;
-    top: 8%;
-    right: 60%;
-    width:150px;
-    height: 150px;
-    border: 3px black solid;
-    border-radius: 50%;
-}
-.skills-content > div > .ui-ux-content > .outer-circle{
-    position: absolute;
-    top: 8%;
-    left: 60%;
-    width:150px;
-    height: 150px;
-    border: 3px black solid;
-    border-radius: 50%;
-}
-.skills-content > div > .python-content > .outer-circle{
-    position: absolute;
-    top: 8%;
-    right: 60%;
-    width:150px;
-    height: 150px;
-    border: 3px black solid;
-    border-radius: 50%;
-}
+
 .skills-content > div > .java-content > .outer-circle > .inner-circle ,
 .skills-content > div > .sql-content > .outer-circle > .inner-circle,
 .skills-content > div > .html-content > .outer-circle > .inner-circle,
@@ -743,7 +626,7 @@
     .skills-content > div > .python-content > .language
     {
         width: 30%;
-        height: 15%;
+        height: 12%;
     }
     .skills-content > div > .java-content > .language > p,
     .skills-content > div > .sql-content > .language > p,
@@ -753,7 +636,7 @@
     .skills-content > div > .git-content > .language > p,
     .skills-content > div > .ui-ux-content > .language > p,
     .skills-content > div > .python-content > .language > p{
-        font-size: 16px;
+        font-size: 12px;
     }
     .skills-content > div > .java-content >  .arrow-head,
     .skills-content > div > .html-content >  .arrow-head,
@@ -761,9 +644,10 @@
     .skills-content > div > .ui-ux-content >  .arrow-head
     {
         left: 30%;
-        border-top: 15px solid transparent;
+        top: 40%;
+        border-top: 16px solid transparent;
         border-left: 50px solid green;
-        border-bottom: 15px solid transparent;
+        border-bottom: 16px solid transparent;
     }
     .skills-content > div > .sql-content >  .arrow-head,
     .skills-content > div > .css-content >  .arrow-head,
