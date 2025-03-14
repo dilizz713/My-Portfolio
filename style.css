@@ -120,10 +120,13 @@
 }
 
 .header > nav > ul > li > a {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
     color: black;
     text-decoration: none;
     position: relative;
-    top: 1vh;
+    top: 0;
     padding: 5px 10px 5px 10px;
     border-radius: 15px;
     font-weight: bold;
@@ -138,8 +141,10 @@
 }
 
 .header > nav > ul > li > select {
-    background: transparent;
+    display: inline-block;
     text-align: center;
+    width: 150px;
+    background: transparent;
     color: black;
     text-decoration: none;
     position: relative;
@@ -489,6 +494,131 @@ hr{
     width:80px;
 }
 
+#portfolio{
+    background: #1A1A1D;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    min-width: 300px;
+    min-height: 500px;
+}
+.portfolio-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-content > aside{
+    position: relative;
+    top:0;
+    left:0;
+    width: 20%;
+    border: 1px solid white;
+}
+.portfolio-content > main{
+    position: relative;
+    top:0;
+    left:0;
+    width: 80%;
+    border: 1px solid white;
+}
+.portfolio-content > aside > h1{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.portfolio-content > aside > ul{
+    position: relative;
+    text-align: center;
+
+
+}
+.portfolio-content > aside > ul > li{
+    position: relative;
+    top: 50px;
+    padding-bottom: 50px;
+}
+.portfolio-content > aside > ul > li > a{
+    text-decoration: none;
+    color: white;
+    background: green;
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+    width: 200px;
+
+}
+main > h2{
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+#ui-ux-projects{
+    /*display: none;*/
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 340px;
+   position: relative;
+    top: 90px;
+}
+
+#ui-ux-projects > div:nth-child(1),
+#ui-ux-projects > div:nth-child(2),
+#ui-ux-projects > div:nth-child(3),
+#ui-ux-projects > div:nth-child(4){
+    position: relative;
+    width: 200px;
+    border: 5px solid white;
+    text-align: center;
+    top: 20px;
+    height: 300px;
+    background: #FF885B;
+    border-radius: 30px;
+    left: 50px;
+    right: 50px;
+}
+
+#ui-ux-projects > div:nth-child(1) > img,
+#ui-ux-projects > div:nth-child(2) > img,
+#ui-ux-projects > div:nth-child(3) > img,
+#ui-ux-projects > div:nth-child(4) > img
+{
+    position: relative;
+    top: 10px;
+   width: 150px;
+    height: 120px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+#ui-ux-projects > div:nth-child(1) > h3,
+#ui-ux-projects > div:nth-child(2) > h3,
+#ui-ux-projects > div:nth-child(3) > h3,
+#ui-ux-projects > div:nth-child(4) > h3
+{
+    position: relative;
+    top: 30px;
+    color: black;
+    text-align: center;
+}
+#ui-ux-projects > div:nth-child(1) > a,
+#ui-ux-projects > div:nth-child(2) > a,
+#ui-ux-projects > div:nth-child(3) > a,
+#ui-ux-projects > div:nth-child(4) > a
+{
+    position: relative;
+    text-decoration: none;
+    top: 50px;
+    font-size: 20px;
+    color: white;
+    background: black;
+    border-radius: 10px;
+    border: 3px solid white;
+    display: inline-block;
+    width: 120px;
+    padding: 5px;
+
+}
 
 
 
