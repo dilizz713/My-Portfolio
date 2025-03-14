@@ -379,6 +379,7 @@ hr {
     background: gray;
     border-right: none;
     border-radius: 10px 0 0 10px;
+    box-shadow: 5px 5px 10px gold;
 }
 
 .skills-content > div > .sql-content > .language,
@@ -394,6 +395,7 @@ hr {
     background: gray;
     border-left: none;
     border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 10px gold;
 }
 
 .skills-content > div > .java-content > .language > p,
@@ -423,6 +425,7 @@ hr {
     border-top: 17px solid transparent;
     border-bottom: 17px solid transparent;
     border-left: 50px solid gray;
+
 }
 
 .skills-content > div > .sql-content > .arrow-head,
@@ -437,6 +440,7 @@ hr {
     border-top: 17px solid transparent;
     border-right: 50px solid gray;
     border-bottom: 17px solid transparent;
+
 }
 
 .skills-content > div > .java-content > .outer-circle,
@@ -605,21 +609,12 @@ main > div > .game-h2 {
     top: 90px;
 }
 
-#ui-ux-projects > div:nth-child(1),
-#ui-ux-projects > div:nth-child(2),
-#ui-ux-projects > div:nth-child(3),
-#ui-ux-projects > div:nth-child(4),
-#development-projects > div:nth-child(1),
-#development-projects > div:nth-child(2),
-#development-projects > div:nth-child(3),
-#development-projects > div:nth-child(4),
-#assignments > div:nth-child(1),
-#assignments > div:nth-child(2),
-#assignments > div:nth-child(3),
-#assignments > div:nth-child(4),
-#games > div:nth-child(1),
-#docs > div:nth-child(1),
-#docs > div:nth-child(2) {
+#ui-ux-projects > div,
+#development-projects div,
+#assignments > div,
+#games > div,
+#docs > div
+ {
     position: relative;
     width: 200px;
     border: 5px solid white;
@@ -632,21 +627,12 @@ main > div > .game-h2 {
     right: 50px;
 }
 
-#ui-ux-projects > div:nth-child(1) > img,
-#ui-ux-projects > div:nth-child(2) > img,
-#ui-ux-projects > div:nth-child(3) > img,
-#ui-ux-projects > div:nth-child(4) > img,
-#development-projects > div:nth-child(1) > img,
-#development-projects > div:nth-child(2) > img,
-#development-projects > div:nth-child(3) > img,
-#development-projects > div:nth-child(4) > img,
-#assignments > div:nth-child(1) > img,
-#assignments > div:nth-child(2) > img,
-#assignments > div:nth-child(3) > img,
-#assignments > div:nth-child(4) > img,
-#games > div:nth-child(1) > img,
-#docs > div:nth-child(1) > img,
-#docs > div:nth-child(2) > img {
+#ui-ux-projects > div > img,
+#development-projects > div > img,
+#assignments > div > img,
+#games > div > img,
+#docs > div > img
+ {
     position: relative;
     top: 10px;
     width: 150px;
@@ -655,42 +641,24 @@ main > div > .game-h2 {
     border: 2px solid black;
 }
 
-#ui-ux-projects > div:nth-child(1) > h3,
-#ui-ux-projects > div:nth-child(2) > h3,
-#ui-ux-projects > div:nth-child(3) > h3,
-#ui-ux-projects > div:nth-child(4) > h3,
-#development-projects > div:nth-child(1) > h3,
-#development-projects > div:nth-child(2) > h3,
-#development-projects > div:nth-child(3) > h3,
-#development-projects > div:nth-child(4) > h3,
-#assignments > div:nth-child(1) > h3,
-#assignments > div:nth-child(2) > h3,
-#assignments > div:nth-child(3) > h3,
-#assignments > div:nth-child(4) > h3,
-#games > div:nth-child(1) > h3,
-#docs > div:nth-child(1) > h3,
-#docs > div:nth-child(2) > h3 {
+#ui-ux-projects > div > h3,
+#development-projects > div > h3,
+#assignments > div > h3,
+#games > div > h3,
+#docs > div > h3
+{
     position: relative;
     top: 30px;
     color: black;
     text-align: center;
 }
 
-#ui-ux-projects > div:nth-child(1) > a,
-#ui-ux-projects > div:nth-child(2) > a,
-#ui-ux-projects > div:nth-child(3) > a,
-#ui-ux-projects > div:nth-child(4) > a,
-#development-projects > div:nth-child(1) > a,
-#development-projects > div:nth-child(2) > a,
-#development-projects > div:nth-child(3) > a,
-#development-projects > div:nth-child(4) > a,
-#assignments > div:nth-child(1) > a,
-#assignments > div:nth-child(2) > a,
-#assignments > div:nth-child(3) > a,
-#assignments > div:nth-child(4) > a,
-#games > div:nth-child(1) > a,
-#docs > div:nth-child(1) > a,
-#docs > div:nth-child(2) > a {
+#ui-ux-projects > div > a,
+#development-projects > div > a,
+#assignments > div > a,
+#games > div > a,
+#docs > div > a
+ {
     position: relative;
     text-decoration: none;
     top: 50px;
@@ -705,21 +673,12 @@ main > div > .game-h2 {
 
 }
 
-#ui-ux-projects > div:nth-child(1) > a:hover,
-#ui-ux-projects > div:nth-child(2) > a:hover,
-#ui-ux-projects > div:nth-child(3) > a:hover,
-#ui-ux-projects > div:nth-child(4) > a:hover,
-#development-projects > div:nth-child(1) > a:hover,
-#development-projects > div:nth-child(2) > a:hover,
-#development-projects > div:nth-child(3) > a:hover,
-#development-projects > div:nth-child(4) > a:hover,
-#assignments > div:nth-child(1) > a:hover,
-#assignments > div:nth-child(2) > a:hover,
-#assignments > div:nth-child(3) > a:hover,
-#assignments > div:nth-child(4) > a:hover,
-#games > div:nth-child(1) > a:hover,
-#docs > div:nth-child(1) > a:hover,
-#docs > div:nth-child(2) > a:hover {
+#ui-ux-projects > div > a:hover,
+#development-projects > div > a:hover,
+#assignments > div > a:hover,
+#games > div > a:hover,
+#docs > div > a:hover
+{
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
     color: black;
     border: black 3px solid;
@@ -937,6 +896,7 @@ main > div > .game-h2 {
     .skills-content > div > .python-content > .language {
         width: 30%;
         height: 12%;
+        box-shadow: none;
     }
 
     .skills-content > div > .java-content > .language > p,
@@ -966,6 +926,7 @@ main > div > .game-h2 {
     .skills-content > div > .git-content > .arrow-head,
     .skills-content > div > .python-content > .arrow-head {
         right: 30%;
+        top: 40.5%;
         border-top: 15px solid transparent;
         border-right: 50px solid gray;
         border-bottom: 15px solid transparent;
@@ -1180,6 +1141,45 @@ main > div > .game-h2 {
     main > div:nth-child(5) {
         display: none;
     }
+
+    #service{
+        height:1800px;
+
+    }
+    #service > h2{
+        font-size: 25px;
+        padding-top:40px;
+    }
+    #service > .service-content{
+        grid-template-columns: 1fr;
+    }
+    #service > .service-content > div{
+        border: 2px solid #FF885B;
+        height: 350px;
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+
+    #service > .service-content > div > img{
+        width: 100px;
+        top: 20px;
+
+    }
+    #service > .service-content > div > h3{
+        font-size: 20px;
+    }
+    #service > .service-content > div > p{
+       margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+
+
+    }
+    hr{
+        display: none;
+    }
+
 
 
 }
