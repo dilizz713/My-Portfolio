@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.home, .about-section , #portfolio {
+.home, .about-section, #portfolio {
     background: #1A1A1D;
     position: relative;
     width: 100%;
@@ -14,12 +14,14 @@
     min-height: 500px;
     /*overflow-x:hidden;*/
 }
+
 .container {
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     width: 100%;
     height: 100vh;
 }
+
 .container > div:nth-child(1), .container > div:nth-child(2) {
     width: 50vw;
     text-align: left;
@@ -27,6 +29,7 @@
     position: relative;
     top: 0;
 }
+
 .container > div:nth-child(1) > h1 {
     position: relative;
     font-size: 64px;
@@ -72,7 +75,7 @@
 }
 
 .container > div:nth-child(1) > a > button:hover {
-    background: linear-gradient(45deg,  #FF5B8A, #FF00FF,#FF885B);
+    background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
 
 }
 
@@ -136,7 +139,7 @@
 }
 
 .header > nav > ul > li > a:hover {
-    background: linear-gradient(45deg,  #FF5B8A, #FF00FF,#FF885B);
+    background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
     border: 1px solid wheat;
 }
 
@@ -157,7 +160,7 @@
 }
 
 .header > nav > ul > li > select:hover {
-    background: linear-gradient(45deg,  #FF5B8A, #FF00FF,#FF885B);
+    background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
     color: black;
     border: 1px solid wheat;
 }
@@ -254,15 +257,15 @@
 }
 
 #about > div:nth-child(2) > a > button:hover {
-    background: linear-gradient(45deg,  #FF5B8A, #FF00FF,#FF885B);
+    background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
 }
 
-hr{
-   border: 1px #FF885B solid;
+hr {
+    border: 1px #FF885B solid;
 }
 
 /*------------------------------------SKILLS------------------------*/
-#skills{
+#skills {
     background: #1A1A1D;
     position: relative;
     width: 100%;
@@ -273,6 +276,7 @@ hr{
 
 
 }
+
 .skills-content {
     display: flex;
     text-align: center;
@@ -281,8 +285,9 @@ hr{
     height: 1000vh;
 
 }
-.skills-content > div{
-   margin-top: 30px;
+
+.skills-content > div {
+    margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     text-align: center;
@@ -291,6 +296,7 @@ hr{
     height: 100vh;
 
 }
+
 .skills-content > div > .vertical-line {
     width: 1%;
     border: 1px solid wheat;
@@ -299,6 +305,7 @@ hr{
     border-radius: 15px;
 
 }
+
 .skills-content > div > .java-content,
 .skills-content > div > .sql-content,
 .skills-content > div > .html-content,
@@ -306,7 +313,7 @@ hr{
 .skills-content > div > .js-content,
 .skills-content > div > .git-content,
 .skills-content > div > .ui-ux-content,
-.skills-content > div > .python-content{
+.skills-content > div > .python-content {
     display: flex;
     width: 50%;
     height: 200px;
@@ -319,48 +326,55 @@ hr{
 
 
 }
+
 .skills-content > div > .sql-content {
-    top:100px;
+    top: 100px;
     right: 50%;
 
 }
+
 .skills-content > div > .html-content {
     top: 200px;
     left: 50%;
 
 }
+
 .skills-content > div > .css-content {
     top: 300px;
     right: 50%;
 
 }
+
 .skills-content > div > .js-content {
-    top:400px;
+    top: 400px;
     left: 50%;
 
 }
+
 .skills-content > div > .git-content {
-    top:500px;
+    top: 500px;
     right: 50%;
 
 }
+
 .skills-content > div > .ui-ux-content {
     top: 600px;
     left: 50%;
 
 }
+
 .skills-content > div > .python-content {
     top: 700px;
     right: 50%;
 
 }
+
 .skills-content > div > .java-content > .language,
 .skills-content > div > .html-content > .language,
 .skills-content > div > .js-content > .language,
-.skills-content > div > .ui-ux-content > .language
-{
+.skills-content > div > .ui-ux-content > .language {
     position: absolute;
-    top:42%;
+    top: 42%;
     bottom: 10%;
     left: 0;
     width: 50%;
@@ -369,13 +383,13 @@ hr{
     border-right: none;
     border-radius: 10px 0 0 10px;
 }
+
 .skills-content > div > .sql-content > .language,
 .skills-content > div > .css-content > .language,
 .skills-content > div > .git-content > .language,
-.skills-content > div > .python-content > .language
-{
+.skills-content > div > .python-content > .language {
     position: absolute;
-    top:42%;
+    top: 42%;
     bottom: 10%;
     right: 0;
     width: 50%;
@@ -392,8 +406,7 @@ hr{
 .skills-content > div > .js-content > .language > p,
 .skills-content > div > .git-content > .language > p,
 .skills-content > div > .ui-ux-content > .language > p,
-.skills-content > div > .python-content > .language > p
-{
+.skills-content > div > .python-content > .language > p {
     color: black;
     position: relative;
     top: 15%;
@@ -401,11 +414,10 @@ hr{
     font-weight: bold;
 }
 
-.skills-content > div > .java-content >  .arrow-head,
-.skills-content > div > .html-content >  .arrow-head,
-.skills-content > div > .js-content >  .arrow-head,
-.skills-content > div > .ui-ux-content >  .arrow-head
-{
+.skills-content > div > .java-content > .arrow-head,
+.skills-content > div > .html-content > .arrow-head,
+.skills-content > div > .js-content > .arrow-head,
+.skills-content > div > .ui-ux-content > .arrow-head {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -416,11 +428,10 @@ hr{
     border-left: 50px solid gray;
 }
 
-.skills-content > div > .sql-content >  .arrow-head,
-.skills-content > div > .css-content >  .arrow-head,
-.skills-content > div > .git-content >  .arrow-head,
-.skills-content > div > .python-content >  .arrow-head
-{
+.skills-content > div > .sql-content > .arrow-head,
+.skills-content > div > .css-content > .arrow-head,
+.skills-content > div > .git-content > .arrow-head,
+.skills-content > div > .python-content > .arrow-head {
     position: absolute;
     top: 40%;
     right: 50%;
@@ -430,50 +441,50 @@ hr{
     border-right: 50px solid gray;
     border-bottom: 17px solid transparent;
 }
+
 .skills-content > div > .java-content > .outer-circle,
 .skills-content > div > .html-content > .outer-circle,
 .skills-content > div > .js-content > .outer-circle,
-.skills-content > div > .ui-ux-content > .outer-circle
-{
+.skills-content > div > .ui-ux-content > .outer-circle {
     position: absolute;
     top: 8%;
     left: 60%;
-    width:150px;
+    width: 150px;
     height: 150px;
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
     border-radius: 50%;
 }
+
 .skills-content > div > .sql-content > .outer-circle,
 .skills-content > div > .css-content > .outer-circle,
 .skills-content > div > .git-content > .outer-circle,
-.skills-content > div > .python-content > .outer-circle
-{
+.skills-content > div > .python-content > .outer-circle {
     position: absolute;
     top: 8%;
     right: 60%;
-    width:150px;
+    width: 150px;
     height: 150px;
     border-radius: 50%;
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
 }
 
-.skills-content > div > .java-content > .outer-circle > .inner-circle ,
+.skills-content > div > .java-content > .outer-circle > .inner-circle,
 .skills-content > div > .sql-content > .outer-circle > .inner-circle,
 .skills-content > div > .html-content > .outer-circle > .inner-circle,
 .skills-content > div > .css-content > .outer-circle > .inner-circle,
 .skills-content > div > .js-content > .outer-circle > .inner-circle,
 .skills-content > div > .git-content > .outer-circle > .inner-circle,
 .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle,
-.skills-content > div > .python-content > .outer-circle > .inner-circle{
+.skills-content > div > .python-content > .outer-circle > .inner-circle {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    width:130px;
+    width: 130px;
     height: 130px;
-    background:#1A1A1D ;
+    background: #1A1A1D;
     border-radius: 50%;
 }
 
@@ -484,17 +495,19 @@ hr{
 .skills-content > div > .js-content > .outer-circle > .inner-circle > img,
 .skills-content > div > .git-content > .outer-circle > .inner-circle > img,
 .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle > img,
-.skills-content > div > .python-content > .outer-circle > .inner-circle > img{
+.skills-content > div > .python-content > .outer-circle > .inner-circle > img {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    width:80px;
+    width: 80px;
 }
 
-#portfolio{
+/*-------------------------------PORTFOLIO----------------------------- */
+
+#portfolio {
     background: #1A1A1D;
     position: relative;
     width: 100%;
@@ -503,80 +516,95 @@ hr{
     min-width: 300px;
     min-height: 500px;
 }
-.portfolio-content{
+
+.portfolio-content {
     display: flex;
     width: 100%;
     height: 100%;
 }
-.portfolio-content > aside{
+
+.portfolio-content > aside {
     position: relative;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 20%;
-    border: 1px solid white;
+    background: #36383B;
 }
-.portfolio-content > main{
+
+.portfolio-content > main {
     position: relative;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 80%;
-    border: 1px solid white;
+
 }
-.portfolio-content > aside > h1{
+
+.portfolio-content > aside > h1 {
     text-align: center;
     font-size: 35px;
     color: white;
 }
-.portfolio-content > aside > ul{
+
+.portfolio-content > aside > ul {
     position: relative;
     text-align: center;
 
 
 }
-.portfolio-content > aside > ul > li{
+
+.portfolio-content > aside > ul > li {
     position: relative;
     top: 50px;
     padding-bottom: 50px;
 }
-.portfolio-content > aside > ul > li > a{
+
+.portfolio-content > aside > ul > li > a {
     text-decoration: none;
     color: white;
-    background: green;
+    background: black;
     border-radius: 15px;
     padding: 10px;
     display: inline-block;
     width: 200px;
 
 }
-main > div{
+
+.portfolio-content > aside > ul > li > a:hover {
+    background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 220px;
+}
+
+main > div {
     position: relative;
-    top:0;
-    left:0;
-    border: 5px solid blue;
+    top: 0;
+    left: 0;
     height: 650px;
 }
-main > div:nth-child(2),
+
+/*main > div:nth-child(2),
 main > div:nth-child(3),
 main > div:nth-child(4),
 main > div:nth-child(5){
     display: none;
-}
+}*/
 main > div > .ui-ux-h2,
 main > div > .develop-h2,
 main > div > .ass-h2,
 main > div > .doc-h2,
-main > div > .game-h2
-{
+main > div > .game-h2 {
     text-align: center;
     color: white;
     padding: 20px;
 }
-#ui-ux-projects, #development-projects, #assignments , #games , #docs{
-    border: 1px solid white;
+
+#ui-ux-projects, #development-projects, #assignments, #games, #docs {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 340px;
-   position: relative;
+    position: relative;
     top: 90px;
 }
 
@@ -594,8 +622,7 @@ main > div > .game-h2
 #assignments > div:nth-child(4),
 #games > div:nth-child(1),
 #docs > div:nth-child(1),
-#docs > div:nth-child(2)
-{
+#docs > div:nth-child(2) {
     position: relative;
     width: 200px;
     border: 5px solid white;
@@ -622,15 +649,15 @@ main > div > .game-h2
 #assignments > div:nth-child(4) > img,
 #games > div:nth-child(1) > img,
 #docs > div:nth-child(1) > img,
-#docs > div:nth-child(2) > img
-{
+#docs > div:nth-child(2) > img {
     position: relative;
     top: 10px;
-   width: 150px;
+    width: 150px;
     height: 120px;
     border-radius: 15px;
     border: 2px solid black;
 }
+
 #ui-ux-projects > div:nth-child(1) > h3,
 #ui-ux-projects > div:nth-child(2) > h3,
 #ui-ux-projects > div:nth-child(3) > h3,
@@ -645,13 +672,13 @@ main > div > .game-h2
 #assignments > div:nth-child(4) > h3,
 #games > div:nth-child(1) > h3,
 #docs > div:nth-child(1) > h3,
-#docs > div:nth-child(2) > h3
-{
+#docs > div:nth-child(2) > h3 {
     position: relative;
     top: 30px;
     color: black;
     text-align: center;
 }
+
 #ui-ux-projects > div:nth-child(1) > a,
 #ui-ux-projects > div:nth-child(2) > a,
 #ui-ux-projects > div:nth-child(3) > a,
@@ -666,8 +693,7 @@ main > div > .game-h2
 #assignments > div:nth-child(4) > a,
 #games > div:nth-child(1) > a,
 #docs > div:nth-child(1) > a,
-#docs > div:nth-child(2) > a
-{
+#docs > div:nth-child(2) > a {
     position: relative;
     text-decoration: none;
     top: 50px;
@@ -682,23 +708,26 @@ main > div > .game-h2
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#ui-ux-projects > div:nth-child(1) > a:hover,
+#ui-ux-projects > div:nth-child(2) > a:hover,
+#ui-ux-projects > div:nth-child(3) > a:hover,
+#ui-ux-projects > div:nth-child(4) > a:hover,
+#development-projects > div:nth-child(1) > a:hover,
+#development-projects > div:nth-child(2) > a:hover,
+#development-projects > div:nth-child(3) > a:hover,
+#development-projects > div:nth-child(4) > a:hover,
+#assignments > div:nth-child(1) > a:hover,
+#assignments > div:nth-child(2) > a:hover,
+#assignments > div:nth-child(3) > a:hover,
+#assignments > div:nth-child(4) > a:hover,
+#games > div:nth-child(1) > a:hover,
+#docs > div:nth-child(1) > a:hover,
+#docs > div:nth-child(2) > a:hover {
+    background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
+    color: black;
+    border: black 3px solid;
+    font-weight: bold;
+}
 
 
 /*-----------------------------MEDIA------------------------------------*/
@@ -828,17 +857,17 @@ main > div > .game-h2
     }
 
     .skills-content > div > .java-content > .language,
-    .skills-content > div > .sql-content > .language ,
-    .skills-content > div > .html-content > .language ,
-    .skills-content > div > .css-content > .language ,
-    .skills-content > div > .js-content > .language ,
-    .skills-content > div > .git-content > .language ,
-    .skills-content > div > .ui-ux-content > .language ,
-    .skills-content > div > .python-content > .language
-    {
+    .skills-content > div > .sql-content > .language,
+    .skills-content > div > .html-content > .language,
+    .skills-content > div > .css-content > .language,
+    .skills-content > div > .js-content > .language,
+    .skills-content > div > .git-content > .language,
+    .skills-content > div > .ui-ux-content > .language,
+    .skills-content > div > .python-content > .language {
         width: 30%;
         height: 12%;
     }
+
     .skills-content > div > .java-content > .language > p,
     .skills-content > div > .sql-content > .language > p,
     .skills-content > div > .html-content > .language > p,
@@ -846,69 +875,234 @@ main > div > .game-h2
     .skills-content > div > .js-content > .language > p,
     .skills-content > div > .git-content > .language > p,
     .skills-content > div > .ui-ux-content > .language > p,
-    .skills-content > div > .python-content > .language > p{
+    .skills-content > div > .python-content > .language > p {
         font-size: 12px;
     }
-    .skills-content > div > .java-content >  .arrow-head,
-    .skills-content > div > .html-content >  .arrow-head,
-    .skills-content > div > .js-content >  .arrow-head,
-    .skills-content > div > .ui-ux-content >  .arrow-head
-    {
+
+    .skills-content > div > .java-content > .arrow-head,
+    .skills-content > div > .html-content > .arrow-head,
+    .skills-content > div > .js-content > .arrow-head,
+    .skills-content > div > .ui-ux-content > .arrow-head {
         left: 30%;
         top: 40%;
         border-top: 16px solid transparent;
         border-left: 50px solid gray;
         border-bottom: 16px solid transparent;
     }
-    .skills-content > div > .sql-content >  .arrow-head,
-    .skills-content > div > .css-content >  .arrow-head,
-    .skills-content > div > .git-content >  .arrow-head,
-    .skills-content > div > .python-content >  .arrow-head{
+
+    .skills-content > div > .sql-content > .arrow-head,
+    .skills-content > div > .css-content > .arrow-head,
+    .skills-content > div > .git-content > .arrow-head,
+    .skills-content > div > .python-content > .arrow-head {
         right: 30%;
         border-top: 15px solid transparent;
         border-right: 50px solid gray;
         border-bottom: 15px solid transparent;
     }
 
-    .skills-content > div > .java-content > .outer-circle ,
-    .skills-content > div > .html-content > .outer-circle ,
-    .skills-content > div > .js-content > .outer-circle ,
-    .skills-content > div > .ui-ux-content > .outer-circle
-     {
+    .skills-content > div > .java-content > .outer-circle,
+    .skills-content > div > .html-content > .outer-circle,
+    .skills-content > div > .js-content > .outer-circle,
+    .skills-content > div > .ui-ux-content > .outer-circle {
         top: 22%;
         left: 50%;
-        width:100px;
+        width: 100px;
         height: 100px;
         border: none;
         background: none;
 
     }
-    .skills-content > div > .sql-content > .outer-circle ,
-    .skills-content > div > .css-content > .outer-circle ,
-    .skills-content > div > .git-content > .outer-circle ,
-    .skills-content > div > .python-content > .outer-circle{
+
+    .skills-content > div > .sql-content > .outer-circle,
+    .skills-content > div > .css-content > .outer-circle,
+    .skills-content > div > .git-content > .outer-circle,
+    .skills-content > div > .python-content > .outer-circle {
         top: 22%;
         right: 50%;
-        width:100px;
+        width: 100px;
         height: 100px;
         border: none;
         background: none;
     }
-    .skills-content > div > .java-content > .outer-circle > .inner-circle ,
-    .skills-content > div > .sql-content > .outer-circle > .inner-circle ,
+
+    .skills-content > div > .java-content > .outer-circle > .inner-circle,
+    .skills-content > div > .sql-content > .outer-circle > .inner-circle,
     .skills-content > div > .html-content > .outer-circle > .inner-circle,
-    .skills-content > div > .css-content > .outer-circle > .inner-circle ,
-    .skills-content > div > .js-content > .outer-circle > .inner-circle ,
+    .skills-content > div > .css-content > .outer-circle > .inner-circle,
+    .skills-content > div > .js-content > .outer-circle > .inner-circle,
     .skills-content > div > .git-content > .outer-circle > .inner-circle,
-    .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle ,
-    .skills-content > div > .python-content > .outer-circle > .inner-circle{
-        width:80px;
+    .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle,
+    .skills-content > div > .python-content > .outer-circle > .inner-circle {
+        width: 80px;
         height: 80px;
         border: none;
         background: none;
     }
 
+    #portfolio {
+        width: 100%;
+        height: 1300px;
 
+    }
+
+    .portfolio-content > aside {
+        width: 30%;
+
+
+    }
+
+    .portfolio-content > main {
+        width: 70%;
+
+    }
+
+    .portfolio-content > aside > h1 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .portfolio-content > aside > ul > li {
+        top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .portfolio-content > aside > ul > li > a {
+        padding: 5px;
+        width: 120px;
+        font-size: 12px;
+        display: inline-block;
+    }
+
+    .portfolio-content > aside > ul > li > a:hover {
+        display: inline-block;
+        width: 120px;
+    }
+
+    main > div {
+        height: 650px;
+    }
+
+    #ui-ux-projects, #development-projects, #assignments, #games, #docs {
+        grid-template-columns:1fr;
+        height: 300px;
+        text-align: center;
+        top: 10px;
+        padding: 10px;
+    }
+
+    #ui-ux-projects > div:nth-child(1),
+    #ui-ux-projects > div:nth-child(2),
+    #ui-ux-projects > div:nth-child(3),
+    #ui-ux-projects > div:nth-child(4),
+    #development-projects > div:nth-child(1),
+    #development-projects > div:nth-child(2),
+    #development-projects > div:nth-child(3),
+    #development-projects > div:nth-child(4),
+    #assignments > div:nth-child(1),
+    #assignments > div:nth-child(2),
+    #assignments > div:nth-child(3),
+    #assignments > div:nth-child(4),
+    #games > div:nth-child(1),
+    #docs > div:nth-child(1),
+    #docs > div:nth-child(2) {
+        border: 2px solid white;
+        text-align: center;
+        height: 250px;
+        margin-bottom: 20px;
+
+    }
+
+    #ui-ux-projects > div:nth-child(1) > img,
+    #ui-ux-projects > div:nth-child(2) > img,
+    #ui-ux-projects > div:nth-child(3) > img,
+    #ui-ux-projects > div:nth-child(4) > img,
+    #development-projects > div:nth-child(1) > img,
+    #development-projects > div:nth-child(2) > img,
+    #development-projects > div:nth-child(3) > img,
+    #development-projects > div:nth-child(4) > img,
+    #assignments > div:nth-child(1) > img,
+    #assignments > div:nth-child(2) > img,
+    #assignments > div:nth-child(3) > img,
+    #assignments > div:nth-child(4) > img,
+    #games > div:nth-child(1) > img,
+    #docs > div:nth-child(1) > img,
+    #docs > div:nth-child(2) > img {
+        position: relative;
+        top: 10px;
+        width: 150px;
+        height: 120px;
+        border-radius: 15px;
+        border: 2px solid black;
+    }
+
+    #ui-ux-projects > div:nth-child(1) > h3,
+    #ui-ux-projects > div:nth-child(2) > h3,
+    #ui-ux-projects > div:nth-child(3) > h3,
+    #ui-ux-projects > div:nth-child(4) > h3,
+    #development-projects > div:nth-child(1) > h3,
+    #development-projects > div:nth-child(2) > h3,
+    #development-projects > div:nth-child(3) > h3,
+    #development-projects > div:nth-child(4) > h3,
+    #assignments > div:nth-child(1) > h3,
+    #assignments > div:nth-child(2) > h3,
+    #assignments > div:nth-child(3) > h3,
+    #assignments > div:nth-child(4) > h3,
+    #games > div:nth-child(1) > h3,
+    #docs > div:nth-child(1) > h3,
+    #docs > div:nth-child(2) > h3 {
+        position: relative;
+        top: 30px;
+        color: black;
+        text-align: center;
+    }
+
+    #ui-ux-projects > div:nth-child(1) > a,
+    #ui-ux-projects > div:nth-child(2) > a,
+    #ui-ux-projects > div:nth-child(3) > a,
+    #ui-ux-projects > div:nth-child(4) > a,
+    #development-projects > div:nth-child(1) > a,
+    #development-projects > div:nth-child(2) > a,
+    #development-projects > div:nth-child(3) > a,
+    #development-projects > div:nth-child(4) > a,
+    #assignments > div:nth-child(1) > a,
+    #assignments > div:nth-child(2) > a,
+    #assignments > div:nth-child(3) > a,
+    #assignments > div:nth-child(4) > a,
+    #games > div:nth-child(1) > a,
+    #docs > div:nth-child(1) > a,
+    #docs > div:nth-child(2) > a {
+        font-size: 15px;
+        border: 2px solid white;
+        display: inline-block;
+        width: 100px;
+
+
+    }
+
+    #ui-ux-projects > div:nth-child(1) > a:hover,
+    #ui-ux-projects > div:nth-child(2) > a:hover,
+    #ui-ux-projects > div:nth-child(3) > a:hover,
+    #ui-ux-projects > div:nth-child(4) > a:hover,
+    #development-projects > div:nth-child(1) > a:hover,
+    #development-projects > div:nth-child(2) > a:hover,
+    #development-projects > div:nth-child(3) > a:hover,
+    #development-projects > div:nth-child(4) > a:hover,
+    #assignments > div:nth-child(1) > a:hover,
+    #assignments > div:nth-child(2) > a:hover,
+    #assignments > div:nth-child(3) > a:hover,
+    #assignments > div:nth-child(4) > a:hover,
+    #games > div:nth-child(1) > a:hover,
+    #docs > div:nth-child(1) > a:hover,
+    #docs > div:nth-child(2) > a:hover {
+        border: black 2px solid;
+    }
+
+    main > div:nth-child(2),
+    main > div:nth-child(3),
+    main > div:nth-child(4),
+    main > div:nth-child(5) {
+        display: none;
+    }
 
 
 }
