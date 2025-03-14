@@ -285,6 +285,7 @@
     border: 1px solid wheat;
     background: wheat;
     height: 1000vh;
+    border-radius: 15px;
 
 }
 .skills-content > div > .java-content,
