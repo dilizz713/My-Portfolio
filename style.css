@@ -548,13 +548,30 @@ hr{
     width: 200px;
 
 }
-main > h2{
+main > div{
+    position: relative;
+    top:0;
+    left:0;
+    border: 5px solid blue;
+    height: 650px;
+}
+main > div:nth-child(2),
+main > div:nth-child(3),
+main > div:nth-child(4),
+main > div:nth-child(5){
+    display: none;
+}
+main > div > .ui-ux-h2,
+main > div > .develop-h2,
+main > div > .ass-h2,
+main > div > .doc-h2,
+main > div > .game-h2
+{
     text-align: center;
     color: white;
     padding: 20px;
 }
-#ui-ux-projects{
-    /*display: none;*/
+#ui-ux-projects, #development-projects, #assignments , #games , #docs{
     border: 1px solid white;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -566,7 +583,19 @@ main > h2{
 #ui-ux-projects > div:nth-child(1),
 #ui-ux-projects > div:nth-child(2),
 #ui-ux-projects > div:nth-child(3),
-#ui-ux-projects > div:nth-child(4){
+#ui-ux-projects > div:nth-child(4),
+#development-projects > div:nth-child(1),
+#development-projects > div:nth-child(2),
+#development-projects > div:nth-child(3),
+#development-projects > div:nth-child(4),
+#assignments > div:nth-child(1),
+#assignments > div:nth-child(2),
+#assignments > div:nth-child(3),
+#assignments > div:nth-child(4),
+#games > div:nth-child(1),
+#docs > div:nth-child(1),
+#docs > div:nth-child(2)
+{
     position: relative;
     width: 200px;
     border: 5px solid white;
@@ -582,7 +611,18 @@ main > h2{
 #ui-ux-projects > div:nth-child(1) > img,
 #ui-ux-projects > div:nth-child(2) > img,
 #ui-ux-projects > div:nth-child(3) > img,
-#ui-ux-projects > div:nth-child(4) > img
+#ui-ux-projects > div:nth-child(4) > img,
+#development-projects > div:nth-child(1) > img,
+#development-projects > div:nth-child(2) > img,
+#development-projects > div:nth-child(3) > img,
+#development-projects > div:nth-child(4) > img,
+#assignments > div:nth-child(1) > img,
+#assignments > div:nth-child(2) > img,
+#assignments > div:nth-child(3) > img,
+#assignments > div:nth-child(4) > img,
+#games > div:nth-child(1) > img,
+#docs > div:nth-child(1) > img,
+#docs > div:nth-child(2) > img
 {
     position: relative;
     top: 10px;
@@ -594,7 +634,18 @@ main > h2{
 #ui-ux-projects > div:nth-child(1) > h3,
 #ui-ux-projects > div:nth-child(2) > h3,
 #ui-ux-projects > div:nth-child(3) > h3,
-#ui-ux-projects > div:nth-child(4) > h3
+#ui-ux-projects > div:nth-child(4) > h3,
+#development-projects > div:nth-child(1) > h3,
+#development-projects > div:nth-child(2) > h3,
+#development-projects > div:nth-child(3) > h3,
+#development-projects > div:nth-child(4) > h3,
+#assignments > div:nth-child(1) > h3,
+#assignments > div:nth-child(2) > h3,
+#assignments > div:nth-child(3) > h3,
+#assignments > div:nth-child(4) > h3,
+#games > div:nth-child(1) > h3,
+#docs > div:nth-child(1) > h3,
+#docs > div:nth-child(2) > h3
 {
     position: relative;
     top: 30px;
@@ -604,7 +655,18 @@ main > h2{
 #ui-ux-projects > div:nth-child(1) > a,
 #ui-ux-projects > div:nth-child(2) > a,
 #ui-ux-projects > div:nth-child(3) > a,
-#ui-ux-projects > div:nth-child(4) > a
+#ui-ux-projects > div:nth-child(4) > a,
+#development-projects > div:nth-child(1) > a,
+#development-projects > div:nth-child(2) > a,
+#development-projects > div:nth-child(3) > a,
+#development-projects > div:nth-child(4) > a,
+#assignments > div:nth-child(1) > a,
+#assignments > div:nth-child(2) > a,
+#assignments > div:nth-child(3) > a,
+#assignments > div:nth-child(4) > a,
+#games > div:nth-child(1) > a,
+#docs > div:nth-child(1) > a,
+#docs > div:nth-child(2) > a
 {
     position: relative;
     text-decoration: none;
