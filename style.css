@@ -584,12 +584,12 @@ main > div {
     height: 650px;
 }
 
-/*main > div:nth-child(2),
+main > div:nth-child(2),
 main > div:nth-child(3),
 main > div:nth-child(4),
 main > div:nth-child(5){
     display: none;
-}*/
+}
 main > div > .ui-ux-h2,
 main > div > .develop-h2,
 main > div > .ass-h2,
