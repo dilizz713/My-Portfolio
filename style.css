@@ -1028,21 +1028,11 @@ main > div > .game-h2 {
         padding: 10px;
     }
 
-    #ui-ux-projects > div:nth-child(1),
-    #ui-ux-projects > div:nth-child(2),
-    #ui-ux-projects > div:nth-child(3),
-    #ui-ux-projects > div:nth-child(4),
-    #development-projects > div:nth-child(1),
-    #development-projects > div:nth-child(2),
-    #development-projects > div:nth-child(3),
-    #development-projects > div:nth-child(4),
-    #assignments > div:nth-child(1),
-    #assignments > div:nth-child(2),
-    #assignments > div:nth-child(3),
-    #assignments > div:nth-child(4),
-    #games > div:nth-child(1),
-    #docs > div:nth-child(1),
-    #docs > div:nth-child(2) {
+    #ui-ux-projects > div,
+    #development-projects > div,
+    #assignments > div,
+    #games > div,
+    #docs > div {
         border: 2px solid white;
         text-align: center;
         height: 250px;
@@ -1050,21 +1040,12 @@ main > div > .game-h2 {
 
     }
 
-    #ui-ux-projects > div:nth-child(1) > img,
-    #ui-ux-projects > div:nth-child(2) > img,
-    #ui-ux-projects > div:nth-child(3) > img,
-    #ui-ux-projects > div:nth-child(4) > img,
-    #development-projects > div:nth-child(1) > img,
-    #development-projects > div:nth-child(2) > img,
-    #development-projects > div:nth-child(3) > img,
-    #development-projects > div:nth-child(4) > img,
-    #assignments > div:nth-child(1) > img,
-    #assignments > div:nth-child(2) > img,
-    #assignments > div:nth-child(3) > img,
-    #assignments > div:nth-child(4) > img,
-    #games > div:nth-child(1) > img,
-    #docs > div:nth-child(1) > img,
-    #docs > div:nth-child(2) > img {
+    #ui-ux-projects > div > img,
+    #development-projects > div > img,
+    #assignments > div > img,
+    #games > div > img,
+    #docs > div > img
+    {
         position: relative;
         top: 10px;
         width: 150px;
@@ -1073,42 +1054,24 @@ main > div > .game-h2 {
         border: 2px solid black;
     }
 
-    #ui-ux-projects > div:nth-child(1) > h3,
-    #ui-ux-projects > div:nth-child(2) > h3,
-    #ui-ux-projects > div:nth-child(3) > h3,
-    #ui-ux-projects > div:nth-child(4) > h3,
-    #development-projects > div:nth-child(1) > h3,
-    #development-projects > div:nth-child(2) > h3,
-    #development-projects > div:nth-child(3) > h3,
-    #development-projects > div:nth-child(4) > h3,
-    #assignments > div:nth-child(1) > h3,
-    #assignments > div:nth-child(2) > h3,
-    #assignments > div:nth-child(3) > h3,
-    #assignments > div:nth-child(4) > h3,
-    #games > div:nth-child(1) > h3,
-    #docs > div:nth-child(1) > h3,
-    #docs > div:nth-child(2) > h3 {
+    #ui-ux-projects > div > h3,
+    #development-projects > div > h3,
+    #assignments > div > h3,
+    #games > div > h3,
+    #docs > div > h3
+    {
         position: relative;
         top: 30px;
         color: black;
         text-align: center;
     }
 
-    #ui-ux-projects > div:nth-child(1) > a,
-    #ui-ux-projects > div:nth-child(2) > a,
-    #ui-ux-projects > div:nth-child(3) > a,
-    #ui-ux-projects > div:nth-child(4) > a,
-    #development-projects > div:nth-child(1) > a,
-    #development-projects > div:nth-child(2) > a,
-    #development-projects > div:nth-child(3) > a,
-    #development-projects > div:nth-child(4) > a,
-    #assignments > div:nth-child(1) > a,
-    #assignments > div:nth-child(2) > a,
-    #assignments > div:nth-child(3) > a,
-    #assignments > div:nth-child(4) > a,
-    #games > div:nth-child(1) > a,
-    #docs > div:nth-child(1) > a,
-    #docs > div:nth-child(2) > a {
+    #ui-ux-projects > div > a,
+    #development-projects > div > a,
+    #assignments > div > a,
+    #games > div > a,
+    #docs > div > a
+    {
         font-size: 15px;
         border: 2px solid white;
         display: inline-block;
@@ -1117,21 +1080,12 @@ main > div > .game-h2 {
 
     }
 
-    #ui-ux-projects > div:nth-child(1) > a:hover,
-    #ui-ux-projects > div:nth-child(2) > a:hover,
-    #ui-ux-projects > div:nth-child(3) > a:hover,
-    #ui-ux-projects > div:nth-child(4) > a:hover,
-    #development-projects > div:nth-child(1) > a:hover,
-    #development-projects > div:nth-child(2) > a:hover,
-    #development-projects > div:nth-child(3) > a:hover,
-    #development-projects > div:nth-child(4) > a:hover,
-    #assignments > div:nth-child(1) > a:hover,
-    #assignments > div:nth-child(2) > a:hover,
-    #assignments > div:nth-child(3) > a:hover,
-    #assignments > div:nth-child(4) > a:hover,
-    #games > div:nth-child(1) > a:hover,
-    #docs > div:nth-child(1) > a:hover,
-    #docs > div:nth-child(2) > a:hover {
+    #ui-ux-projects > div > a:hover,
+    #development-projects > div > a:hover,
+    #assignments > div > a:hover,
+    #games > div > a:hover,
+    #docs > div > a:hover
+    {
         border: black 2px solid;
     }
 
