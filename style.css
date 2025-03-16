@@ -133,14 +133,14 @@
     padding: 5px 10px 5px 10px;
     border-radius: 15px;
     font-weight: bold;
-    border-bottom: 2px black solid;
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
+    box-shadow: 2px 2px 2px #FF885B;
 
 }
 
 .header > nav > ul > li > a:hover {
     background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
-    border: 1px solid wheat;
+    box-shadow: 2px 2px 2px #FF00FF;
 }
 
 .header > nav > ul > li > select {
@@ -155,14 +155,14 @@
     border-radius: 15px;
     font-weight: bold;
     border: none;
-    border-bottom: 2px black solid;
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
+    box-shadow: 2px 2px 2px #FF885B;
 }
 
 .header > nav > ul > li > select:hover {
     background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
     color: black;
-    border: 1px solid wheat;
+    box-shadow: 2px 2px 2px #FF00FF;
 }
 
 .header > nav > ul > li > select > option {
@@ -239,12 +239,17 @@
     padding-left: 150px;
     padding-right: 30px;
 }
+#about > div:nth-child(2) > div{
+    position: relative;
+    display: flex;
 
-#about > div:nth-child(2) > a {
+}
+
+#about > div:nth-child(2)  >  a {
     padding-left: 150px;
 }
 
-#about > div:nth-child(2) > a > button {
+#about > div:nth-child(2) >   a > button {
     position: relative;
     font-size: 20px;
     font-weight: bold;
