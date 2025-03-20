@@ -744,7 +744,27 @@ main > div > .game-h2 {
     color: black;
 
 }
+#contact-me{
+    width: 100%;
+    background: #1A1A1D;
+    height: 700px;
+}
+#contact-me > h3{
+    position: relative;
+    top: 30px;
+    left: 20px;
+    color: #FF885B;
+    font-size: 25px;
+}
+.contact-form{
+   position: relative;
+    height: 400px;
+    top:50px;
+    left: 500px;
+    background: #EE8E6A;
+    width: 550px;
 
+}
 
 
 
