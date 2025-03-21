@@ -832,11 +832,14 @@ main > div > .game-h2 {
     background: #D9D9D9;
     height: fit-content;
     left: 220px;
-
 }
 .submit-button:hover {
     background: white;
 }
+
+
+
+
 
 
 
