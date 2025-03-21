@@ -850,6 +850,9 @@ main > div > .game-h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+.address-for-phone{
+    display: none;
+}
 .footer > div:first-child {
     position: relative;
     width: 100%;
@@ -857,14 +860,12 @@ main > div > .game-h2 {
 .footer > div:last-child {
     position: relative;
     width: 100%;
-    border: 2px solid red;
     justify-content: right;
     display: flex;
 }
 .footer > div:first-child  > .footer-content{
     position: relative;
     display: flex;
-    border: 3px solid white;
     height: 70px;
 }
 .footer > div:first-child  > .footer-content > .img-icon {
@@ -1363,6 +1364,33 @@ main > div > .game-h2 {
     .submit-button:hover {
         background: white;
     }
+
+
+    .footer {
+        height: 400px;
+        grid-template-columns: 1fr;
+    }
+
+    .footer > div:last-child {
+        top:-20px;
+        justify-content: center;
+
+    }
+
+    .footer > div:first-child  > .footer-content{
+        display: inline-block;
+        height: 70px;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer > div:first-child  > .footer-content > .img-icon {
+        left:0;
+    }
+    .footer > div:first-child  > .footer-content > .details {
+        left: 0;
+        font-size: 15px;
+    }
+
 
 
 
