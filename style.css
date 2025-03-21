@@ -844,67 +844,59 @@ main > div > .game-h2 {
     margin-top: -20px;
     text-align: center;
     padding: 20px 50px;
-    height: 300px;
+    height: 250px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.footer > div:first-child  > div{
+.footer > div:first-child {
+    position: relative;
+    width: 100%;
+}
+.footer > div:last-child {
+    position: relative;
+    width: 100%;
+    border: 2px solid red;
+    justify-content: right;
+    display: flex;
+}
+.footer > div:first-child  > .footer-content{
     position: relative;
     display: flex;
     border: 3px solid white;
+    height: 70px;
 }
-.footer > div:first-child > div > div:nth-child(1){
+.footer > div:first-child  > .footer-content > .img-icon {
     position: relative;
-    text-align: center;
-    padding: 10px;
+    top: 20px;
+    left: 10px;
 }
-./*footer > div:first-child > div:first-child,
-.footer > div:nth-child(2) > div:first-child,
-.footer > div:nth-child(3) > div:first-child{
+.footer > div:first-child  > .footer-content > .details {
     position: relative;
-    text-align: center;
-    padding: 10px;
-}*/
-footer > div:first-child > div > div:nth-child(2) >p{
-    position: relative;
-    top: 18px;
+    top: 25px;
+    left: 25px;
     font-size: 18px;
     font-weight: bold;
     color: white;
 }
-/*.footer > div:first-child > div:last-child,
-.footer > div:nth-child(2) > div:last-child,
-.footer > div:nth-child(3) > div:last-child{
+.footer > div:nth-child(2) > div{
     position: relative;
-    top: 18px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}*/
-.footer > div:nth-child(2){
-    position: relative;
-    display: flex;
-    top:20px;
-    text-align: center;
+    top:40px;
+    padding: 0 20px;
+
 }
-/*.footer > div:nth-child(4){
-    position: relative;
-    display: flex;
-    top:20px;
-    text-align: center;
-}*/
-.footer > div:nth-child(4) > div{
-    position: relative;
-    padding-right: 20px;
+.footer > div:nth-child(2) > div > img{
+    background: #D9D9D9;
+    padding: 5px;
+    width: 50px;
+    border-radius: 10px;
 }
-.footer > div:nth-child(5){
-    position: relative;
-    top: 30px;
-    text-align: left;
-    display: flex;
-    background:#D9D9D9;
-    width: 100%;
+.footer > div:nth-child(2) > div > img:hover{
+    background: #EE8E6A;
+    padding: 5px;
+    width: 50px;
+    border-radius: 10px;
 }
+
 .copyright{
     position: relative;
     display: flex;
