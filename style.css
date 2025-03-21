@@ -239,17 +239,18 @@
     padding-left: 150px;
     padding-right: 30px;
 }
-#about > div:nth-child(2) > div{
+
+#about > div:nth-child(2) > div {
     position: relative;
     display: flex;
 
 }
 
-#about > div:nth-child(2)  >  a {
+#about > div:nth-child(2) > a {
     padding-left: 150px;
 }
 
-#about > div:nth-child(2) >   a > button {
+#about > div:nth-child(2) > a > button {
     position: relative;
     font-size: 20px;
     font-weight: bold;
@@ -593,9 +594,10 @@ main > div {
 main > div:nth-child(2),
 main > div:nth-child(3),
 main > div:nth-child(4),
-main > div:nth-child(5){
+main > div:nth-child(5) {
     display: none;
 }
+
 main > div > .ui-ux-h2,
 main > div > .develop-h2,
 main > div > .ass-h2,
@@ -618,8 +620,7 @@ main > div > .game-h2 {
 #development-projects div,
 #assignments > div,
 #games > div,
-#docs > div
- {
+#docs > div {
     position: relative;
     width: 200px;
     border: 5px solid white;
@@ -636,8 +637,7 @@ main > div > .game-h2 {
 #development-projects > div > img,
 #assignments > div > img,
 #games > div > img,
-#docs > div > img
- {
+#docs > div > img {
     position: relative;
     top: 10px;
     width: 150px;
@@ -650,8 +650,7 @@ main > div > .game-h2 {
 #development-projects > div > h3,
 #assignments > div > h3,
 #games > div > h3,
-#docs > div > h3
-{
+#docs > div > h3 {
     position: relative;
     top: 30px;
     color: black;
@@ -662,8 +661,7 @@ main > div > .game-h2 {
 #development-projects > div > a,
 #assignments > div > a,
 #games > div > a,
-#docs > div > a
- {
+#docs > div > a {
     position: relative;
     text-decoration: none;
     top: 50px;
@@ -682,8 +680,7 @@ main > div > .game-h2 {
 #development-projects > div > a:hover,
 #assignments > div > a:hover,
 #games > div > a:hover,
-#docs > div > a:hover
-{
+#docs > div > a:hover {
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
     color: black;
     border: black 3px solid;
@@ -691,23 +688,26 @@ main > div > .game-h2 {
 }
 
 /*-----------------------------SERVICES--------------------------*/
-#service{
+#service {
     width: 100%;
     background: #1A1A1D;
     height: 700px;
 }
-#service > h2{
+
+#service > h2 {
     text-align: center;
     font-size: 35px;
     color: white;
-    padding-top:50px;
+    padding-top: 50px;
 }
-#service > .service-content{
+
+#service > .service-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
 }
-#service > .service-content > div{
+
+#service > .service-content > div {
     text-align: center;
     border: 3px solid #FF885B;
     height: 450px;
@@ -721,69 +721,79 @@ main > div > .game-h2 {
     box-shadow: 5px 5px 5px #FF885B;
 }
 
-#service > .service-content > div > img{
+#service > .service-content > div > img {
     width: 150px;
     position: relative;
     top: 30px;
-    border-radius:50%;
+    border-radius: 50%;
     box-shadow: 5px 5px 5px #FF885B;
 
 }
-#service > .service-content > div > h3{
+
+#service > .service-content > div > h3 {
     font-size: 25px;
     position: relative;
     top: 50px;
-   color: black;
+    color: black;
     font-weight: bold;
     text-align: center;
 }
-#service > .service-content > div > p{
+
+#service > .service-content > div > p {
     position: relative;
     top: 80px;
-   font-size: 18px;
+    font-size: 18px;
     color: black;
 
 }
-#contact-me{
+
+#contact-me {
     width: 100%;
     background: #1A1A1D;
     height: 700px;
 }
-#contact-me > h3{
+
+#contact-me > h3 {
     position: relative;
-    top:50px;
+    top: 30px;
     text-align: center;
     color: #FF885B;
     font-size: 25px;
 }
-.contact-form{
-   position: relative;
-    height: 600px;
-    top:80px;
+
+.contact-form {
+    position: relative;
+    height: 520px;
+    top: 50px;
     left: 500px;
     background: #EE8E6A;
     width: 550px;
+    border-radius: 20px;
 }
-.first, .second,.third{
+
+.first, .second, .third {
     position: relative;
-    top:20px;
+    top: 20px;
     left: 50px;
     display: flex;
     justify-content: space-between;
     width: 250px;
 }
-.first > div:nth-child(2),.second > div:nth-child(2),.third > div:nth-child(2){
+
+.first > div:nth-child(2), .second > div:nth-child(2), .third > div:nth-child(2) {
     position: relative;
     margin-bottom: 20px;
 }
-.first > div:nth-child(2) > label,.second > div:nth-child(2) > label, .third > div:nth-child(2) > label{
+
+.first > div:nth-child(2) > label, .second > div:nth-child(2) > label, .third > div:nth-child(2) > label {
     position: relative;
     top: 5px;
     left: 15px;
     font-weight: bold;
     font-size: 18px;
 }
-.first > div:nth-child(2) > .input-type, .second > div:nth-child(2) > .input-type{
+
+.first > div:nth-child(2) > .input-type, .second > div:nth-child(2) > .input-type {
     position: relative;
     left: 15px;
     margin-top: 20px;
@@ -791,8 +801,10 @@ main > div > .game-h2 {
     height: 30px;
     border-radius: 10px;
     padding: 10px;
+    background: #D9D9D9;
 }
-.third > div:nth-child(2) > .input-type{
+
+.third > div:nth-child(2) > .input-type {
     position: relative;
     left: 15px;
     margin-top: 20px;
@@ -800,19 +812,31 @@ main > div > .game-h2 {
     height: 150px;
     border-radius: 10px;
     padding: 10px;
-    top:0;
-
+    top: 0;
+    background: #D9D9D9;
 }
 
-.icon{
+.icon {
     font-size: 35px;
     color: black;
 }
 
+.submit-button {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: #D9D9D9;
+    height: fit-content;
+    left: 220px;
 
-
-
-
+}
+.submit-button:hover {
+    background: white;
+}
 
 
 
@@ -1054,8 +1078,6 @@ main > div > .game-h2 {
         background: none;
 
 
-
-
     }
 
     .portfolio-content > main {
@@ -1113,8 +1135,7 @@ main > div > .game-h2 {
     #development-projects > div > img,
     #assignments > div > img,
     #games > div > img,
-    #docs > div > img
-    {
+    #docs > div > img {
         position: relative;
         top: 10px;
         width: 150px;
@@ -1127,8 +1148,7 @@ main > div > .game-h2 {
     #development-projects > div > h3,
     #assignments > div > h3,
     #games > div > h3,
-    #docs > div > h3
-    {
+    #docs > div > h3 {
         position: relative;
         top: 30px;
         color: black;
@@ -1139,8 +1159,7 @@ main > div > .game-h2 {
     #development-projects > div > a,
     #assignments > div > a,
     #games > div > a,
-    #docs > div > a
-    {
+    #docs > div > a {
         font-size: 15px;
         border: 2px solid white;
         display: inline-block;
@@ -1153,8 +1172,7 @@ main > div > .game-h2 {
     #development-projects > div > a:hover,
     #assignments > div > a:hover,
     #games > div > a:hover,
-    #docs > div > a:hover
-    {
+    #docs > div > a:hover {
         border: black 2px solid;
     }
 
@@ -1165,18 +1183,21 @@ main > div > .game-h2 {
         display: none;
     }
 
-    #service{
-        height:1800px;
+    #service {
+        height: 1800px;
 
     }
-    #service > h2{
+
+    #service > h2 {
         font-size: 25px;
-        padding-top:40px;
+        padding-top: 40px;
     }
-    #service > .service-content{
+
+    #service > .service-content {
         grid-template-columns: 1fr;
     }
-    #service > .service-content > div{
+
+    #service > .service-content > div {
         border: 2px solid #FF885B;
         height: 350px;
         margin-right: 100px;
@@ -1184,25 +1205,27 @@ main > div > .game-h2 {
         margin-bottom: 50px;
     }
 
-    #service > .service-content > div > img{
+    #service > .service-content > div > img {
         width: 100px;
         top: 20px;
 
     }
-    #service > .service-content > div > h3{
+
+    #service > .service-content > div > h3 {
         font-size: 20px;
     }
-    #service > .service-content > div > p{
-       margin-left: 10px;
+
+    #service > .service-content > div > p {
+        margin-left: 10px;
         margin-right: 10px;
         font-size: 14px;
 
 
     }
-    hr{
+
+    hr {
         display: none;
     }
-
 
 
 }
