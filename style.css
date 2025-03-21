@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 
+
 .home, .about-section, #portfolio {
     background: #1A1A1D;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     min-width: 300px;
     min-height: 500px;
@@ -96,6 +97,7 @@
     left: 0;
     background: #36383B;
     z-index: 10;
+
 
 }
 
@@ -286,7 +288,7 @@ hr {
     text-align: center;
     justify-content: center;
     width: 100%;
-    height: 1000vh;
+    height: 100vh;
 }
 
 .skills-content > div {
@@ -803,7 +805,6 @@ main > div > .game-h2 {
     padding: 10px;
     background: #D9D9D9;
 }
-
 .third > div:nth-child(2) > .input-type {
     position: relative;
     left: 15px;
@@ -815,12 +816,10 @@ main > div > .game-h2 {
     top: 0;
     background: #D9D9D9;
 }
-
 .icon {
     font-size: 35px;
     color: black;
 }
-
 .submit-button {
     position: relative;
     top: 10px;
@@ -836,6 +835,79 @@ main > div > .game-h2 {
 .submit-button:hover {
     background: white;
 }
+
+/*-------------------------------------FOOTER-------------------------------*/
+.footer {
+    position: relative;
+    background: #36383B;
+    top:0;
+    margin-top: -20px;
+    text-align: center;
+    padding: 20px 50px;
+    height: 300px;
+}
+.footer > div:first-child ,.footer > div:nth-child(2) ,.footer > div:nth-child(3)  {
+    position: relative;
+    display: flex;
+}
+.footer > div:first-child > div:first-child,
+.footer > div:nth-child(2) > div:first-child,
+.footer > div:nth-child(3) > div:first-child{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+.footer > div:first-child > div:last-child,
+.footer > div:nth-child(2) > div:last-child,
+.footer > div:nth-child(3) > div:last-child{
+    position: relative;
+    top: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.footer > div:nth-child(4){
+    position: relative;
+    display: flex;
+    top:20px;
+    text-align: center;
+}
+.footer > div:nth-child(4) > div{
+    position: relative;
+    padding-right: 20px;
+}
+.footer > div:nth-child(5){
+    position: relative;
+    top: 30px;
+    text-align: left;
+    display: flex;
+    background:#D9D9D9;
+    width: 100%;
+}
+.copyright{
+    position: relative;
+    display: flex;
+    background: #D9D9D9;
+    height: 30px;
+    text-align: center;
+}
+.copyright > div{
+    position: relative;
+    top:5px;
+}
+.copyright > div:nth-child(1){
+    left:60px;
+    padding-right: 5px;
+
+}
+.copyright > div:nth-child(2){
+    left:60px;
+    font-weight: bold;
+}
+
+
+
+
 
 
 
