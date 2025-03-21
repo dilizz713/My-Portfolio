@@ -845,6 +845,8 @@ main > div > .game-h2 {
     text-align: center;
     padding: 20px 50px;
     height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .footer > div:first-child ,.footer > div:nth-child(2) ,.footer > div:nth-child(3)  {
     position: relative;
