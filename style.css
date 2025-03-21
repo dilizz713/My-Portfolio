@@ -593,12 +593,12 @@ main > div {
     height: 650px;
 }
 
-main > div:nth-child(2),
+/*main > div:nth-child(2),
 main > div:nth-child(3),
 main > div:nth-child(4),
 main > div:nth-child(5) {
     display: none;
-}
+}*/
 
 main > div > .ui-ux-h2,
 main > div > .develop-h2,
@@ -749,6 +749,8 @@ main > div > .game-h2 {
 
 }
 
+
+/*---------------------------------------CONTACT------------------------------*/
 #contact-me {
     width: 100%;
     background: #1A1A1D;
@@ -1307,13 +1309,63 @@ main > div > .game-h2 {
         margin-left: 10px;
         margin-right: 10px;
         font-size: 14px;
-
-
     }
-
     hr {
         display: none;
     }
+
+
+    #contact-me {
+        width: 100%;
+        background: #1A1A1D;
+        height: 620px;
+    }
+
+    #contact-me > h3 {
+        top: 20px;
+        font-size: 20px;
+    }
+
+    .contact-form {
+        height: 520px;
+        top: 50px;
+        left: 50px;
+        width: 400px;
+    }
+
+    .first, .second, .third {
+        width: 200px;
+    }
+
+    .first > div:nth-child(2), .second > div:nth-child(2), .third > div:nth-child(2) {
+        margin-bottom: 15px;
+        top:-5px;
+    }
+
+    .first > div:nth-child(2) > label, .second > div:nth-child(2) > label, .third > div:nth-child(2) > label {
+        font-size: 16px;
+    }
+
+    .first > div:nth-child(2) > .input-type, .second > div:nth-child(2) > .input-type {
+        width: 250px;
+    }
+    .third > div:nth-child(2) > .input-type {
+        width: 250px;
+
+    }
+    .icon {
+        font-size: 20px;
+    }
+    .submit-button {
+        font-size: 16px;
+        left: 160px;
+    }
+    .submit-button:hover {
+        background: white;
+    }
+
+
+
 
 
 }
