@@ -16,7 +16,6 @@ body{
     padding: 50px 20px;
     animation: fadeIn 1.5s ease;
 
-
 }
 
 .container{
@@ -107,6 +106,16 @@ button:hover{
 
 }
 
+.about-section{
+    padding: 50px 20px;
+}
+
+
+
+
+
+
+
 
 /*Animations*/
 @keyframes fadeIn {
@@ -125,6 +134,42 @@ button:hover{
 @keyframes fadeInRight {
     from { transform: translateX(50px); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+/*Responsive*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .text-content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+
+    .image-content {
+        margin-bottom: 20px;
+    }
+
 }
 
 
