@@ -16,14 +16,15 @@
     /*overflow-x:hidden;*/
 }
 
-.container {
+.home > .container {
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     width: 100%;
     height: 100vh;
+    background: #36383B;
 }
 
-.container > div:nth-child(1), .container > div:nth-child(2) {
+.home > .container > div:nth-child(1), .container > div:nth-child(2) {
     width: 50vw;
     text-align: left;
     justify-content: left;
@@ -31,7 +32,7 @@
     top: 0;
 }
 
-.container > div:nth-child(1) > h1 {
+.home > .container > div:nth-child(1) > h1 {
     position: relative;
     font-size: 64px;
     top: 80px;
@@ -41,7 +42,7 @@
 
 }
 
-.container > div:nth-child(1) > p {
+.home > .container > div:nth-child(1) > p {
     color: white;
     position: relative;
     font-size: 30px;
@@ -50,18 +51,18 @@
 
 }
 
-.container > div:nth-child(1) > p > .highlight {
+.home > .container > div:nth-child(1) > p > .highlight {
     font-size: 40px;
     font-weight: bold;
     color: #FF885B;
 
 }
 
-.container > div:nth-child(1) > a {
+.home > .container > div:nth-child(1) > a {
     padding-left: 150px;
 }
 
-.container > div:nth-child(1) > a > button {
+.home > .container > div:nth-child(1) > a > button {
     position: relative;
     font-size: 28px;
     font-weight: bold;
@@ -75,12 +76,12 @@
 
 }
 
-.container > div:nth-child(1) > a > button:hover {
+.home > .container > div:nth-child(1) > a > button:hover {
     background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
 
 }
 
-.container > div:nth-child(2) > img {
+.home > .container > div:nth-child(2) > img {
     position: relative;
     top: 100px;
     width: 70%;
@@ -950,12 +951,12 @@ main > div > .game-h2 {
         min-height: 500px;
     }
 
-    .container {
+    .home > .container {
         grid-template-columns:1fr;
         width: 100%;
     }
 
-    .container > div:nth-child(1), .container > div:nth-child(2) {
+    .home > .container > div:nth-child(1), .container > div:nth-child(2) {
         width: 100vw;
         height: 100%;
         text-align: center;
@@ -963,34 +964,34 @@ main > div > .game-h2 {
 
     }
 
-    .container > div:nth-child(1) > h1 {
+    .home > .container > div:nth-child(1) > h1 {
         font-size: 40px;
         top: 10px;
         padding: 10px;
     }
 
-    .container > div:nth-child(1) > p {
+    .home > .container > div:nth-child(1) > p {
         font-size: 20px;
         top: 10px;
         padding: 10px;
     }
 
-    .container > div:nth-child(1) > p > .highlight {
+    .home > .container > div:nth-child(1) > p > .highlight {
         font-size: 25px;
     }
 
-    .container > div:nth-child(1) > a {
+    .home > .container > div:nth-child(1) > a {
         padding-left: 0;
     }
 
-    .container > div:nth-child(1) > a > button {
+    .home > .container > div:nth-child(1) > a > button {
         top: 30px;
         padding: 5px;
         font-size: 16px;
         width: 150px;
     }
 
-    .container > div:nth-child(2) > img {
+    .home > .container > div:nth-child(2) > img {
         top: 15px;
         margin: auto;
         padding-left: 0;
