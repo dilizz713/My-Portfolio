@@ -15,6 +15,7 @@ body{
 .home{
     padding: 50px 20px;
 
+
 }
 
 .container{
@@ -91,4 +92,25 @@ button:hover{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
 }
+
+
+/*Animations*/
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+
+}
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeInLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+@keyframes fadeInRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
 
