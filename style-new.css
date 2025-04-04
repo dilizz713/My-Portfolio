@@ -110,7 +110,90 @@ button:hover{
     padding: 50px 20px;
 }
 
+.header{
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    gap: 30px;
+}
+.header > img{
+    width: 50px;
+    height: auto;
 
+}
+.header >  nav > ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+.header > nav > ul >  li {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.header > nav > ul > li > a {
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
+    box-shadow: 2px 2px 2px #FF885B;
+
+}
+.header > nav > ul > li > a:hover {
+    background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
+    box-shadow: 2px 2px 2px #FF00FF;
+}
+.header > nav > ul > li > select {
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    background: transparent;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: none;
+    background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
+    box-shadow: 2px 2px 2px #FF885B;
+}
+.header > nav > ul > li > select:hover {
+    background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
+    color: black;
+    box-shadow: 2px 2px 2px #FF00FF;
+}
+
+.header > nav > ul > li > select > option {
+    color: black;
+    text-decoration: none;
+    background: #0B8793;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+}
 
 
 
