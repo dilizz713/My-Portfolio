@@ -195,7 +195,21 @@ button:hover{
     width: 100%;
 }
 
-
+#about{
+    position: relative;
+    top:50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
+}
 
 
 
