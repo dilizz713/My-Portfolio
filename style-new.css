@@ -517,6 +517,166 @@ button:hover {
     width: 80px;
 }
 
+.portfolio-content{
+    position: relative;
+    top:200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
+    animation: slideUp 1.2s ease;
+}
+.portfolio-content > aside {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 300px;
+    background: #36383B;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 15px;
+
+}
+.portfolio-content > main {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 800px;
+
+}
+.portfolio-content > aside > h1 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.portfolio-content > aside > ul {
+    position: relative;
+    text-align: center;
+
+}
+.portfolio-content > aside > ul > li {
+    position: relative;
+    top: 50px;
+    padding-bottom: 50px;
+    list-style: none;
+}
+.portfolio-content > aside > ul > li > a {
+    text-decoration: none;
+    color: white;
+    background: black;
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+    width: 200px;
+}
+.portfolio-content > aside > ul > li > a:hover {
+    background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 220px;
+}
+main > div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 650px;
+}
+main > div:nth-child(2),
+main > div:nth-child(3),
+main > div:nth-child(4),
+main > div:nth-child(5) {
+    display: none;
+}
+main > div > .ui-ux-h2,
+main > div > .develop-h2,
+main > div > .ass-h2,
+main > div > .doc-h2,
+main > div > .game-h2 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+}
+#ui-ux-projects, #development-projects, #assignments, #games, #docs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 340px;
+    position: relative;
+    top: 10px;
+}
+#ui-ux-projects > div,
+#development-projects  > div,
+#assignments > div,
+#games > div,
+#docs > div {
+    position: relative;
+    width: 200px;
+    border: 5px solid white;
+    text-align: center;
+    height: 280px;
+    background: #FF885B;
+    border-radius: 30px;
+    left: 50px;
+    right: 50px;
+    margin-bottom: 20px;
+}
+#ui-ux-projects > div > img,
+#development-projects > div > img,
+#assignments > div > img,
+#games > div > img,
+#docs > div > img {
+    position: relative;
+    top: 10px;
+    width: 150px;
+    height: 120px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+#ui-ux-projects > div > h3,
+#development-projects > div > h3,
+#assignments > div > h3,
+#games > div > h3,
+#docs > div > h3 {
+    position: relative;
+    top: 30px;
+    color: black;
+    text-align: center;
+}
+#ui-ux-projects > div > a,
+#development-projects > div > a,
+#assignments > div > a,
+#games > div > a,
+#docs > div > a {
+    position: relative;
+    text-decoration: none;
+    top: 50px;
+    font-size: 20px;
+    color: white;
+    background: black;
+    border-radius: 10px;
+    border: 3px solid white;
+    display: inline-block;
+    width: 120px;
+    padding: 5px;
+
+}
+#ui-ux-projects > div > a:hover,
+#development-projects > div > a:hover,
+#assignments > div > a:hover,
+#games > div > a:hover,
+#docs > div > a:hover {
+    background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
+    color: black;
+    border: black 3px solid;
+    font-weight: bold;
+}
 
 /*Animations*/
 @keyframes fadeIn {
