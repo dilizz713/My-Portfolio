@@ -1,24 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-body{
+
+body {
     background: #1A1A1D;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
-.home{
+
+.home {
     padding: 50px 20px;
     animation: fadeIn 1.5s ease;
 
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -34,35 +37,35 @@ body{
 
 }
 
-.text-content{
+.text-content {
     flex: 1;
     min-width: 280px;
     animation: fadeInLeft 1.2s ease;
 
 }
 
-.text-content h1{
+.text-content h1 {
     font-size: 2.9rem;
     margin-bottom: 50px;
     color: white;
 
 }
 
-.text-content p{
+.text-content p {
     font-size: 1.3rem;
     margin-bottom: 50px;
     color: white;
 
 }
 
-.highlight{
+.highlight {
     color: #FF885B;
     font-weight: bold;
     font-size: 1.8rem;
 
 }
 
-button{
+button {
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
     color: white;
     border: none;
@@ -78,13 +81,14 @@ button{
 
 }
 
-button:hover{
+button:hover {
     background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
     box-shadow: 0 10px 20px rgba(255, 78, 80, 0.4);
     transform: translateY(-3px);
 
 }
-.image-content{
+
+.image-content {
     flex: 1;
     min-width: 280px;
     text-align: center;
@@ -93,7 +97,7 @@ button:hover{
 
 }
 
-.profile-pic{
+.profile-pic {
     max-width: 80%;
     height: auto;
     border-radius: 20px;
@@ -101,18 +105,18 @@ button:hover{
     transition: transform 0.4s ease;
 }
 
-.profile-pic:hover{
+.profile-pic:hover {
     transform: scale(1.05);
 
 }
 
-.about-section{
+.about-section {
     padding: 50px 20px;
 }
 
-.header{
+.header {
     position: fixed;
-    top: 20px;
+    top: 50px;
     left: 0;
     right: 0;
     display: flex;
@@ -126,19 +130,24 @@ button:hover{
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     padding: 10px;
     gap: 30px;
+    animation: slideDown 1s ease-in-out;
+    z-index: 999;
 }
-.header > img{
+
+.header > img {
     width: 50px;
     height: auto;
 
 }
-.header >  nav > ul{
+
+.header > nav > ul {
     display: flex;
     text-align: center;
     justify-content: center;
 
 }
-.header > nav > ul >  li {
+
+.header > nav > ul > li {
     list-style: none;
     text-align: center;
     padding: 10px;
@@ -161,10 +170,12 @@ button:hover{
     box-shadow: 2px 2px 2px #FF885B;
 
 }
+
 .header > nav > ul > li > a:hover {
     background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
     box-shadow: 2px 2px 2px #FF00FF;
 }
+
 .header > nav > ul > li > select {
     display: inline-block;
     text-align: center;
@@ -179,7 +190,9 @@ button:hover{
     border: none;
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
     box-shadow: 2px 2px 2px #FF885B;
+
 }
+
 .header > nav > ul > li > select:hover {
     background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
     color: black;
@@ -195,9 +208,16 @@ button:hover{
     width: 100%;
 }
 
-#about{
+#menu-bar {
+    position: absolute;
+    right: 2vw;
+    top: 4vh;
+    display: none;
+}
+
+#about {
     position: relative;
-    top:50px;
+    top: 120px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -207,38 +227,363 @@ button:hover{
     background: #36383B;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    padding: 40px;
+    padding: 80px 40px;
     gap: 30px;
+    animation: fadeUp 1.2s ease-in-out;
+
+}
+
+#image-side {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+
+}
+
+#image-side > img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 250px;
 }
 
 
+#main-content {
+    flex: 1;
+    min-width: 280px;
+
+}
+
+#main-content > h2 {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#main-content > h1 {
+    margin-top: 20px;
+    font-size: 2.9rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#main-content > p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: white;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skills-content {
+    position: relative;
+    top:150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+   /* background: #36383B;*/
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  /*  gap: 30px;*/
+}
+
+.skills-content > div {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   /* width: 80%;*/
+    height: 100vh;
+
+}
+.skills-content > div > .vertical-line {
+    width: 1%;
+    border: 1px solid wheat;
+    background: wheat;
+    border-radius: 15px;
+
+}
+.skills-content > div > .java-content,
+.skills-content > div > .sql-content,
+.skills-content > div > .html-content,
+.skills-content > div > .css-content,
+.skills-content > div > .js-content,
+.skills-content > div > .git-content,
+.skills-content > div > .ui-ux-content,
+.skills-content > div > .python-content {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+.skills-content > div > .java-content {
+    top: 0;
+    left: 50%;
+
+
+}
+.skills-content > div > .sql-content {
+    top: 100px;
+    right: 50%;
+
+}
+.skills-content > div > .html-content {
+    top: 200px;
+    left: 50%;
+
+}
+
+.skills-content > div > .css-content {
+    top: 300px;
+    right: 50%;
+
+}
+
+.skills-content > div > .js-content {
+    top: 400px;
+    left: 50%;
+
+}
+
+.skills-content > div > .git-content {
+    top: 500px;
+    right: 50%;
+
+}
+
+.skills-content > div > .ui-ux-content {
+    top: 600px;
+    left: 50%;
+
+}
+
+.skills-content > div > .python-content {
+    top: 700px;
+    right: 50%;
+
+}
+.skills-content > div > .java-content > .language,
+.skills-content > div > .html-content > .language,
+.skills-content > div > .js-content > .language,
+.skills-content > div > .ui-ux-content > .language {
+    position: absolute;
+    top: 42%;
+    bottom: 10%;
+    left: 0;
+    width: 200px;
+    height: 13%;
+    background: gray;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 5px 5px 10px gold;
+    animation: fadeInLeft 1.2s ease-in-out;
+}
+
+.skills-content > div > .sql-content > .language,
+.skills-content > div > .css-content > .language,
+.skills-content > div > .git-content > .language,
+.skills-content > div > .python-content > .language {
+    position: absolute;
+    top: 42%;
+    bottom: 10%;
+    right: 0;
+    width: 200px;
+    height: 13%;
+    background: gray;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 10px gold;
+    animation: fadeInRight 1.2s ease-in-out;
+}
+
+.skills-content > div > .java-content > .language > p,
+.skills-content > div > .sql-content > .language > p,
+.skills-content > div > .html-content > .language > p,
+.skills-content > div > .css-content > .language > p,
+.skills-content > div > .js-content > .language > p,
+.skills-content > div > .git-content > .language > p,
+.skills-content > div > .ui-ux-content > .language > p,
+.skills-content > div > .python-content > .language > p {
+    color: black;
+    position: relative;
+    top: 15%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skills-content > div > .java-content > .arrow-head,
+.skills-content > div > .html-content > .arrow-head,
+.skills-content > div > .js-content > .arrow-head,
+.skills-content > div > .ui-ux-content > .arrow-head {
+    position: absolute;
+    top: 40%;
+    left: 200px;
+    width: 0;
+    height: 0;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 50px solid gray;
+    animation: fadeInLeft 1.2s ease-in-out;
+
+}
+
+.skills-content > div > .sql-content > .arrow-head,
+.skills-content > div > .css-content > .arrow-head,
+.skills-content > div > .git-content > .arrow-head,
+.skills-content > div > .python-content > .arrow-head {
+    position: absolute;
+    top: 40%;
+    right: 200px;
+    width: 0;
+    height: 0;
+    border-top: 17px solid transparent;
+    border-right: 50px solid gray;
+    border-bottom: 17px solid transparent;
+    animation: fadeInRight 1.2s ease-in-out;
+
+}
+
+.skills-content > div > .java-content > .outer-circle,
+.skills-content > div > .html-content > .outer-circle,
+.skills-content > div > .js-content > .outer-circle,
+.skills-content > div > .ui-ux-content > .outer-circle {
+    position: absolute;
+    top: 8%;
+    left: 250px;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
+    border-radius: 50%;
+}
+
+.skills-content > div > .sql-content > .outer-circle,
+.skills-content > div > .css-content > .outer-circle,
+.skills-content > div > .git-content > .outer-circle,
+.skills-content > div > .python-content > .outer-circle {
+    position: absolute;
+    top: 8%;
+    right: 250px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
+}
+
+.skills-content > div > .java-content > .outer-circle > .inner-circle,
+.skills-content > div > .sql-content > .outer-circle > .inner-circle,
+.skills-content > div > .html-content > .outer-circle > .inner-circle,
+.skills-content > div > .css-content > .outer-circle > .inner-circle,
+.skills-content > div > .js-content > .outer-circle > .inner-circle,
+.skills-content > div > .git-content > .outer-circle > .inner-circle,
+.skills-content > div > .ui-ux-content > .outer-circle > .inner-circle,
+.skills-content > div > .python-content > .outer-circle > .inner-circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 130px;
+    height: 130px;
+    background: #1A1A1D;
+    border-radius: 50%;
+}
+
+.skills-content > div > .java-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .sql-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .html-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .css-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .js-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .git-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .ui-ux-content > .outer-circle > .inner-circle > img,
+.skills-content > div > .python-content > .outer-circle > .inner-circle > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 80px;
+}
 
 
 /*Animations*/
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 
 }
+
 @keyframes slideUp {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
+
 @keyframes fadeInLeft {
-    from { transform: translateX(-50px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
+
 @keyframes fadeInRight {
-    from { transform: translateX(50px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 
+}
 
-
-
-
-
+@keyframes fadeUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 
 /*Responsive*/
@@ -266,6 +611,164 @@ button:hover{
     .image-content {
         margin-bottom: 20px;
     }
+
+    #about {
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+        position: relative;
+        top: 40px;
+    }
+
+    #main-content {
+        font-size: 2rem;
+    }
+
+    .header {
+        position: relative;
+        top: 0;
+        flex-direction: column;
+        padding: 10px;
+        height: 75px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .header > nav > ul {
+        display: none;
+    }
+
+    .header > img {
+        position: absolute;
+        left: 30px;
+        top: 15px;
+        width: 40px;
+    }
+
+    #menu-bar {
+        display: block;
+        position: absolute;
+        right: 30px;
+    }
+
+
+    #main-content > h2 {
+        font-size: 1.9rem;
+
+    }
+
+    #main-content > h1 {
+        margin-top: 10px;
+        font-size: 2.3rem;
+
+    }
+
+    #main-content > p {
+        font-size: 0.8rem;
+        margin-bottom: 50px;
+        color: white;
+    }
+
+    #main-content > a {
+        font-size: 1.2rem;
+    }
+
+    button {
+        width: 200px;
+
+    }
+    #skills{
+        margin-top: -50px;
+    }
+    .skills-content > div > .java-content > .language,
+    .skills-content > div > .sql-content > .language,
+    .skills-content > div > .html-content > .language,
+    .skills-content > div > .css-content > .language,
+    .skills-content > div > .js-content > .language,
+    .skills-content > div > .git-content > .language,
+    .skills-content > div > .ui-ux-content > .language,
+    .skills-content > div > .python-content > .language {
+        width: 80px;
+        height: 12%;
+    }
+    .skills-content > div > .java-content > .language > p,
+    .skills-content > div > .sql-content > .language > p,
+    .skills-content > div > .html-content > .language > p,
+    .skills-content > div > .css-content > .language > p,
+    .skills-content > div > .js-content > .language > p,
+    .skills-content > div > .git-content > .language > p,
+    .skills-content > div > .ui-ux-content > .language > p,
+    .skills-content > div > .python-content > .language > p {
+        font-size: 12px;
+    }
+    .skills-content > div > .java-content > .arrow-head,
+    .skills-content > div > .html-content > .arrow-head,
+    .skills-content > div > .js-content > .arrow-head,
+    .skills-content > div > .ui-ux-content > .arrow-head {
+        left: 80px;
+        top: 40%;
+        border-top: 16px solid transparent;
+        border-left: 50px solid gray;
+        border-bottom: 16px solid transparent;
+    }
+    .skills-content > div > .sql-content > .arrow-head,
+    .skills-content > div > .css-content > .arrow-head,
+    .skills-content > div > .git-content > .arrow-head,
+    .skills-content > div > .python-content > .arrow-head {
+        right: 80px;
+        top: 40.5%;
+        border-top: 15px solid transparent;
+        border-right: 50px solid gray;
+        border-bottom: 15px solid transparent;
+    }
+    .skills-content > div > .java-content > .outer-circle,
+    .skills-content > div > .html-content > .outer-circle,
+    .skills-content > div > .js-content > .outer-circle,
+    .skills-content > div > .ui-ux-content > .outer-circle {
+        left: 128px;
+        width: 100px;
+        height: 100px;
+        top:50px;
+    }
+
+    .skills-content > div > .sql-content > .outer-circle,
+    .skills-content > div > .css-content > .outer-circle,
+    .skills-content > div > .git-content > .outer-circle,
+    .skills-content > div > .python-content > .outer-circle {
+        right: 128px;
+        width: 100px;
+        height: 100px;
+        top:50px;
+
+    }
+
+    .skills-content > div > .java-content > .outer-circle > .inner-circle,
+    .skills-content > div > .sql-content > .outer-circle > .inner-circle,
+    .skills-content > div > .html-content > .outer-circle > .inner-circle,
+    .skills-content > div > .css-content > .outer-circle > .inner-circle,
+    .skills-content > div > .js-content > .outer-circle > .inner-circle,
+    .skills-content > div > .git-content > .outer-circle > .inner-circle,
+    .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle,
+    .skills-content > div > .python-content > .outer-circle > .inner-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    .skills-content > div > .java-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .sql-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .html-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .css-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .js-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .git-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .python-content > .outer-circle > .inner-circle > img {
+        width: 50px;
+    }
+
+
 
 }
 
