@@ -731,6 +731,69 @@ main > div > .game-h2 {
     font-weight: bold;
 }
 
+#service{
+    position: relative;
+    top: 300px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
+}
+#service > h2 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding-top: 10px;
+
+}
+#service > .service-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+#service > .service-content > div {
+    text-align: center;
+    border: 3px solid #FF885B;
+    height: 450px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 50px;
+    background: #DAE1E7;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #FF885B;
+}
+#service > .service-content > div > img {
+    width: 150px;
+    position: relative;
+    top: 30px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #FF885B;
+
+}
+#service > .service-content > div > h3 {
+    font-size: 25px;
+    position: relative;
+    top: 50px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+#service > .service-content > div > p {
+    position: relative;
+    top: 60px;
+    font-size: 18px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
 /*Animations*/
 @keyframes fadeIn {
     from {
@@ -763,6 +826,8 @@ main > div > .game-h2 {
         opacity: 1;
     }
 }
+
+
 
 @keyframes fadeInRight {
     from {
