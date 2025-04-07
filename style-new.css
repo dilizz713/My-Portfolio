@@ -548,6 +548,7 @@ button:hover {
     border-right: 2px solid white;
     border-left: 2px solid white;
     border-radius: 15px;
+    animation: fadeInLeft 1s ease-in-out;
 
 }
 
@@ -556,6 +557,7 @@ button:hover {
     top: 0;
     left: 0;
     min-width: 800px;
+    animation: fadeInRight 1s ease-in-out;
 
 }
 
@@ -576,6 +578,20 @@ button:hover {
     top: 50px;
     padding-bottom: 50px;
     list-style: none;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+.portfolio-content > aside > ul > li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.portfolio-content > aside > ul > li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.portfolio-content > aside > ul > li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.portfolio-content > aside > ul > li:nth-child(4) {
+    animation-delay: 0.8s;
 }
 
 .portfolio-content > aside > ul > li > a {
@@ -644,6 +660,13 @@ main > div > .game-h2 {
     left: 50px;
     right: 50px;
     margin-bottom: 20px;
+    animation: fadeUp 1s ease;
+}
+#ui-ux-projects > div:nth-child(1) {
+    animation-delay: 0.2s;
+}
+#ui-ux-projects > div:nth-child(2) {
+    animation-delay: 0.4s;
 }
 
 #ui-ux-projects > div > img,
@@ -687,6 +710,14 @@ main > div > .game-h2 {
     width: 120px;
     padding: 5px;
 
+}
+#ui-ux-projects > div:hover,
+#development-projects > div:hover,
+#assignments > div:hover,
+#games > div:hover,
+#docs > div:hover{
+    transform: scale(1.05);
+    animation: transform 0.3s ease;
 }
 
 #ui-ux-projects > div > a:hover,
