@@ -282,7 +282,7 @@ button:hover {
 
 .skills-content {
     position: relative;
-    top:150px;
+    top: 150px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -290,11 +290,11 @@ button:hover {
     max-width: 1400px;
     width: 100%;
     margin: auto;
-   /* background: #36383B;*/
+    /* background: #36383B;*/
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     padding: 40px;
-  /*  gap: 30px;*/
+    /*  gap: 30px;*/
 }
 
 .skills-content > div {
@@ -303,10 +303,11 @@ button:hover {
     display: flex;
     text-align: center;
     justify-content: center;
-   /* width: 80%;*/
+    /* width: 80%;*/
     height: 100vh;
 
 }
+
 .skills-content > div > .vertical-line {
     width: 1%;
     border: 1px solid wheat;
@@ -314,6 +315,7 @@ button:hover {
     border-radius: 15px;
 
 }
+
 .skills-content > div > .java-content,
 .skills-content > div > .sql-content,
 .skills-content > div > .html-content,
@@ -327,17 +329,20 @@ button:hover {
     height: 200px;
     position: absolute;
 }
+
 .skills-content > div > .java-content {
     top: 0;
     left: 50%;
 
 
 }
+
 .skills-content > div > .sql-content {
     top: 100px;
     right: 50%;
 
 }
+
 .skills-content > div > .html-content {
     top: 200px;
     left: 50%;
@@ -373,6 +378,7 @@ button:hover {
     right: 50%;
 
 }
+
 .skills-content > div > .java-content > .language,
 .skills-content > div > .html-content > .language,
 .skills-content > div > .js-content > .language,
@@ -517,9 +523,9 @@ button:hover {
     width: 80px;
 }
 
-.portfolio-content{
+.portfolio-content {
     position: relative;
-    top:200px;
+    top: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
@@ -532,40 +538,46 @@ button:hover {
     gap: 30px;
     animation: slideUp 1.2s ease;
 }
+
 .portfolio-content > aside {
     position: relative;
     top: 0;
     left: 0;
-    width: 300px;
+    min-width: 300px;
     background: #36383B;
     border-right: 2px solid white;
     border-left: 2px solid white;
     border-radius: 15px;
 
 }
+
 .portfolio-content > main {
     position: relative;
     top: 0;
     left: 0;
-    width: 800px;
+    min-width: 800px;
 
 }
+
 .portfolio-content > aside > h1 {
     text-align: center;
     font-size: 35px;
     color: white;
 }
+
 .portfolio-content > aside > ul {
     position: relative;
     text-align: center;
 
 }
+
 .portfolio-content > aside > ul > li {
     position: relative;
     top: 50px;
     padding-bottom: 50px;
     list-style: none;
 }
+
 .portfolio-content > aside > ul > li > a {
     text-decoration: none;
     color: white;
@@ -575,6 +587,7 @@ button:hover {
     display: inline-block;
     width: 200px;
 }
+
 .portfolio-content > aside > ul > li > a:hover {
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
     color: black;
@@ -582,18 +595,21 @@ button:hover {
     display: inline-block;
     width: 220px;
 }
+
 main > div {
     position: relative;
     top: 0;
     left: 0;
     height: 650px;
 }
+
 main > div:nth-child(2),
 main > div:nth-child(3),
 main > div:nth-child(4),
 main > div:nth-child(5) {
     display: none;
 }
+
 main > div > .ui-ux-h2,
 main > div > .develop-h2,
 main > div > .ass-h2,
@@ -604,6 +620,7 @@ main > div > .game-h2 {
     padding: 20px;
 
 }
+
 #ui-ux-projects, #development-projects, #assignments, #games, #docs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -611,8 +628,9 @@ main > div > .game-h2 {
     position: relative;
     top: 10px;
 }
+
 #ui-ux-projects > div,
-#development-projects  > div,
+#development-projects > div,
 #assignments > div,
 #games > div,
 #docs > div {
@@ -627,6 +645,7 @@ main > div > .game-h2 {
     right: 50px;
     margin-bottom: 20px;
 }
+
 #ui-ux-projects > div > img,
 #development-projects > div > img,
 #assignments > div > img,
@@ -639,6 +658,7 @@ main > div > .game-h2 {
     border-radius: 15px;
     border: 2px solid black;
 }
+
 #ui-ux-projects > div > h3,
 #development-projects > div > h3,
 #assignments > div > h3,
@@ -649,6 +669,7 @@ main > div > .game-h2 {
     color: black;
     text-align: center;
 }
+
 #ui-ux-projects > div > a,
 #development-projects > div > a,
 #assignments > div > a,
@@ -667,6 +688,7 @@ main > div > .game-h2 {
     padding: 5px;
 
 }
+
 #ui-ux-projects > div > a:hover,
 #development-projects > div > a:hover,
 #assignments > div > a:hover,
@@ -840,9 +862,11 @@ main > div > .game-h2 {
         width: 200px;
 
     }
-    #skills{
+
+    #skills {
         margin-top: -50px;
     }
+
     .skills-content > div > .java-content > .language,
     .skills-content > div > .sql-content > .language,
     .skills-content > div > .html-content > .language,
@@ -854,6 +878,7 @@ main > div > .game-h2 {
         width: 80px;
         height: 12%;
     }
+
     .skills-content > div > .java-content > .language > p,
     .skills-content > div > .sql-content > .language > p,
     .skills-content > div > .html-content > .language > p,
@@ -864,6 +889,7 @@ main > div > .game-h2 {
     .skills-content > div > .python-content > .language > p {
         font-size: 12px;
     }
+
     .skills-content > div > .java-content > .arrow-head,
     .skills-content > div > .html-content > .arrow-head,
     .skills-content > div > .js-content > .arrow-head,
@@ -874,6 +900,7 @@ main > div > .game-h2 {
         border-left: 50px solid gray;
         border-bottom: 16px solid transparent;
     }
+
     .skills-content > div > .sql-content > .arrow-head,
     .skills-content > div > .css-content > .arrow-head,
     .skills-content > div > .git-content > .arrow-head,
@@ -884,6 +911,7 @@ main > div > .game-h2 {
         border-right: 50px solid gray;
         border-bottom: 15px solid transparent;
     }
+
     .skills-content > div > .java-content > .outer-circle,
     .skills-content > div > .html-content > .outer-circle,
     .skills-content > div > .js-content > .outer-circle,
@@ -891,7 +919,7 @@ main > div > .game-h2 {
         left: 128px;
         width: 100px;
         height: 100px;
-        top:50px;
+        top: 50px;
     }
 
     .skills-content > div > .sql-content > .outer-circle,
@@ -901,7 +929,7 @@ main > div > .game-h2 {
         right: 128px;
         width: 100px;
         height: 100px;
-        top:50px;
+        top: 50px;
 
     }
 
@@ -926,6 +954,96 @@ main > div > .game-h2 {
     .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle > img,
     .skills-content > div > .python-content > .outer-circle > .inner-circle > img {
         width: 50px;
+    }
+
+    .portfolio-content {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .portfolio-content > aside {
+        min-width: 200px;
+        border: none;
+
+    }
+
+    .doc{
+        position: relative;
+        left:50%;
+
+    }
+
+    .portfolio-content > main {
+        min-width: 300px;
+
+    }
+
+    .portfolio-content > aside > h1 {
+        font-size: 30px;
+        position: relative;
+        top:-30px;
+    }
+
+    .portfolio-content > aside > ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        top: -80px;
+
+    }
+
+    .portfolio-content > aside > ul > li {
+        top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .portfolio-content > aside > ul > li > a {
+        width: 160px;
+        font-size: 12px;
+        margin-right: 5px;
+        margin-left: 5px;
+
+    }
+
+    .portfolio-content > aside > ul > li > a:hover {
+        width: 160px;
+    }
+
+    main > div {
+        position: relative;
+        top: -50px;
+        left: 0;
+        height: 1200px;
+    }
+
+   /* main > div:nth-child(2),
+    main > div:nth-child(3),
+    main > div:nth-child(4),
+    main > div:nth-child(5) {
+        display: none;
+    }*/
+
+
+    #ui-ux-projects, #development-projects, #assignments, #games, #docs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #ui-ux-projects > div,
+    #development-projects > div,
+    #assignments > div,
+    #games > div,
+    #docs > div {
+        left: 70px;
+    }
+
+
+    #ui-ux-projects > div > a,
+    #development-projects > div > a,
+    #assignments > div > a,
+    #games > div > a,
+    #docs > div > a {
+        font-size: 15px;
+        width: 100px;
+
     }
 
 
