@@ -1390,6 +1390,63 @@ main > div > .game-h2 {
         left: 35%;
         width: fit-content;
     }
+    .footer {
+        top: 350px;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .footer > div:first-child {
+        width: 300px;
+    }
+
+    .footer > div:last-child {
+        right: 0;
+        width: 300px;
+        top:-50px;
+    }
+    .footer > div:first-child  > .footer-content{
+        position: relative;
+        display: flex;
+        height: 70px;
+    }
+    .footer > div:first-child  > .footer-content > .img-icon {
+        position: relative;
+        top: 20px;
+        left: 10px;
+
+    }
+    .footer > div:first-child  > .footer-content > .details {
+        top: 30px;
+        left: 25px;
+        font-size: 14px;
+    }
+    .footer > div:nth-child(2) > div{
+        top:40px;
+        left: -30px;
+
+    }
+    .footer > div:nth-child(2) > div > img{
+        width: 35px;
+    }
+    .footer > div:nth-child(2) > div > img:hover{
+        width: 35px;
+
+    }
+    .copyright{
+        top: 350px;
+
+    }
+    .copyright > div:nth-child(1){
+        left:10px;
+        padding-right: 5px;
+        width: 80px;;
+
+    }
+    .copyright > div:nth-child(2){
+        left:-45px;
+        font-weight: bold;
+        width: 280px;
+    }
 
 
 
