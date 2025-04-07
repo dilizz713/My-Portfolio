@@ -1142,6 +1142,32 @@ main > div > .game-h2 {
 
     }
 
+    #service{
+        top: 250px;
+    }
+    #service > h2 {
+        font-size: 30px;
+
+    }
+    #service > .service-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #service > .service-content > div {
+        height: 350px;
+        width: 300px;
+    }
+    #service > .service-content > div > img {
+        width: 120px;
+
+    }
+    #service > .service-content > div > h3 {
+        font-size: 20px;
+    }
+    #service > .service-content > div > p {
+        font-size: 14px;
+
+    }
+
 
 
 }
