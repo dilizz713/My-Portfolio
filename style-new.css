@@ -888,6 +888,103 @@ main > div > .game-h2 {
     background: black;
     color: #EE8E6A;
 }
+.footer {
+    position: relative;
+    top: 420px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.address-for-phone{
+    display: none;
+}
+
+.footer > div:first-child {
+    position: relative;
+    width: 600px;
+}
+
+.footer > div:last-child {
+    position: relative;
+    right: 100px;
+    width: 600px;
+    justify-content: right;
+    display: flex;
+}
+.footer > div:first-child  > .footer-content{
+    position: relative;
+    display: flex;
+    height: 70px;
+}
+.footer > div:first-child  > .footer-content > .img-icon {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.footer > div:first-child  > .footer-content > .details {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.footer > div:nth-child(2) > div{
+    position: relative;
+    top:40px;
+    padding: 0 20px;
+
+}
+.footer > div:nth-child(2) > div > img{
+    background: #D9D9D9;
+    padding: 5px;
+    width: 50px;
+    border-radius: 10px;
+}
+.footer > div:nth-child(2) > div > img:hover{
+    background: #EE8E6A;
+    padding: 5px;
+    width: 50px;
+    border-radius: 10px;
+}
+.copyright{
+    position: relative;
+    top: 410px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #D9D9D9;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+
+}
+.copyright > div{
+    position: relative;
+    top:5px;
+
+}
+.copyright > div:nth-child(1){
+    left:60px;
+    padding-right: 5px;
+    width: 80px;;
+
+}
+.copyright > div:nth-child(2){
+    left:0px;
+    font-weight: bold;
+    width: 1100px;
+}
+
 
 /*Animations*/
 @keyframes fadeIn {
