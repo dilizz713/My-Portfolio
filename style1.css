@@ -1,113 +1,142 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+
 }
 
-
-.home, .about-section, #portfolio {
+body {
     background: #1A1A1D;
-    position: relative;
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    min-width: 300px;
-    min-height: 500px;
-    /*overflow-x:hidden;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.home > .container {
-    display: grid;
-    grid-template-columns:repeat(2, 1fr);
-    width: 100%;
-    height: 100vh;
+.home {
+    padding: 50px 20px;
+    animation: fadeIn 1.5s ease;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
     background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
+    animation: slideUp 1.2s ease;
+
 }
 
-.home > .container > div:nth-child(1), .container > div:nth-child(2) {
-    width: 50vw;
-    text-align: left;
-    justify-content: left;
-    position: relative;
-    top: 0;
+.text-content {
+    flex: 1;
+    min-width: 280px;
+    animation: fadeInLeft 1.2s ease;
+
 }
 
-.home > .container > div:nth-child(1) > h1 {
-    position: relative;
-    font-size: 64px;
-    top: 80px;
+.text-content h1 {
+    font-size: 2.9rem;
+    margin-bottom: 50px;
     color: white;
-    padding-left: 150px;
-
 
 }
 
-.home > .container > div:nth-child(1) > p {
+.text-content p {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
     color: white;
-    position: relative;
-    font-size: 30px;
-    top: 100px;
-    padding-left: 150px;
 
 }
 
-.home > .container > div:nth-child(1) > p > .highlight {
-    font-size: 40px;
-    font-weight: bold;
+.highlight {
     color: #FF885B;
-
-}
-
-.home > .container > div:nth-child(1) > a {
-    padding-left: 150px;
-}
-
-.home > .container > div:nth-child(1) > a > button {
-    position: relative;
-    font-size: 28px;
     font-weight: bold;
-    top: 180px;
+    font-size: 1.8rem;
+
+}
+
+button {
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
-    padding: 10px;
-    border-radius: 15px;
-    border: 2px black solid;
-    width: 242px;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(255, 78, 80, 0.3);
+    margin-bottom: 50px;
+    transition: all 0.3s ease-in-out;
 
 
 }
 
-.home > .container > div:nth-child(1) > a > button:hover {
+button:hover {
     background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
+    box-shadow: 0 10px 20px rgba(255, 78, 80, 0.4);
+    transform: translateY(-3px);
 
 }
 
-.home > .container > div:nth-child(2) > img {
-    position: relative;
-    top: 100px;
-    width: 70%;
+.image-content {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    animation: fadeInRight 1.2s ease;
+
+
+}
+
+.profile-pic {
+    max-width: 80%;
     height: auto;
-    padding-left: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
 }
 
-/*------------------------------HEADER--------------------------------*/
+.profile-pic:hover {
+    transform: scale(1.05);
+
+}
+
+.about-section {
+    padding: 50px 20px;
+}
+
 .header {
     position: fixed;
-    width: 100%;
-    height: 10vh;
-    top: 0;
+    top: 50px;
     left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
     background: #36383B;
-    z-index: 10;
-
-
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    gap: 30px;
+    animation: slideDown 1s ease-in-out;
+    z-index: 999;
 }
 
 .header > img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 50px;
-    margin: 10px;
+    height: auto;
 
 }
 
@@ -115,9 +144,10 @@
     display: flex;
     text-align: center;
     justify-content: center;
+
 }
 
-.header > nav > ul li {
+.header > nav > ul > li {
     list-style: none;
     text-align: center;
     padding: 10px;
@@ -128,7 +158,7 @@
 .header > nav > ul > li > a {
     display: inline-block;
     text-align: center;
-    width: 150px;
+    width: 120px;
     color: black;
     text-decoration: none;
     position: relative;
@@ -149,7 +179,7 @@
 .header > nav > ul > li > select {
     display: inline-block;
     text-align: center;
-    width: 150px;
+    width: 120px;
     background: transparent;
     color: black;
     text-decoration: none;
@@ -160,6 +190,7 @@
     border: none;
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
     box-shadow: 2px 2px 2px #FF885B;
+
 }
 
 .header > nav > ul > li > select:hover {
@@ -185,111 +216,85 @@
 }
 
 #about {
-    display: grid;
-    grid-template-columns:repeat(2, 1fr);
-    width: 100%;
-    height: 100vh;
-}
-
-#about > div:nth-child(1), #about > div:nth-child(2) {
-    text-align: left;
-    justify-content: left;
     position: relative;
-    top: 10vh;
-}
-
-#about > div:nth-child(1) {
-    width: 30vw;
-}
-
-#about > div:nth-child(2) {
-    width: 70vw;
-}
-
-#about > div:nth-child(1) > img {
-    position: relative;
-    top: 80px;
-    width: 350px;
-    height: auto;
-    margin-left: 120px;
-    border-radius: 15px;
-    border-right: 2px black solid;
-    border-bottom: 2px black solid;
-    overflow: hidden;
-}
-
-#about > div:nth-child(2) > h2 {
-    position: relative;
-    font-size: 50px;
     top: 120px;
-    color: whitesmoke;
-    padding-left: 150px;
-}
-
-#about > div:nth-child(2) > h1 {
-    position: relative;
-    font-size: 80px;
-    top: 60px;
-    color: whitesmoke;
-    padding-left: 150px;
-}
-
-#about > div:nth-child(2) > p {
-    color: whitesmoke;
-    position: relative;
-    font-size: 20px;
-    top: 50px;
-    padding-left: 150px;
-    padding-right: 30px;
-}
-
-#about > div:nth-child(2) > div {
-    position: relative;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 80px 40px;
+    gap: 30px;
+    animation: fadeUp 1.2s ease-in-out;
 
 }
 
-#about > div:nth-child(2) > a {
-    padding-left: 150px;
-}
-
-#about > div:nth-child(2) > a > button {
-    position: relative;
-    font-size: 20px;
-    font-weight: bold;
-    top: 100px;
-    padding: 10px;
-    background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
-    border-radius: 15px;
-    border: 2px black solid;
-    width: 242px;
-}
-
-#about > div:nth-child(2) > a > button:hover {
-    background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
-}
-
-hr {
-    border: 1px #FF885B solid;
-}
-
-/*------------------------------------SKILLS------------------------*/
-#skills {
-    background: #1A1A1D;
-    position: relative;
-    width: 100%;
-    height: 1000px;
-    display: flex;
+#image-side {
+    flex: 1;
     min-width: 300px;
-    min-height: 500px;
+    text-align: center;
+
+}
+
+#image-side > img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+
+#main-content {
+    flex: 1;
+    min-width: 280px;
+
+}
+
+#main-content > h2 {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#main-content > h1 {
+    margin-top: 20px;
+    font-size: 2.9rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#main-content > p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: white;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .skills-content {
+    position: relative;
+    top: 150px;
     display: flex;
-    text-align: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
     width: 100%;
-    height: 100vh;
+    margin: auto;
+    /* background: #36383B;*/
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    /*  gap: 30px;*/
 }
 
 .skills-content > div {
@@ -298,7 +303,7 @@ hr {
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 80%;
+    /* width: 80%;*/
     height: 100vh;
 
 }
@@ -307,7 +312,6 @@ hr {
     width: 1%;
     border: 1px solid wheat;
     background: wheat;
-    height: 900px;
     border-radius: 15px;
 
 }
@@ -321,7 +325,7 @@ hr {
 .skills-content > div > .ui-ux-content,
 .skills-content > div > .python-content {
     display: flex;
-    width: 50%;
+    width: 100%;
     height: 200px;
     position: absolute;
 }
@@ -383,12 +387,13 @@ hr {
     top: 42%;
     bottom: 10%;
     left: 0;
-    width: 50%;
+    width: 200px;
     height: 13%;
     background: gray;
     border-right: none;
     border-radius: 10px 0 0 10px;
     box-shadow: 5px 5px 10px gold;
+    animation: fadeInLeft 1.2s ease-in-out;
 }
 
 .skills-content > div > .sql-content > .language,
@@ -399,12 +404,13 @@ hr {
     top: 42%;
     bottom: 10%;
     right: 0;
-    width: 50%;
+    width: 200px;
     height: 13%;
     background: gray;
     border-left: none;
     border-radius: 0 10px 10px 0;
     box-shadow: 5px 5px 10px gold;
+    animation: fadeInRight 1.2s ease-in-out;
 }
 
 .skills-content > div > .java-content > .language > p,
@@ -428,12 +434,13 @@ hr {
 .skills-content > div > .ui-ux-content > .arrow-head {
     position: absolute;
     top: 40%;
-    left: 50%;
+    left: 200px;
     width: 0;
     height: 0;
     border-top: 17px solid transparent;
     border-bottom: 17px solid transparent;
     border-left: 50px solid gray;
+    animation: fadeInLeft 1.2s ease-in-out;
 
 }
 
@@ -443,12 +450,13 @@ hr {
 .skills-content > div > .python-content > .arrow-head {
     position: absolute;
     top: 40%;
-    right: 50%;
+    right: 200px;
     width: 0;
     height: 0;
     border-top: 17px solid transparent;
     border-right: 50px solid gray;
     border-bottom: 17px solid transparent;
+    animation: fadeInRight 1.2s ease-in-out;
 
 }
 
@@ -458,7 +466,7 @@ hr {
 .skills-content > div > .ui-ux-content > .outer-circle {
     position: absolute;
     top: 8%;
-    left: 60%;
+    left: 250px;
     width: 150px;
     height: 150px;
     background: linear-gradient(45deg, #FF885B, #FFB05B, #FF5B8A);
@@ -471,7 +479,7 @@ hr {
 .skills-content > div > .python-content > .outer-circle {
     position: absolute;
     top: 8%;
-    right: 60%;
+    right: 250px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -515,37 +523,41 @@ hr {
     width: 80px;
 }
 
-/*-------------------------------PORTFOLIO----------------------------- */
-
-#portfolio {
-    background: #1A1A1D;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    min-width: 300px;
-    min-height: 500px;
-}
-
 .portfolio-content {
-    display: flex;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
+    animation: slideUp 1.2s ease;
 }
 
 .portfolio-content > aside {
     position: relative;
     top: 0;
     left: 0;
-    width: 20%;
+    min-width: 300px;
     background: #36383B;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 15px;
+    animation: fadeInLeft 1s ease-in-out;
+
 }
 
 .portfolio-content > main {
     position: relative;
     top: 0;
     left: 0;
-    width: 80%;
+    min-width: 800px;
+    animation: fadeInRight 1s ease-in-out;
 
 }
 
@@ -559,13 +571,27 @@ hr {
     position: relative;
     text-align: center;
 
-
 }
 
 .portfolio-content > aside > ul > li {
     position: relative;
     top: 50px;
     padding-bottom: 50px;
+    list-style: none;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+.portfolio-content > aside > ul > li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.portfolio-content > aside > ul > li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.portfolio-content > aside > ul > li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.portfolio-content > aside > ul > li:nth-child(4) {
+    animation-delay: 0.8s;
 }
 
 .portfolio-content > aside > ul > li > a {
@@ -576,7 +602,6 @@ hr {
     padding: 10px;
     display: inline-block;
     width: 200px;
-
 }
 
 .portfolio-content > aside > ul > li > a:hover {
@@ -609,18 +634,19 @@ main > div > .game-h2 {
     text-align: center;
     color: white;
     padding: 20px;
+
 }
 
 #ui-ux-projects, #development-projects, #assignments, #games, #docs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     height: 340px;
     position: relative;
-    top: 90px;
+    top: 10px;
 }
 
 #ui-ux-projects > div,
-#development-projects div,
+#development-projects > div,
 #assignments > div,
 #games > div,
 #docs > div {
@@ -628,12 +654,19 @@ main > div > .game-h2 {
     width: 200px;
     border: 5px solid white;
     text-align: center;
-    top: 20px;
-    height: 300px;
+    height: 280px;
     background: #FF885B;
     border-radius: 30px;
     left: 50px;
     right: 50px;
+    margin-bottom: 20px;
+    animation: fadeUp 1s ease;
+}
+#ui-ux-projects > div:nth-child(1) {
+    animation-delay: 0.2s;
+}
+#ui-ux-projects > div:nth-child(2) {
+    animation-delay: 0.4s;
 }
 
 #ui-ux-projects > div > img,
@@ -678,6 +711,14 @@ main > div > .game-h2 {
     padding: 5px;
 
 }
+#ui-ux-projects > div:hover,
+#development-projects > div:hover,
+#assignments > div:hover,
+#games > div:hover,
+#docs > div:hover{
+    transform: scale(1.05);
+    animation: transform 0.3s ease;
+}
 
 #ui-ux-projects > div > a:hover,
 #development-projects > div > a:hover,
@@ -690,26 +731,33 @@ main > div > .game-h2 {
     font-weight: bold;
 }
 
-/*-----------------------------SERVICES--------------------------*/
-#service {
-    width: 100%;
-    background: #1A1A1D;
-    height: 700px;
+#service{
+    position: relative;
+    top: 300px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
 }
-
 #service > h2 {
     text-align: center;
     font-size: 35px;
     color: white;
-    padding-top: 50px;
-}
+    position: relative;
+    top:-10px;
 
+}
 #service > .service-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
+    position: relative;
+    top: -20px;
 }
-
 #service > .service-content > div {
     text-align: center;
     border: 3px solid #FF885B;
@@ -723,7 +771,6 @@ main > div > .game-h2 {
     border-radius: 20px;
     box-shadow: 5px 5px 5px #FF885B;
 }
-
 #service > .service-content > div > img {
     width: 150px;
     position: relative;
@@ -732,7 +779,6 @@ main > div > .game-h2 {
     box-shadow: 5px 5px 5px #FF885B;
 
 }
-
 #service > .service-content > div > h3 {
     font-size: 25px;
     position: relative;
@@ -741,41 +787,45 @@ main > div > .game-h2 {
     font-weight: bold;
     text-align: center;
 }
-
 #service > .service-content > div > p {
     position: relative;
-    top: 80px;
+    top: 60px;
     font-size: 18px;
     color: black;
+    margin-left: 5px;
+    margin-right: 5px;
 
 }
 
+#contact-me{
+    position: relative;
+    top: 400px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
 
-/*---------------------------------------CONTACT------------------------------*/
-#contact-me {
-    width: 100%;
-    background: #1A1A1D;
-    height: 700px;
 }
-
 #contact-me > h3 {
     position: relative;
-    top: 30px;
-    text-align: center;
+    top: 0;
+    text-align: left;
     color: #FF885B;
     font-size: 25px;
 }
-
 .contact-form {
     position: relative;
     height: 520px;
-    top: 50px;
-    left: 500px;
+    top: 30px;
+    left: 0;
     background: #EE8E6A;
-    width: 550px;
+    width: 1100px;
     border-radius: 20px;
 }
-
 .first, .second, .third {
     position: relative;
     top: 20px;
@@ -783,13 +833,12 @@ main > div > .game-h2 {
     display: flex;
     justify-content: space-between;
     width: 250px;
-}
 
+}
 .first > div:nth-child(2), .second > div:nth-child(2), .third > div:nth-child(2) {
     position: relative;
     margin-bottom: 20px;
 }
-
 .first > div:nth-child(2) > label, .second > div:nth-child(2) > label, .third > div:nth-child(2) > label {
     position: relative;
     top: 5px;
@@ -797,12 +846,11 @@ main > div > .game-h2 {
     font-weight: bold;
     font-size: 18px;
 }
-
 .first > div:nth-child(2) > .input-type, .second > div:nth-child(2) > .input-type {
     position: relative;
     left: 15px;
     margin-top: 20px;
-    width: 400px;
+    width: 900px;
     height: 30px;
     border-radius: 10px;
     padding: 10px;
@@ -812,7 +860,7 @@ main > div > .game-h2 {
     position: relative;
     left: 15px;
     margin-top: 20px;
-    width: 400px;
+    width: 900px;
     height: 150px;
     border-radius: 10px;
     padding: 10px;
@@ -831,36 +879,43 @@ main > div > .game-h2 {
     font-weight: bold;
     border-radius: 10px;
     padding: 5px 10px;
-    background: #D9D9D9;
+    background:black;
     height: fit-content;
-    left: 220px;
+    left: 45%;
+    color: white;
 }
 .submit-button:hover {
-    background: white;
+    background: black;
+    color: #EE8E6A;
 }
-
-/*-------------------------------------FOOTER-------------------------------*/
 .footer {
     position: relative;
+    top: 420px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
     background: #36383B;
-    top:0;
-    margin-top: -20px;
-    text-align: center;
-    padding: 20px 50px;
-    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
 }
 .address-for-phone{
     display: none;
 }
+
 .footer > div:first-child {
     position: relative;
-    width: 100%;
+    width: 600px;
 }
+
 .footer > div:last-child {
     position: relative;
-    width: 100%;
+    right: 100px;
+    width: 600px;
     justify-content: right;
     display: flex;
 }
@@ -900,110 +955,156 @@ main > div > .game-h2 {
     width: 50px;
     border-radius: 10px;
 }
-
 .copyright{
     position: relative;
-    display: flex;
+    top: 410px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
     background: #D9D9D9;
-    height: 30px;
-    text-align: center;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+
 }
 .copyright > div{
     position: relative;
     top:5px;
+
 }
 .copyright > div:nth-child(1){
     left:60px;
     padding-right: 5px;
+    width: 80px;;
 
 }
 .copyright > div:nth-child(2){
-    left:60px;
+    left:0px;
     font-weight: bold;
+    width: 1100px;
+}
+
+
+/*Animations*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 
 
+@keyframes fadeInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-----------------------------MEDIA------------------------------------*/
-@media all and (max-width: 500px) {
-    .home {
-        min-width: 300px;
-        min-height: 500px;
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 
-    .home > .container {
-        grid-template-columns:1fr;
-        width: 100%;
-    }
+}
 
-    .home > .container > div:nth-child(1), .container > div:nth-child(2) {
-        width: 100vw;
-        height: 100%;
+@keyframes fadeUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/*Responsive*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        padding: 30px 20px;
         text-align: center;
-        justify-content: center;
-
+        align-items: center;
     }
 
-    .home > .container > div:nth-child(1) > h1 {
-        font-size: 40px;
-        top: 10px;
-        padding: 10px;
+    .text-content {
+        text-align: center;
+        align-items: center;
     }
 
-    .home > .container > div:nth-child(1) > p {
-        font-size: 20px;
-        top: 10px;
-        padding: 10px;
+    .text-content h1 {
+        font-size: 2rem;
     }
 
-    .home > .container > div:nth-child(1) > p > .highlight {
-        font-size: 25px;
+    .text-content p {
+        font-size: 1rem;
     }
 
-    .home > .container > div:nth-child(1) > a {
-        padding-left: 0;
+    .image-content {
+        margin-bottom: 20px;
     }
 
-    .home > .container > div:nth-child(1) > a > button {
-        top: 30px;
-        padding: 5px;
-        font-size: 16px;
-        width: 150px;
+    #about {
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+        position: relative;
+        top: 40px;
     }
 
-    .home > .container > div:nth-child(2) > img {
-        top: 15px;
-        margin: auto;
-        padding-left: 0;
-    }
-
-    .about-section {
-        min-width: 300px;
-        min-height: 500px;
+    #main-content {
+        font-size: 2rem;
     }
 
     .header {
-        height: 8vh;
+        position: relative;
+        top: 0;
+        flex-direction: column;
+        padding: 10px;
+        height: 75px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+
     }
 
     .header > nav > ul {
@@ -1011,65 +1112,48 @@ main > div > .game-h2 {
     }
 
     .header > img {
+        position: absolute;
+        left: 30px;
+        top: 15px;
         width: 40px;
     }
 
     #menu-bar {
-        position: absolute;
-        right: 10vw;
-        top: 2.5vh;
         display: block;
+        position: absolute;
+        right: 30px;
     }
 
-    #about {
-        grid-template-columns:1fr;
-        width: 100%;
+
+    #main-content > h2 {
+        font-size: 1.9rem;
+
     }
 
-    #about > div:nth-child(1), #about > div:nth-child(2) {
-        width: 100vw;
-        height: 100%;
-        text-align: center;
-        justify-content: center;
-        top: 8vh;
+    #main-content > h1 {
+        margin-top: 10px;
+        font-size: 2.3rem;
+
     }
 
-    #about > div:nth-child(1) > img {
-        top: 10px;
-        margin: auto;
+    #main-content > p {
+        font-size: 0.8rem;
+        margin-bottom: 50px;
+        color: white;
+    }
+
+    #main-content > a {
+        font-size: 1.2rem;
+    }
+
+    button {
         width: 200px;
 
     }
 
-    #about > div:nth-child(2) > h2 {
-        font-size: 30px;
-        padding: 0;
-        top: -50px;
-
+    #skills {
+        margin-top: -50px;
     }
-
-    #about > div:nth-child(2) > h1 {
-        font-size: 40px;
-        padding: 0;
-        top: -50px;
-    }
-
-    #about > div:nth-child(2) > p {
-        font-size: 20px;
-        padding: 0;
-        top: -50px;
-    }
-
-    #about > div:nth-child(2) > a {
-        padding-left: 0;
-    }
-
-    #about > div:nth-child(2) > a > button {
-        top: 0;
-        width: 200px;
-        font-size: 18px;
-    }
-
 
     .skills-content > div > .java-content > .language,
     .skills-content > div > .sql-content > .language,
@@ -1079,9 +1163,8 @@ main > div > .game-h2 {
     .skills-content > div > .git-content > .language,
     .skills-content > div > .ui-ux-content > .language,
     .skills-content > div > .python-content > .language {
-        width: 30%;
+        width: 80px;
         height: 12%;
-        box-shadow: none;
     }
 
     .skills-content > div > .java-content > .language > p,
@@ -1099,7 +1182,7 @@ main > div > .game-h2 {
     .skills-content > div > .html-content > .arrow-head,
     .skills-content > div > .js-content > .arrow-head,
     .skills-content > div > .ui-ux-content > .arrow-head {
-        left: 30%;
+        left: 80px;
         top: 40%;
         border-top: 16px solid transparent;
         border-left: 50px solid gray;
@@ -1110,7 +1193,7 @@ main > div > .game-h2 {
     .skills-content > div > .css-content > .arrow-head,
     .skills-content > div > .git-content > .arrow-head,
     .skills-content > div > .python-content > .arrow-head {
-        right: 30%;
+        right: 80px;
         top: 40.5%;
         border-top: 15px solid transparent;
         border-right: 50px solid gray;
@@ -1121,25 +1204,21 @@ main > div > .game-h2 {
     .skills-content > div > .html-content > .outer-circle,
     .skills-content > div > .js-content > .outer-circle,
     .skills-content > div > .ui-ux-content > .outer-circle {
-        top: 22%;
-        left: 50%;
+        left: 128px;
         width: 100px;
         height: 100px;
-        border: none;
-        background: none;
-
+        top: 50px;
     }
 
     .skills-content > div > .sql-content > .outer-circle,
     .skills-content > div > .css-content > .outer-circle,
     .skills-content > div > .git-content > .outer-circle,
     .skills-content > div > .python-content > .outer-circle {
-        top: 22%;
-        right: 50%;
+        right: 128px;
         width: 100px;
         height: 100px;
-        border: none;
-        background: none;
+        top: 50px;
+
     }
 
     .skills-content > div > .java-content > .outer-circle > .inner-circle,
@@ -1150,65 +1229,90 @@ main > div > .game-h2 {
     .skills-content > div > .git-content > .outer-circle > .inner-circle,
     .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle,
     .skills-content > div > .python-content > .outer-circle > .inner-circle {
-        width: 80px;
-        height: 80px;
-        border: none;
-        background: none;
+        width: 90px;
+        height: 90px;
     }
 
-    #portfolio {
-        width: 100%;
-        height: 1300px;
+    .skills-content > div > .java-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .sql-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .html-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .css-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .js-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .git-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle > img,
+    .skills-content > div > .python-content > .outer-circle > .inner-circle > img {
+        width: 50px;
+    }
+
+    .portfolio-content {
+        grid-template-columns: repeat(1, 1fr);
 
     }
 
     .portfolio-content > aside {
-        width: 30%;
-        height: 400px;
-        position: sticky;
-        top: 0;
-        background: none;
+        min-width: 200px;
+        border: none;
 
+    }
+
+    .doc{
+        position: relative;
+        left:50%;
 
     }
 
     .portfolio-content > main {
-        width: 70%;
+        min-width: 300px;
 
     }
 
     .portfolio-content > aside > h1 {
-        font-size: 20px;
-        margin-top: 30px;
+        font-size: 30px;
+        position: relative;
+        top:-30px;
+    }
+
+    .portfolio-content > aside > ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        top: -80px;
+
     }
 
     .portfolio-content > aside > ul > li {
-        top: 30px;
-        padding-bottom: 30px;
+        top: 50px;
+        padding-bottom: 20px;
     }
 
     .portfolio-content > aside > ul > li > a {
-        padding: 5px;
-        width: 120px;
+        width: 160px;
         font-size: 12px;
-        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+
     }
 
     .portfolio-content > aside > ul > li > a:hover {
-        display: inline-block;
-        width: 120px;
+        width: 160px;
     }
 
     main > div {
-        height: 650px;
+        position: relative;
+        top: -50px;
+        left: 0;
+        height: 1200px;
     }
 
+    /* main > div:nth-child(2),
+     main > div:nth-child(3),
+     main > div:nth-child(4),
+     main > div:nth-child(5) {
+         display: none;
+     }*/
+
+
     #ui-ux-projects, #development-projects, #assignments, #games, #docs {
-        grid-template-columns:1fr;
-        height: 300px;
-        text-align: center;
-        top: 10px;
-        padding: 10px;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     #ui-ux-projects > div,
@@ -1216,36 +1320,9 @@ main > div > .game-h2 {
     #assignments > div,
     #games > div,
     #docs > div {
-        border: 2px solid white;
-        text-align: center;
-        height: 250px;
-        margin-bottom: 20px;
-
+        left: 70px;
     }
 
-    #ui-ux-projects > div > img,
-    #development-projects > div > img,
-    #assignments > div > img,
-    #games > div > img,
-    #docs > div > img {
-        position: relative;
-        top: 10px;
-        width: 150px;
-        height: 120px;
-        border-radius: 15px;
-        border: 2px solid black;
-    }
-
-    #ui-ux-projects > div > h3,
-    #development-projects > div > h3,
-    #assignments > div > h3,
-    #games > div > h3,
-    #docs > div > h3 {
-        position: relative;
-        top: 30px;
-        color: black;
-        text-align: center;
-    }
 
     #ui-ux-projects > div > a,
     #development-projects > div > a,
@@ -1253,148 +1330,126 @@ main > div > .game-h2 {
     #games > div > a,
     #docs > div > a {
         font-size: 15px;
-        border: 2px solid white;
-        display: inline-block;
         width: 100px;
 
-
     }
 
-    #ui-ux-projects > div > a:hover,
-    #development-projects > div > a:hover,
-    #assignments > div > a:hover,
-    #games > div > a:hover,
-    #docs > div > a:hover {
-        border: black 2px solid;
+    #service{
+        top: 250px;
     }
-
-    main > div:nth-child(2),
-    main > div:nth-child(3),
-    main > div:nth-child(4),
-    main > div:nth-child(5) {
-        display: none;
-    }
-
-    #service {
-        height: 1800px;
-
-    }
-
     #service > h2 {
-        font-size: 25px;
-        padding-top: 40px;
-    }
+        font-size: 30px;
 
+    }
     #service > .service-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
     }
-
     #service > .service-content > div {
-        border: 2px solid #FF885B;
         height: 350px;
-        margin-right: 100px;
-        margin-left: 100px;
-        margin-bottom: 50px;
+        width: 300px;
     }
-
     #service > .service-content > div > img {
-        width: 100px;
-        top: 20px;
+        width: 120px;
 
     }
-
     #service > .service-content > div > h3 {
         font-size: 20px;
     }
-
     #service > .service-content > div > p {
-        margin-left: 10px;
-        margin-right: 10px;
         font-size: 14px;
-    }
-    hr {
-        display: none;
+
     }
 
+    #contact-me{
+        top: 300px;
 
-    #contact-me {
-        width: 100%;
-        background: #1A1A1D;
-        height: 620px;
     }
-
-    #contact-me > h3 {
-        top: 20px;
-        font-size: 20px;
-    }
-
     .contact-form {
         height: 520px;
-        top: 50px;
-        left: 50px;
-        width: 400px;
+        width: 300px;
     }
-
     .first, .second, .third {
-        width: 200px;
+        left: 10px;
+
+
     }
 
-    .first > div:nth-child(2), .second > div:nth-child(2), .third > div:nth-child(2) {
-        margin-bottom: 15px;
-        top:-5px;
-    }
-
-    .first > div:nth-child(2) > label, .second > div:nth-child(2) > label, .third > div:nth-child(2) > label {
-        font-size: 16px;
-    }
 
     .first > div:nth-child(2) > .input-type, .second > div:nth-child(2) > .input-type {
-        width: 250px;
+        width: 200px;
     }
     .third > div:nth-child(2) > .input-type {
-        width: 250px;
-
+        width: 200px;
+        height: 150px;
     }
     .icon {
-        font-size: 20px;
+        font-size: 30px;
     }
     .submit-button {
         font-size: 16px;
-        left: 160px;
+        left: 35%;
+        width: fit-content;
     }
-    .submit-button:hover {
-        background: white;
-    }
-
-
     .footer {
-        height: 400px;
-        grid-template-columns: 1fr;
+        top: 350px;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .footer > div:first-child {
+        width: 300px;
     }
 
     .footer > div:last-child {
-        top:-20px;
-        justify-content: center;
-
+        right: 0;
+        width: 300px;
+        top:-50px;
     }
-
     .footer > div:first-child  > .footer-content{
-        display: inline-block;
+        position: relative;
+        display: flex;
         height: 70px;
-        text-align: center;
-        justify-content: center;
     }
     .footer > div:first-child  > .footer-content > .img-icon {
-        left:0;
+        position: relative;
+        top: 20px;
+        left: 10px;
+
     }
     .footer > div:first-child  > .footer-content > .details {
-        left: 0;
-        font-size: 15px;
+        top: 30px;
+        left: 25px;
+        font-size: 14px;
     }
+    .footer > div:nth-child(2) > div{
+        top:40px;
+        left: -30px;
 
+    }
+    .footer > div:nth-child(2) > div > img{
+        width: 35px;
+    }
+    .footer > div:nth-child(2) > div > img:hover{
+        width: 35px;
 
+    }
+    .copyright{
+        top: 350px;
+
+    }
+    .copyright > div:nth-child(1){
+        left:10px;
+        padding-right: 5px;
+        width: 80px;;
+
+    }
+    .copyright > div:nth-child(2){
+        left:-45px;
+        font-weight: bold;
+        width: 280px;
+    }
 
 
 
 
 }
+

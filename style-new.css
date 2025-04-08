@@ -124,7 +124,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     max-width: 1200px;
-    margin: auto;
+    margin:  auto;
     background: #36383B;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -132,6 +132,7 @@ button:hover {
     gap: 30px;
     animation: slideDown 1s ease-in-out;
     z-index: 999;
+
 }
 
 .header > img {
@@ -287,14 +288,14 @@ button:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    max-width: 1400px;
-    width: 100%;
+    max-width: 1200px;
     margin: auto;
-    /* background: #36383B;*/
+   /*  background: #36383B;*/
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    /*  gap: 30px;*/
+    padding: 80px 40px;
+    /*gap: 30px;*/
+
 }
 
 .skills-content > div {
@@ -303,8 +304,8 @@ button:hover {
     display: flex;
     text-align: center;
     justify-content: center;
-    /* width: 80%;*/
-    height: 100vh;
+  width: 100%;
+    height:100vh;
 
 }
 
@@ -543,7 +544,7 @@ button:hover {
     position: relative;
     top: 0;
     left: 0;
-    min-width: 300px;
+    width: 300px;
     background: #36383B;
     border-right: 2px solid white;
     border-left: 2px solid white;
@@ -556,7 +557,7 @@ button:hover {
     position: relative;
     top: 0;
     left: 0;
-    min-width: 800px;
+    width: 800px;
     animation: fadeInRight 1s ease-in-out;
 
 }
@@ -757,6 +758,7 @@ main > div > .game-h2 {
     text-align: center;
     position: relative;
     top: -20px;
+   width: 100%;
 }
 #service > .service-content > div {
     text-align: center;
@@ -1057,7 +1059,7 @@ main > div > .game-h2 {
 
 
 /*Responsive*/
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .container {
         flex-direction: column-reverse;
         padding: 30px 20px;
@@ -1088,6 +1090,8 @@ main > div > .game-h2 {
         text-align: center;
         position: relative;
         top: 40px;
+        border: 1px  solid red;
+
     }
 
     #main-content {
@@ -1103,6 +1107,7 @@ main > div > .game-h2 {
         text-align: center;
         align-items: center;
         justify-content: center;
+        border: 1px solid red;
 
 
     }
@@ -1124,6 +1129,9 @@ main > div > .game-h2 {
         right: 30px;
     }
 
+    #main-content{
+        border: 1px  solid red;
+    }
 
     #main-content > h2 {
         font-size: 1.9rem;
@@ -1150,9 +1158,17 @@ main > div > .game-h2 {
         width: 200px;
 
     }
+    #skills{
+        border: 1px  solid red;
+    }
 
-    #skills {
-        margin-top: -50px;
+    .skills-content{
+        padding: 50px 40px;
+        text-align: center;
+        position: relative;
+        top: 40px;
+        width: 100%;
+        border: 1px  solid red;
     }
 
     .skills-content > div > .java-content > .language,
@@ -1163,7 +1179,7 @@ main > div > .game-h2 {
     .skills-content > div > .git-content > .language,
     .skills-content > div > .ui-ux-content > .language,
     .skills-content > div > .python-content > .language {
-        width: 80px;
+        width: 55px;
         height: 12%;
     }
 
@@ -1182,7 +1198,7 @@ main > div > .game-h2 {
     .skills-content > div > .html-content > .arrow-head,
     .skills-content > div > .js-content > .arrow-head,
     .skills-content > div > .ui-ux-content > .arrow-head {
-        left: 80px;
+        left: 55px;
         top: 40%;
         border-top: 16px solid transparent;
         border-left: 50px solid gray;
@@ -1193,7 +1209,7 @@ main > div > .game-h2 {
     .skills-content > div > .css-content > .arrow-head,
     .skills-content > div > .git-content > .arrow-head,
     .skills-content > div > .python-content > .arrow-head {
-        right: 80px;
+        right: 55px;
         top: 40.5%;
         border-top: 15px solid transparent;
         border-right: 50px solid gray;
@@ -1204,9 +1220,9 @@ main > div > .game-h2 {
     .skills-content > div > .html-content > .outer-circle,
     .skills-content > div > .js-content > .outer-circle,
     .skills-content > div > .ui-ux-content > .outer-circle {
-        left: 128px;
-        width: 100px;
-        height: 100px;
+        left: 112px;
+        width: 80px;
+        height: 80px;
         top: 50px;
     }
 
@@ -1214,9 +1230,9 @@ main > div > .game-h2 {
     .skills-content > div > .css-content > .outer-circle,
     .skills-content > div > .git-content > .outer-circle,
     .skills-content > div > .python-content > .outer-circle {
-        right: 128px;
-        width: 100px;
-        height: 100px;
+        right: 112px;
+        width: 80px;
+        height: 80px;
         top: 50px;
 
     }
@@ -1229,8 +1245,8 @@ main > div > .game-h2 {
     .skills-content > div > .git-content > .outer-circle > .inner-circle,
     .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle,
     .skills-content > div > .python-content > .outer-circle > .inner-circle {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: auto;
     }
 
     .skills-content > div > .java-content > .outer-circle > .inner-circle > img,
@@ -1241,41 +1257,51 @@ main > div > .game-h2 {
     .skills-content > div > .git-content > .outer-circle > .inner-circle > img,
     .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle > img,
     .skills-content > div > .python-content > .outer-circle > .inner-circle > img {
-        width: 50px;
+        width: 40px;
+    }
+    #portfolio{
+        border: 1px  solid red;
     }
 
     .portfolio-content {
         grid-template-columns: repeat(1, 1fr);
+        width: 450px;
+        top:80px;
 
     }
 
     .portfolio-content > aside {
-        min-width: 200px;
-        border: none;
+        left:-20px;
+       width: 410px;
+        border: 1px solid red;
+        padding: 10px;
 
     }
 
-    .doc{
+    .doc {
         position: relative;
-        left:50%;
+        left: 50%;
 
     }
 
     .portfolio-content > main {
-        min-width: 300px;
+        width: 410px;
+        left:-20px;
+        border: 1px solid red;
 
     }
 
     .portfolio-content > aside > h1 {
         font-size: 30px;
         position: relative;
-        top:-30px;
+        top: -30px;
     }
 
     .portfolio-content > aside > ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         top: -80px;
+
 
     }
 
@@ -1303,14 +1329,12 @@ main > div > .game-h2 {
         height: 1200px;
     }
 
-   /* main > div:nth-child(2),
-    main > div:nth-child(3),
-    main > div:nth-child(4),
-    main > div:nth-child(5) {
-        display: none;
-    }*/
-
-
+    /* main > div:nth-child(2),
+     main > div:nth-child(3),
+     main > div:nth-child(4),
+     main > div:nth-child(5) {
+         display: none;
+     }*/
     #ui-ux-projects, #development-projects, #assignments, #games, #docs {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -1320,7 +1344,7 @@ main > div > .game-h2 {
     #assignments > div,
     #games > div,
     #docs > div {
-        left: 70px;
+        left:100px;
     }
 
 
@@ -1334,119 +1358,160 @@ main > div > .game-h2 {
 
     }
 
-    #service{
-        top: 250px;
+    #service {
+        top: 120px;
+        border: 1px  solid red;
     }
+
     #service > h2 {
         font-size: 30px;
 
     }
+
     #service > .service-content {
         grid-template-columns: repeat(1, 1fr);
+        width: 370px;
+        border: 1px solid red;
     }
+
     #service > .service-content > div {
         height: 350px;
         width: 300px;
+        left:10px;
+
     }
+
     #service > .service-content > div > img {
         width: 120px;
 
     }
+
     #service > .service-content > div > h3 {
         font-size: 20px;
     }
+
     #service > .service-content > div > p {
         font-size: 14px;
 
     }
 
-    #contact-me{
-        top: 300px;
+    #contact-me {
+        top: 160px;
+        border: 1px  solid red;
 
     }
+
     .contact-form {
         height: 520px;
-        width: 300px;
+        width: 370px;
+        border: 1px solid red;
     }
+
     .first, .second, .third {
         left: 10px;
-
-
     }
 
 
     .first > div:nth-child(2) > .input-type, .second > div:nth-child(2) > .input-type {
-        width: 200px;
+        width: 300px;
     }
+
     .third > div:nth-child(2) > .input-type {
-        width: 200px;
+        width: 300px;
         height: 150px;
     }
+
     .icon {
         font-size: 30px;
     }
+
     .submit-button {
         font-size: 16px;
         left: 35%;
         width: fit-content;
     }
-    .footer {
-        top: 350px;
-        grid-template-columns: repeat(1, 1fr);
 
+    .footer {
+        top: 200px;
+        grid-template-columns: repeat(1, 1fr);
+        border: 1px  solid red;
     }
+
     .footer > div:first-child {
-        width: 300px;
+        width: 370px;
+        border: 1px solid red;
     }
 
     .footer > div:last-child {
         right: 0;
-        width: 300px;
-        top:-50px;
+        width: 370px;
+        top: -50px;
+        border: 1px solid red;
+        height: 100px;
     }
-    .footer > div:first-child  > .footer-content{
+
+    .footer > div:first-child > .footer-content {
         position: relative;
         display: flex;
         height: 70px;
     }
-    .footer > div:first-child  > .footer-content > .img-icon {
+
+    .footer > div:first-child > .footer-content > .img-icon {
         position: relative;
         top: 20px;
         left: 10px;
 
     }
-    .footer > div:first-child  > .footer-content > .details {
+
+    .footer > div:first-child > .footer-content > .details {
         top: 30px;
         left: 25px;
         font-size: 14px;
     }
-    .footer > div:nth-child(2) > div{
-        top:40px;
-        left: -30px;
+
+    .footer > div:nth-child(2) > div {
+        top: 40px;
+        left: -80px;
 
     }
-    .footer > div:nth-child(2) > div > img{
+
+    .footer > div:nth-child(2) > div > img {
         width: 35px;
     }
-    .footer > div:nth-child(2) > div > img:hover{
+
+    .footer > div:nth-child(2) > div > img:hover {
         width: 35px;
 
     }
-    .copyright{
-        top: 350px;
+
+    .copyright {
+        top: 200px;
+        border: 1px solid red;
+        width: 450px;
 
     }
-    .copyright > div:nth-child(1){
-        left:10px;
+
+    .copyright > div:nth-child(1) {
+        left: 10px;
         padding-right: 5px;
         width: 80px;;
 
     }
-    .copyright > div:nth-child(2){
-        left:-45px;
+
+    .copyright > div:nth-child(2) {
+        left: -45px;
         font-weight: bold;
         width: 280px;
     }
+
+
+
+
+
+
+
+
+
 
 
 
