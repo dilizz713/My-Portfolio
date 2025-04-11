@@ -93,8 +93,6 @@ button:hover {
     min-width: 280px;
     text-align: center;
     animation: fadeInRight 1.2s ease;
-
-
 }
 
 .profile-pic {
@@ -112,6 +110,7 @@ button:hover {
 
 .about-section {
     padding: 50px 20px;
+    border: 1px solid red;
 }
 
 .header {
@@ -1059,463 +1058,73 @@ main > div > .game-h2 {
 
 
 /*Responsive*/
-@media (max-width: 800px) {
-    .container {
-        flex-direction: column-reverse;
-        padding: 30px 20px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .text-content {
-        text-align: center;
-        align-items: center;
-    }
-
-    .text-content h1 {
-        font-size: 2rem;
-    }
-
-    .text-content p {
-        font-size: 1rem;
-    }
-
-    .image-content {
-        margin-bottom: 20px;
-    }
-
-    #about {
-        flex-direction: column;
-        padding: 50px 20px;
-        text-align: center;
-        position: relative;
-        top: 40px;
-        border: 1px  solid red;
-
-    }
-
-    #main-content {
-        font-size: 2rem;
-    }
-
-    .header {
-        position: relative;
-        top: 0;
-        flex-direction: column;
-        padding: 10px;
-        height: 75px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid red;
-
-
-    }
-
-    .header > nav > ul {
-        display: none;
-    }
-
-    .header > img {
-        position: absolute;
-        left: 30px;
-        top: 15px;
-        width: 40px;
-    }
-
-    #menu-bar {
-        display: block;
-        position: absolute;
-        right: 30px;
-    }
-
-    #main-content{
-        border: 1px  solid red;
-    }
-
-    #main-content > h2 {
-        font-size: 1.9rem;
-
-    }
-
-    #main-content > h1 {
-        margin-top: 10px;
-        font-size: 2.3rem;
-
-    }
-
-    #main-content > p {
-        font-size: 0.8rem;
-        margin-bottom: 50px;
-        color: white;
-    }
-
-    #main-content > a {
-        font-size: 1.2rem;
-    }
-
-    button {
-        width: 200px;
-
-    }
-    #skills{
-        border: 1px  solid red;
-    }
-
-    .skills-content{
-        padding: 50px 40px;
-        text-align: center;
-        position: relative;
-        top: 40px;
-        width: 100%;
-        border: 1px  solid red;
-    }
-
-    .skills-content > div > .java-content > .language,
-    .skills-content > div > .sql-content > .language,
-    .skills-content > div > .html-content > .language,
-    .skills-content > div > .css-content > .language,
-    .skills-content > div > .js-content > .language,
-    .skills-content > div > .git-content > .language,
-    .skills-content > div > .ui-ux-content > .language,
-    .skills-content > div > .python-content > .language {
-        width: 55px;
-        height: 12%;
-    }
-
-    .skills-content > div > .java-content > .language > p,
-    .skills-content > div > .sql-content > .language > p,
-    .skills-content > div > .html-content > .language > p,
-    .skills-content > div > .css-content > .language > p,
-    .skills-content > div > .js-content > .language > p,
-    .skills-content > div > .git-content > .language > p,
-    .skills-content > div > .ui-ux-content > .language > p,
-    .skills-content > div > .python-content > .language > p {
-        font-size: 12px;
-    }
-
-    .skills-content > div > .java-content > .arrow-head,
-    .skills-content > div > .html-content > .arrow-head,
-    .skills-content > div > .js-content > .arrow-head,
-    .skills-content > div > .ui-ux-content > .arrow-head {
-        left: 55px;
-        top: 40%;
-        border-top: 16px solid transparent;
-        border-left: 50px solid gray;
-        border-bottom: 16px solid transparent;
-    }
-
-    .skills-content > div > .sql-content > .arrow-head,
-    .skills-content > div > .css-content > .arrow-head,
-    .skills-content > div > .git-content > .arrow-head,
-    .skills-content > div > .python-content > .arrow-head {
-        right: 55px;
-        top: 40.5%;
-        border-top: 15px solid transparent;
-        border-right: 50px solid gray;
-        border-bottom: 15px solid transparent;
-    }
-
-    .skills-content > div > .java-content > .outer-circle,
-    .skills-content > div > .html-content > .outer-circle,
-    .skills-content > div > .js-content > .outer-circle,
-    .skills-content > div > .ui-ux-content > .outer-circle {
-        left: 112px;
-        width: 80px;
-        height: 80px;
-        top: 50px;
-    }
-
-    .skills-content > div > .sql-content > .outer-circle,
-    .skills-content > div > .css-content > .outer-circle,
-    .skills-content > div > .git-content > .outer-circle,
-    .skills-content > div > .python-content > .outer-circle {
-        right: 112px;
-        width: 80px;
-        height: 80px;
-        top: 50px;
-
-    }
-
-    .skills-content > div > .java-content > .outer-circle > .inner-circle,
-    .skills-content > div > .sql-content > .outer-circle > .inner-circle,
-    .skills-content > div > .html-content > .outer-circle > .inner-circle,
-    .skills-content > div > .css-content > .outer-circle > .inner-circle,
-    .skills-content > div > .js-content > .outer-circle > .inner-circle,
-    .skills-content > div > .git-content > .outer-circle > .inner-circle,
-    .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle,
-    .skills-content > div > .python-content > .outer-circle > .inner-circle {
-        width: 70px;
-        height: auto;
-    }
-
-    .skills-content > div > .java-content > .outer-circle > .inner-circle > img,
-    .skills-content > div > .sql-content > .outer-circle > .inner-circle > img,
-    .skills-content > div > .html-content > .outer-circle > .inner-circle > img,
-    .skills-content > div > .css-content > .outer-circle > .inner-circle > img,
-    .skills-content > div > .js-content > .outer-circle > .inner-circle > img,
-    .skills-content > div > .git-content > .outer-circle > .inner-circle > img,
-    .skills-content > div > .ui-ux-content > .outer-circle > .inner-circle > img,
-    .skills-content > div > .python-content > .outer-circle > .inner-circle > img {
-        width: 40px;
-    }
-    #portfolio{
-        border: 1px  solid red;
-    }
-
-    .portfolio-content {
-        grid-template-columns: repeat(1, 1fr);
-        width: 450px;
-        top:80px;
-
-    }
-
-    .portfolio-content > aside {
-        left:-20px;
-       width: 410px;
-        border: 1px solid red;
-        padding: 10px;
-
-    }
-
-    .doc {
-        position: relative;
-        left: 50%;
-
-    }
-
-    .portfolio-content > main {
-        width: 410px;
-        left:-20px;
-        border: 1px solid red;
-
-    }
-
-    .portfolio-content > aside > h1 {
-        font-size: 30px;
-        position: relative;
-        top: -30px;
-    }
-
-    .portfolio-content > aside > ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        top: -80px;
-
-
-    }
-
-    .portfolio-content > aside > ul > li {
-        top: 50px;
-        padding-bottom: 20px;
-    }
-
-    .portfolio-content > aside > ul > li > a {
-        width: 160px;
-        font-size: 12px;
-        margin-right: 5px;
-        margin-left: 5px;
-
-    }
-
-    .portfolio-content > aside > ul > li > a:hover {
-        width: 160px;
-    }
-
-    main > div {
-        position: relative;
-        top: -50px;
-        left: 0;
-        height: 1200px;
-    }
-
-    /* main > div:nth-child(2),
-     main > div:nth-child(3),
-     main > div:nth-child(4),
-     main > div:nth-child(5) {
-         display: none;
-     }*/
-    #ui-ux-projects, #development-projects, #assignments, #games, #docs {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    #ui-ux-projects > div,
-    #development-projects > div,
-    #assignments > div,
-    #games > div,
-    #docs > div {
-        left:100px;
-    }
-
-
-    #ui-ux-projects > div > a,
-    #development-projects > div > a,
-    #assignments > div > a,
-    #games > div > a,
-    #docs > div > a {
-        font-size: 15px;
-        width: 100px;
-
-    }
-
-    #service {
-        top: 120px;
-        border: 1px  solid red;
-    }
-
-    #service > h2 {
-        font-size: 30px;
-
-    }
-
-    #service > .service-content {
-        grid-template-columns: repeat(1, 1fr);
-        width: 370px;
+@media (min-width: 801px) and (max-width: 1200px) {
+    .home{
+        padding: 20px 50px;
         border: 1px solid red;
     }
-
-    #service > .service-content > div {
-        height: 350px;
-        width: 300px;
-        left:10px;
-
-    }
-
-    #service > .service-content > div > img {
-        width: 120px;
-
-    }
-
-    #service > .service-content > div > h3 {
-        font-size: 20px;
-    }
-
-    #service > .service-content > div > p {
-        font-size: 14px;
-
-    }
-
-    #contact-me {
-        top: 160px;
-        border: 1px  solid red;
-
-    }
-
-    .contact-form {
-        height: 520px;
-        width: 370px;
-        border: 1px solid red;
-    }
-
-    .first, .second, .third {
-        left: 10px;
-    }
-
-
-    .first > div:nth-child(2) > .input-type, .second > div:nth-child(2) > .input-type {
-        width: 300px;
-    }
-
-    .third > div:nth-child(2) > .input-type {
-        width: 300px;
-        height: 150px;
-    }
-
-    .icon {
-        font-size: 30px;
-    }
-
-    .submit-button {
-        font-size: 16px;
-        left: 35%;
-        width: fit-content;
-    }
-
-    .footer {
-        top: 200px;
-        grid-template-columns: repeat(1, 1fr);
-        border: 1px  solid red;
-    }
-
-    .footer > div:first-child {
-        width: 370px;
-        border: 1px solid red;
-    }
-
-    .footer > div:last-child {
-        right: 0;
-        width: 370px;
-        top: -50px;
-        border: 1px solid red;
-        height: 100px;
-    }
-
-    .footer > div:first-child > .footer-content {
-        position: relative;
-        display: flex;
-        height: 70px;
-    }
-
-    .footer > div:first-child > .footer-content > .img-icon {
-        position: relative;
-        top: 20px;
-        left: 10px;
-
-    }
-
-    .footer > div:first-child > .footer-content > .details {
-        top: 30px;
-        left: 25px;
-        font-size: 14px;
-    }
-
-    .footer > div:nth-child(2) > div {
-        top: 40px;
-        left: -80px;
-
-    }
-
-    .footer > div:nth-child(2) > div > img {
-        width: 35px;
-    }
-
-    .footer > div:nth-child(2) > div > img:hover {
-        width: 35px;
-
-    }
-
-    .copyright {
-        top: 200px;
-        border: 1px solid red;
-        width: 450px;
-
-    }
-
-    .copyright > div:nth-child(1) {
-        left: 10px;
-        padding-right: 5px;
-        width: 80px;;
-
-    }
-
-    .copyright > div:nth-child(2) {
-        left: -45px;
-        font-weight: bold;
-        width: 280px;
-    }
-
-
-
-
-
-
-
-
-
-
 
 
 
 }
+
+@media (max-width: 800px) {
+    .home{
+        padding: 20px 10px;
+        border: 1px solid green;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border: 1px solid hotpink;
+        padding: 20px;
+    }
+    .text-content{
+        text-align: center;
+        border: 1px solid orange;
+    }
+    .text-content h1{
+        font-size: 2.0rem;
+        margin-bottom: 40px;
+    }
+    .text-content p {
+        font-size: 1.0rem;
+        margin-bottom: 40px;
+    }
+    .highlight {
+        font-size: 1.5rem;
+    }
+    button {
+        border-radius: 15px;
+        font-size: 1.0rem;
+        margin-bottom: 40px;
+    }
+    .image-content {
+        border: 1px solid orange;
+    }
+    .profile-pic {
+        max-width: 60%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.4s ease;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
