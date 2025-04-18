@@ -445,6 +445,70 @@ button:hover {
     margin-bottom: 20px;
 
 }
+#contact-me {
+    border: 1px solid blue;
+    padding:50px 20px;
+}
+#contact-me > h3 {
+    font-size: 2.0rem;
+    color: #FF885B;
+}
+.contact-form{
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
+}
+.first,.second,.third{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.first > div:first-child , .second > div:first-child , .third > div:first-child {
+    width:100px;
+    border: 1px solid #FF885B;
+
+}
+.icon{
+    font-size: 3rem;
+    padding: 10px;
+}
+.first > div:nth-child(2) , .second > div:nth-child(2) , .third > div:nth-child(2) {
+    border: 1px solid green;
+}
+.first > div:nth-child(2) > label , .second > div:nth-child(2) > label, .third > div:nth-child(2) > label{
+    width:700px;
+    border: 1px solid green;
+    font-size:1.6rem;
+    font-weight: bold;
+    color:#FF885B;
+}
+
+.input-type{
+    width: 800px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    background: #1A1A1D;
+    color: white;
+    padding: 10px;
+
+}
+.text-area{
+    height:200px;
+}
+
 
 
 /*.portfolio-content {
@@ -1040,6 +1104,14 @@ main > div > .game-h2 {
         padding: 20px 50px;
         border: 1px solid red;
     }
+    #contact-me{
+        padding: 20px 50px;
+        border: 1px solid red;
+    }
+    .input-type{
+        width: 500px;
+    }
+
 
 
 
@@ -1196,8 +1268,28 @@ main > div > .game-h2 {
     }
     .service-content > div > div > p {
         font-size:0.9rem;
+    }
+    #contact-me{
+        padding: 20px;
+        border: 1px solid yellow;
+    }
+    .input-type{
+        width: 100%;
+    }
+    #contact-me > h3 {
+        font-size: 1.5rem;
 
-
+    }
+    .first > div:first-child , .second > div:first-child , .third > div:first-child {
+         width:80px;
+     }
+    .icon{
+        font-size: 1.5rem;
+    }
+    .first > div:nth-child(2) > label , .second > div:nth-child(2) > label, .third > div:nth-child(2) > label{
+        font-size:1.2rem;
+        border:1px solid green;
+        width:300px;
 
     }
 }
