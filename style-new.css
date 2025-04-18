@@ -1281,7 +1281,7 @@ main > div > .game-h2 {
 
     }
     .first > div:first-child , .second > div:first-child , .third > div:first-child {
-         width:80px;
+         width:50px;
      }
     .icon{
         font-size: 1.5rem;
@@ -1291,6 +1291,9 @@ main > div > .game-h2 {
         border:1px solid green;
         width:300px;
 
+    }
+    .text-area{
+        height:150px;
     }
 }
 
