@@ -341,6 +341,51 @@ button:hover {
     position: relative;
     top:15px;
 }
+#portfolio {
+   text-align: center;
+    border: 1px solid blue;
+    padding:50px 20px;
+}
+#portfolio > h1 {
+    font-size: 3.5rem;
+    color: #FF885B;
+}
+.portfolio-content{
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
+}
+.portfolio-content > div {
+    width: 200px;
+    height: 180px;
+    border:5px solid #FF885B;
+    border-radius: 30px;
+}
+.portfolio-content > div > a {
+  position: relative;
+    top:50px;
+    text-decoration:none;
+    font-size:1.25rem;
+    color: white;
+}
+.portfolio-content > div:hover {
+   background:  #1A1A1D;
+    border:5px solid white;
+
+}
+.portfolio-content > div > a:hover {
+    color: #FF885B;
+}
 
 
 /*.portfolio-content {
@@ -928,6 +973,10 @@ main > div > .game-h2 {
         padding: 20px 50px;
         border: 1px solid red;
     }
+    #portfolio {
+        padding: 20px 50px;
+        border: 1px solid red;
+    }
 
 
 
@@ -1043,19 +1092,29 @@ main > div > .game-h2 {
     #skills {
         padding: 20px;
         border: 1px solid yellow;
-        width: 100%;
-        box-sizing:border-box;
     }
     #skills > h1{
         font-size: 3.0rem;
     }
     .skills-content {
         display:grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .skills-content > div {
       position:relative;
         border-radius:20px;
+    }
+    #portfolio{
+        padding: 20px;
+        border: 1px solid yellow;
+    }
+    #portfolio > h1 {
+        font-size: 2.8rem;
+    }
+
+    .portfolio-content {
+       display:grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
