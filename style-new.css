@@ -387,6 +387,65 @@ button:hover {
     color: #FF885B;
 }
 
+#service{
+    text-align: center;
+    border: 1px solid blue;
+    padding:50px 20px;
+}
+#service > h2{
+    font-size: 3.5rem;
+    color: #FF885B;
+}
+.service-content{
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
+}
+.service-content > div {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+.service-content > div > div {
+   border: 2px solid #FF885B;
+    background: #1A1A1D;
+    border-radius: 20px;
+    margin: 20px;
+    height:auto;
+    text-align: center;
+    padding: 30px;
+}
+.service-content > div > div > img {
+    width:180px;
+    border-radius: 50%;
+    border: 2px solid #FF885B;
+    box-shadow: 5px 5px 5px #FF885B;
+}
+.service-content > div > div > h3 {
+   font-size: 2.0rem;
+    color: white;
+    font-weight: bold;
+    position:relative;
+    top:15px;
+}
+.service-content > div > div > p {
+    font-size:1.2rem;
+    color: white;
+    position:relative;
+    top:25px;
+    margin-bottom: 20px;
+
+}
+
 
 /*.portfolio-content {
     position: relative;
@@ -977,6 +1036,10 @@ main > div > .game-h2 {
         padding: 20px 50px;
         border: 1px solid red;
     }
+    #service {
+        padding: 20px 50px;
+        border: 1px solid red;
+    }
 
 
 
@@ -1116,7 +1179,27 @@ main > div > .game-h2 {
        display:grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    #service{
+        padding: 20px;
+        border: 1px solid yellow;
+    }
+    .service-content > div {
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service-content > div > div >  img {
+        width:150px;
+    }
+    .service-content > div > div > h3 {
+        font-size: 1.8rem;
 
+    }
+    .service-content > div > div > p {
+        font-size:0.9rem;
+
+
+
+    }
 }
 
 
