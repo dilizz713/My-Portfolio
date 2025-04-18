@@ -147,7 +147,6 @@ button:hover {
     padding: 10px 40px;
     gap: 30px;
     animation: fadeUp 1.2s ease-in-out;
-    width: 1200px;
 
 }
 
@@ -246,7 +245,7 @@ button:hover {
     padding: 40px;
     gap: 30px;
     animation: fadeUp 1.2s ease-in-out;
-    width: 1200px;
+
 
 }
 
@@ -309,6 +308,7 @@ button:hover {
     /*display: grid;
    grid-template-columns: repeat(3,1fr);*/
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
@@ -318,7 +318,7 @@ button:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     padding: 40px;
     gap: 30px;
-    width: 1200px;
+
 }
 
 .skills-content > div {
@@ -892,7 +892,6 @@ main > div > .game-h2 {
     .header {
         padding: 10px 20px;
         border: 1px solid green;
-        width:900px;
     }
 
     .header > img {
@@ -908,9 +907,7 @@ main > div > .game-h2 {
     .header > nav > ul > li > select > option {
         font-size: 0.6rem;
     }
-    #about{
-        width:900px;
-    }
+
     #image-side  > img{
         width: 200px;
 
@@ -930,26 +927,7 @@ main > div > .game-h2 {
         padding: 20px 50px;
         border: 1px solid red;
     }
-    #skills > h1{
-        font-size: 3.0rem;
-    }
-    .skills-content {
-        width: 900px;
-    }
-    .skills-content > div {
-        width: 120px;
-        height: 120px;
-        padding: 10px;
-    }
-    .skills-content > div > div > p {
-        font-size:0.9rem;
 
-    }
-    .skills-content > div > div:nth-child(2) > img {
-        position: relative;
-        top:15px;
-        width:50px;
-    }
 
 
 }
@@ -1011,7 +989,6 @@ main > div > .game-h2 {
 
     .header {
         padding: 10px;
-        width:600px;
     }
 
     .header > nav > ul {
@@ -1036,7 +1013,6 @@ main > div > .game-h2 {
         border: 1px solid hotpink;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        width:600px;
     }
 
     #image-side > img {
@@ -1066,16 +1042,14 @@ main > div > .game-h2 {
         border: 1px solid yellow;
     }
     #skills > h1{
-        font-size: 2.8rem;
+        font-size: 3.0rem;
     }
     .skills-content {
-        width: 600px;
         display:grid;
         grid-template-columns: repeat(2, 1fr);
     }
     .skills-content > div {
       position:relative;
-        left: 40px;
         border-radius:20px;
     }
 
