@@ -886,11 +886,13 @@ main > div > .game-h2 {
     .about-section {
         padding: 20px 50px;
         border: 1px solid red;
+
     }
 
     .header {
         padding: 10px 20px;
         border: 1px solid green;
+        width:900px;
     }
 
     .header > img {
@@ -906,13 +908,55 @@ main > div > .game-h2 {
     .header > nav > ul > li > select > option {
         font-size: 0.6rem;
     }
+    #about{
+        width:900px;
+    }
+    #image-side  > img{
+        width: 200px;
+
+    }
+    #main-content > h2 {
+        font-size: 1.9rem;
+    }
+    #main-content > h1 {
+        font-size: 2.5rem;
+
+    }
+    #main-content > p {
+        font-size:1.0rem;
+
+    }
+    #skills {
+        padding: 20px 50px;
+        border: 1px solid red;
+    }
+    #skills > h1{
+        font-size: 3.0rem;
+    }
+    .skills-content {
+        width: 900px;
+    }
+    .skills-content > div {
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+    }
+    .skills-content > div > div > p {
+        font-size:0.9rem;
+
+    }
+    .skills-content > div > div:nth-child(2) > img {
+        position: relative;
+        top:15px;
+        width:50px;
+    }
 
 
 }
 
 @media (max-width: 800px) {
     .home {
-        padding: 20px 10px;
+        padding: 20px;
         border: 1px solid green;
     }
 
@@ -962,11 +1006,12 @@ main > div > .game-h2 {
 
     .about-section {
         border: 1px solid yellow;
-        padding: 20px 10px;
+        padding: 20px;
     }
 
     .header {
         padding: 10px;
+        width:600px;
     }
 
     .header > nav > ul {
@@ -991,6 +1036,7 @@ main > div > .game-h2 {
         border: 1px solid hotpink;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        width:600px;
     }
 
     #image-side > img {
@@ -1015,6 +1061,24 @@ main > div > .game-h2 {
         font-size: 1.0rem;
         margin-bottom: 30px;
     }
+    #skills {
+        padding: 20px;
+        border: 1px solid yellow;
+    }
+    #skills > h1{
+        font-size: 2.8rem;
+    }
+    .skills-content {
+        width: 600px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills-content > div {
+      position:relative;
+        left: 40px;
+        border-radius:20px;
+    }
+
 }
 
 
