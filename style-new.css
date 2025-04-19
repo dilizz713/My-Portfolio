@@ -534,6 +534,14 @@ button:hover {
 .text-area {
     height: 200px;
 }
+.submit-button{
+    position: absolute;
+    height: fit-content;
+    left:0;
+    right:0;
+    margin:auto;
+    width: 200px;
+}
 
 #footer {
     padding: 50px 20px;
@@ -1214,6 +1222,9 @@ main > div > .game-h2 {
     .input-type {
         width: 500px;
     }
+    .submit-button{
+       width:150px;
+    }
 
     #footer {
         padding: 20px 50px;
@@ -1430,6 +1441,9 @@ main > div > .game-h2 {
         height: 150px;
     }
 
+    .submit-button{
+        width:150px;
+    }
     #footer {
         padding: 20px;
         border: 1px solid yellow;
