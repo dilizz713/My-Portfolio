@@ -110,29 +110,11 @@ button:hover {
 
 .about-section {
     padding: 50px 20px;
-    border: 1px solid blue;
     height: 100vh;
 
 }
 
 .header {
-    /*position: fixed;
-    top: 50px;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin:  auto;
-    background: #36383B;
-    border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    gap: 30px;
-    animation: slideDown 1s ease-in-out;
-    z-index: 999;*/
     position: relative;
     top: 10px;
     display: flex;
@@ -294,7 +276,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 50px 20px;
-    border: 1px solid blue;
+
 }
 
 #skills > h1 {
@@ -347,7 +329,6 @@ button:hover {
 
 #portfolio {
     text-align: center;
-    border: 1px solid blue;
     padding: 50px 20px;
 }
 
@@ -399,7 +380,6 @@ button:hover {
 
 #service {
     text-align: center;
-    border: 1px solid blue;
     padding: 50px 20px;
 }
 
@@ -430,7 +410,6 @@ button:hover {
 }
 
 .service-content > div > div {
-    border: 2px solid #FF885B;
     background: #1A1A1D;
     border-radius: 20px;
     margin: 20px;
@@ -464,7 +443,6 @@ button:hover {
 }
 
 #contact-me {
-    border: 1px solid blue;
     padding: 50px 20px;
 }
 
@@ -498,7 +476,6 @@ button:hover {
 
 .first > div:first-child, .second > div:first-child, .third > div:first-child {
     width: 100px;
-    border: 1px solid #FF885B;
 
 }
 
@@ -507,13 +484,8 @@ button:hover {
     padding: 10px;
 }
 
-.first > div:nth-child(2), .second > div:nth-child(2), .third > div:nth-child(2) {
-    border: 1px solid green;
-}
-
 .first > div:nth-child(2) > label, .second > div:nth-child(2) > label, .third > div:nth-child(2) > label {
     width: 700px;
-    border: 1px solid green;
     font-size: 1.6rem;
     font-weight: bold;
     color: #FF885B;
@@ -545,7 +517,7 @@ button:hover {
 
 #footer {
     padding: 50px 20px;
-    border: 1px solid blue;
+
 }
 
 .footer-content {
@@ -564,9 +536,7 @@ button:hover {
     gap: 30px;
 }
 
-.footer-content > div:nth-child(1), .footer-content > div:nth-child(2) {
-    border: 1px solid pink;
-}
+
 
 .info {
     display: flex;
@@ -1183,18 +1153,18 @@ main > div > .game-h2 {
 @media (min-width: 801px) and (max-width: 1200px) {
     .home {
         padding: 20px 50px;
-        border: 1px solid red;
+
     }
 
     .about-section {
         padding: 20px 50px;
-        border: 1px solid red;
+
 
     }
 
     .header {
         padding: 10px 20px;
-        border: 1px solid green;
+
     }
 
     .header > img {
@@ -1234,22 +1204,22 @@ main > div > .game-h2 {
 
     #skills {
         padding: 20px 50px;
-        border: 1px solid red;
+
     }
 
     #portfolio {
         padding: 20px 50px;
-        border: 1px solid red;
+
     }
 
     #service {
         padding: 20px 50px;
-        border: 1px solid red;
+
     }
 
     #contact-me {
         padding: 20px 50px;
-        border: 1px solid red;
+
     }
 
     .input-type {
@@ -1261,7 +1231,7 @@ main > div > .game-h2 {
 
     #footer {
         padding: 20px 50px;
-        border: 1px solid red;
+
     }
     .footer-content{
         display: grid;
@@ -1293,19 +1263,18 @@ main > div > .game-h2 {
 @media (max-width: 800px) {
     .home {
         padding: 20px;
-        border: 1px solid green;
+
     }
 
     .container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        border: 1px solid hotpink;
         padding: 20px;
     }
 
     .text-content {
         text-align: center;
-        border: 1px solid orange;
+
     }
 
     .text-content h1 {
@@ -1328,9 +1297,7 @@ main > div > .game-h2 {
         margin-bottom: 40px;
     }
 
-    .image-content {
-        border: 1px solid orange;
-    }
+
 
     .profile-pic {
         max-width: 60%;
@@ -1341,7 +1308,7 @@ main > div > .game-h2 {
     }
 
     .about-section {
-        border: 1px solid yellow;
+
         padding: 20px;
         width: 100%;
         box-sizing: border-box;
@@ -1370,7 +1337,7 @@ main > div > .game-h2 {
 
     #about {
         top: 30px;
-        border: 1px solid hotpink;
+
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
@@ -1407,7 +1374,7 @@ main > div > .game-h2 {
 
     #skills {
         padding: 20px;
-        border: 1px solid yellow;
+
     }
 
     #skills > h1 {
@@ -1426,7 +1393,7 @@ main > div > .game-h2 {
 
     #portfolio {
         padding: 20px;
-        border: 1px solid yellow;
+
     }
 
     #portfolio > h1 {
@@ -1440,7 +1407,7 @@ main > div > .game-h2 {
 
     #service {
         padding: 20px;
-        border: 1px solid yellow;
+
     }
 
     .service-content > div {
@@ -1463,7 +1430,7 @@ main > div > .game-h2 {
 
     #contact-me {
         padding: 20px;
-        border: 1px solid yellow;
+
     }
 
     .input-type {
@@ -1485,7 +1452,7 @@ main > div > .game-h2 {
 
     .first > div:nth-child(2) > label, .second > div:nth-child(2) > label, .third > div:nth-child(2) > label {
         font-size: 1.2rem;
-        border: 1px solid green;
+
         width: 300px;
 
     }
@@ -1499,7 +1466,7 @@ main > div > .game-h2 {
     }
     #footer {
         padding: 20px;
-        border: 1px solid yellow;
+
     }
 
     .details {
@@ -1565,7 +1532,7 @@ main > div > .game-h2 {
     }
     .copyright > div:nth-child(2) {
         width: 200px;
-        border: 1px solid red;
+
     }
     .copyright > div:nth-child(1) > img {
         width:20px;
