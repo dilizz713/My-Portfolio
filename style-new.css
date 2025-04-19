@@ -611,6 +611,39 @@ button:hover {
 
 
 }
+.copyright{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
+    height: 20px;
+}
+.copyright > div:nth-child(1) {
+    width: 20px;
+    position: relative;
+    top: -15px;
+}
+.copyright > div:nth-child(1) > img {
+    width: 30px;
+}
+.copyright > div:nth-child(2) {
+    width:800px;
+    position: relative;
+    top: -15px;
+}
+.copyright > div:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 
 /*.portfolio-content {
@@ -1230,15 +1263,28 @@ main > div > .game-h2 {
         padding: 20px 50px;
         border: 1px solid red;
     }
+    .footer-content{
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+    }
+    .footer-content > div:nth-child(1){
+        width: 600px;
 
+    }
     .footer-content > div:nth-child(2) {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        align-self: center;
         position: relative;
-        left: 30%;
+        left: 25%;
+
+    }
+    .copyright > div:nth-child(1) {
+        width: 15px;
+    }
+    .copyright > div:nth-child(2) {
+        width: 650px;
     }
 
 
@@ -1496,6 +1542,30 @@ main > div > .game-h2 {
         height: 35px;
         position: relative;
         top: 7px;
+    }
+    .copyright{
+        height:5px;
+        background: none;
+        color:white;
+
+    }
+    .copyright > div:nth-child(1) {
+        width:20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        border: 1px solid pink;
+    }
+    .copyright > div:nth-child(2) {
+        width: 200px;
+        border: 1px solid red;
+    }
+    .copyright > div:nth-child(1) > img {
+        width:20px;
+    }
+    .copyright > div:nth-child(2) > p{
+
+       font-size: 1.0rem;
     }
 
 }
