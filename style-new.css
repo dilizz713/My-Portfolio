@@ -1366,6 +1366,14 @@ main > div > .game-h2 {
     .copyright > div:nth-child(2) {
         width: 650px;
     }
+    #projects {
+        padding: 20px 50px;
+        border: 1px solid red;
+    }
+    .project-content{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+    }
 
 
 }
@@ -1657,6 +1665,16 @@ main > div > .game-h2 {
     .copyright > div:nth-child(2) > p {
 
         font-size: 1.0rem;
+    }
+
+    #projects {
+        padding: 20px;
+        border: 1px solid yellow;
+        height: fit-content;
+    }
+    .project-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
