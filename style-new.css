@@ -276,56 +276,62 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 50px 20px;
-
+    width: 100%;
 }
 
 #skills > h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #FF885B;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
 }
 
 .skills-content {
-    position: relative;
-    top: 10px;
-    /*display: grid;
-   grid-template-columns: repeat(3,1fr);*/
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
     max-width: 1200px;
     margin: auto;
-    background: #36383B;
+    background: #2C2C2E;
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     padding: 40px;
-    gap: 30px;
-
 }
 
 .skills-content > div {
     width: 150px;
     height: 150px;
-    padding: 10px;
     background: #1A1A1D;
-    border-radius: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
-.skills-content > div > div {
+.skills-content > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(255, 136, 91, 0.3);
+    background-color: #2F2F33;
+}
+
+.skills-content img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skills-content p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #F1F1F1;
     text-align: center;
 }
 
-.skills-content > div > div > p {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: whitesmoke;
-}
-
-.skills-content > div > div:nth-child(2) > img {
-    position: relative;
-    top: 15px;
-}
 
 #portfolio {
     text-align: center;
@@ -333,7 +339,7 @@ button:hover {
 }
 
 #portfolio > h1 {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     color: #FF885B;
 }
 
@@ -352,12 +358,18 @@ button:hover {
     padding: 40px;
     gap: 30px;
 }
-
+.portfolio-content > div:hover {
+    transform: translateY(-10px);
+    background-color: #2F2F33;
+    box-shadow: 0 10px 25px rgba(255, 136, 91, 0.4);
+    border-color: #ffffff;
+}
 .portfolio-content > div {
     width: 200px;
     height: 180px;
     border: 5px solid #FF885B;
     border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .portfolio-content > div > a {
@@ -384,7 +396,7 @@ button:hover {
 }
 
 #service > h2 {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     color: #FF885B;
 }
 
@@ -416,6 +428,7 @@ button:hover {
     height: auto;
     text-align: center;
     padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-content > div > div > img {
@@ -423,6 +436,7 @@ button:hover {
     border-radius: 50%;
     border: 2px solid #FF885B;
     box-shadow: 5px 5px 5px #FF885B;
+
 }
 
 .service-content > div > div > h3 {
@@ -431,6 +445,12 @@ button:hover {
     font-weight: bold;
     position: relative;
     top: 15px;
+}
+.service-content > div > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 136, 91, 0.4);
+    border-color: #FF885B;
+    background-color: #2F2F33;
 }
 
 .service-content > div > div > p {
@@ -500,18 +520,24 @@ button:hover {
     background: #1A1A1D;
     color: white;
     padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
 }
-
+.input-type:focus {
+    border-color: #FF885B;
+    box-shadow: 0 0 10px rgba(255, 136, 91, 0.5);
+    outline: none;
+}
 .text-area {
     height: 200px;
 }
-.submit-button{
+
+.submit-button {
     position: absolute;
     height: fit-content;
-    left:0;
-    right:0;
-    margin:auto;
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 200px;
 }
 
@@ -535,7 +561,10 @@ button:hover {
     padding: 40px;
     gap: 30px;
 }
-
+.img-icon img {
+    width: 20px;
+    filter: brightness(1.2);
+}
 
 
 .info {
@@ -556,7 +585,8 @@ button:hover {
 .info > div:nth-child(2) {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
 }
 
 .footer-content > div:nth-child(2) {
@@ -581,7 +611,53 @@ button:hover {
 
 
 }
-.copyright{
+
+.copyright {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 40px;
+    gap: 30px;
+    height: 20px;
+    color: white;
+}
+
+.copyright > div:nth-child(1) {
+    width: 20px;
+    position: relative;
+    top: -15px;
+}
+
+.copyright > div:nth-child(1) > img {
+    width: 30px;
+}
+
+.copyright > div:nth-child(2) {
+    width: 800px;
+    position: relative;
+    top: -15px;
+}
+
+.copyright > div:nth-child(2) {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+/*----------------------------------------------------------*/
+#projects {
+    padding: 50px 20px;
+    border: 1px solid blue;
+    height: 100vh;
+}
+
+.project-content {
     position: relative;
     top: 0;
     display: flex;
@@ -595,25 +671,53 @@ button:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     padding: 40px;
     gap: 30px;
-    height: 20px;
+
 }
-.copyright > div:nth-child(1) {
-    width: 20px;
-    position: relative;
-    top: -15px;
+
+.project-topic {
+    font-size: 2.0rem;
+    color: #FF885B;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
-.copyright > div:nth-child(1) > img {
-    width: 30px;
+.project-content > div{
+    border:2px solid white;
+    padding: 20px;
+    height: 220px;
+    border-radius: 20px;
 }
-.copyright > div:nth-child(2) {
-    width:800px;
-    position: relative;
-    top: -15px;
+.project-content > div > img {
+    border-radius: 15px;
+    width: 150px;
+    height: auto;
 }
-.copyright > div:nth-child(2) {
-    font-size: 1.5rem;
-    font-weight: bold;
+.project-content > div > img {
+    border-radius: 15px;
+    width: 150px;
+    height: auto;
 }
+.project-content > div > h3{
+    font-size: 1.0rem;
+    text-align: center;
+    margin-top:10px;
+    color: white;
+
+}
+.project-content > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto 0 auto;
+    background: #FF885B;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 0.9rem;
+    color: black;
+}
+
 
 
 /*.portfolio-content {
@@ -1225,22 +1329,26 @@ main > div > .game-h2 {
     .input-type {
         width: 500px;
     }
-    .submit-button{
-       width:150px;
+
+    .submit-button {
+        width: 150px;
     }
 
     #footer {
         padding: 20px 50px;
 
     }
-    .footer-content{
+
+    .footer-content {
         display: grid;
         grid-template-columns:repeat(1, 1fr);
     }
-    .footer-content > div:nth-child(1){
+
+    .footer-content > div:nth-child(1) {
         width: 600px;
 
     }
+
     .footer-content > div:nth-child(2) {
         display: flex;
         flex-wrap: wrap;
@@ -1250,9 +1358,11 @@ main > div > .game-h2 {
         left: 25%;
 
     }
+
     .copyright > div:nth-child(1) {
         width: 15px;
     }
+
     .copyright > div:nth-child(2) {
         width: 650px;
     }
@@ -1296,7 +1406,6 @@ main > div > .game-h2 {
         font-size: 1.0rem;
         margin-bottom: 40px;
     }
-
 
 
     .profile-pic {
@@ -1461,9 +1570,10 @@ main > div > .game-h2 {
         height: 150px;
     }
 
-    .submit-button{
-        width:150px;
+    .submit-button {
+        width: 150px;
     }
+
     #footer {
         padding: 20px;
 
@@ -1504,42 +1614,49 @@ main > div > .game-h2 {
     .footer-content > div:nth-child(2) {
         width: 180px;
     }
-    .footer-content > div:nth-child(2) > div{
+
+    .footer-content > div:nth-child(2) > div {
         background: #1A1A1D;
         margin: 5px;
         width: 50px;
         height: 50px;
         border-radius: 10px;
     }
-    .footer-content > div:nth-child(2) > div > img{
+
+    .footer-content > div:nth-child(2) > div > img {
         width: 35px;
         height: 35px;
         position: relative;
         top: 7px;
     }
-    .copyright{
-        height:5px;
+
+    .copyright {
+        height: 5px;
         background: none;
-        color:white;
+        color: white;
 
     }
+
     .copyright > div:nth-child(1) {
-        width:20px;
+        width: 20px;
         height: 20px;
         background: white;
         border-radius: 50%;
         border: 1px solid pink;
     }
+
     .copyright > div:nth-child(2) {
         width: 200px;
 
     }
-    .copyright > div:nth-child(1) > img {
-        width:20px;
-    }
-    .copyright > div:nth-child(2) > p{
 
-       font-size: 1.0rem;
+    .copyright > div:nth-child(1) > img {
+        width: 20px;
+    }
+
+    .copyright > div:nth-child(2) > p {
+
+        font-size: 1.0rem;
     }
 
 }
