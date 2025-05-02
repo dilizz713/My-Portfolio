@@ -807,6 +807,9 @@ button:hover {
     margin: auto;
     padding-bottom: 20px;
 }
+#github-img:hover{
+    background: whitesmoke;
+}
 .tech-content > div > img:hover {
     background: black;
 }
@@ -876,9 +879,45 @@ button:hover {
     border-radius: 50px;
 
 }
+.overview > .key-features , .overview > .question{
+    color: #FF5B8A;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.overview > .key-points > li{
+    color: antiquewhite;
+    font-size: 0.9rem;
+    margin: 5px;
+}
 
-
-
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.tools > div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.tools > div > img{
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+.video-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.video-content > video{
+    width: 80%;
+}
 @keyframes sliding {
     0%{
         transform: translateX(0%);
@@ -1449,6 +1488,13 @@ button:hover {
     }
     .tech-content > div {
         margin: 10px;
+
+    }
+    .tools > div > img{
+        width: 50%;
+        height: 50%;
+        padding: 5px;
+        border-radius: 10px;
 
     }
 }
