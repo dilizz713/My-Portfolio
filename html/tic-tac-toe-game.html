@@ -8,122 +8,91 @@
     I specialize in building modern, responsive websites that bring ideas to life.">
     <title>Dilini Silva</title>
     <link rel="icon" type="image/ico" href="../assets/favicon.ico">
-    <link rel="stylesheet" href="../style1.css">
+    <link rel="stylesheet" href="../style-new.css">
     <link rel="stylesheet" href="../assets/lib/normalize.css">
     <link rel="stylesheet" href="../assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 <body>
-<header class="header">
-    <img src="../assets/logo1.png" alt="logo" width="50">
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li>
-                <select onchange="location = this.value;">
-                    <option value="" selected disabled>About</option>
-                    <option value="about.html">About</option>
-                    <option value="educational-qualifications.html">Educational Qualifications</option>
-                </select>
-            </li>
-            <li>
-                <select onchange="location = this.value;">
-                    <option value="" selected disabled>Skills</option>
-                    <option value="about.html#skills">Skills</option>
-                    <option value="certificates.html">Certificates</option>
-                </select>
-            </li>
-            <li><a href="about.html#portfolio">Portfolio</a></li>
-            <li><a href="about.html#service">Service</a></li>
-            <li><a href="about.html#contact-me">Contact Me</a></li>
-        </ul>
-    </nav>
-</header>
+<div id="project-content">
+    <header class="header">
+        <img src="../assets/logo1.png" alt="logo" width="50">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="" selected disabled>About</option>
+                        <option value="#about">About</option>
+                        <option value="educational-qualifications.html">Educational Qualifications</option>
+                        <option value="gallery.html">Gallery</option>
+                    </select>
+                </li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="" selected disabled>Skills</option>
+                        <option value="#skills">Skills</option>
+                        <option value="certificates.html">Certificates</option>
+                    </select>
+                </li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" style="color: #ffffff;" id="menu-bar"></i>
+    </header>
 
-<div>
-    <p>Tic Tac Toe</p>
-    <hr>
-    <p>Games</p>
-    <hr>
-    <p>2024</p>
-    <h2>Project Overview</h2>
-    <p>
-        The Tic-Tac-Toe Game with AI is a desktop application built using JavaFX that allows users to play against
-        an AI opponent. The AI logic is designed to make intelligent moves, providing a challenging and engaging gameplay
-        experience. The game features a clean and interactive UI, ensuring a smooth user experience.I have used
-        minimax algorithm for that.
-    </p>
-    <p>Key Features</p>
-    <ul>
-        <li>Single-Player Mode: Play against an AI opponent.</li>
-        <li>Intuitive UI: Built with JavaFX .</li>
-        <li>Win/Loss/Draw Detection: The game automatically checks for a winner or a draw after each move..</li>
-        <li>Restart Option: Players can reset the game and start over.</li>
-    </ul>
-    <p>Why Auto Rent Pro?</p>
-    <ul>
-        <li>Scalable & Maintainable: Layered architecture ensures modularity.</li>
-        <li>Efficient & Secure: Reduces redundancy and improves performance</li>
-        <li>User-Friendly Interface: JavaFX provides a smooth and intuitive experience.</li>
-    </ul>
-</div>
-<hr>
-<div>
-    <div>
-        <p>Technologies & Tools</p>
-        <ul>
-            <li><img src="../assets/java.png"></li>
-            <li><img src="../assets/intelijidea.png" width="50px"></li>
-            <li><img src="../assets/scenebuilder.jpeg" width="50px"></li>
-        </ul>
-        <img src="../assets/github.png" alt="github" width="50">
-        <a href="#">Click on Here</a>
+    <div class="topic">
+        <div><p>Tic-Tac-Toe</p></div>
+        <hr>
+        <div><p>Game</p></div>
+        <hr>
+        <div><p>2024</p></div>
     </div>
-</div>
-<hr>
-<div>
-    <video src="../assets/video/tictactoe.mp4"
-           controls="controls">
 
-    </video>
-</div>
-<hr>
-<div>
-    <ul>
-        <li><a href="#">Previous Project</a></li>
-        <li><a href="about.html#portfolio">All Project</a></li>
-        <li><a href="#">Next Project</a></li>
-    </ul>
-</div>
-<hr>
-<footer>
-    <div>
-       <span>
-           <img src="../assets/phone-call.png" alt="phone" width="35">
-           +94 70 139 8043
-       </span><br><br>
-        <span>
-           <img src="../assets/location-pin.png" alt="location" width="35">
-           No. 175/6 River Road , Pamunugama , Alubomulla
-       </span><br><br>
-        <span>
-           <img src="../assets/communication.png" alt="email" width="35">
-           dilinichamikasilva@gmail.com
-       </span><br><br>
-    </div>
-    <br><br>
-    <div>
-        <ul>
-            <li><img src="../assets/linkedin.png" alt="linkedin" width="35"></li>
-            <li><img src="../assets/github.png" alt="github" width="35"></li>
-            <li><img src="../assets/freelancer-modified.png" alt="freelancer" width="35"></li>
+    <div class="overview">
+        <h2>Project Overview</h2>
+        <p>
+            This is a desktop-based Tic Tac Toe game developed using JavaFX for the graphical user interface, Java as the core programming language, and MySQL for data persistence.
+            The game offers a classic two-player experience with additional functionality for storing and retrieving game data from a database.
+        </p>
+        <p class="key-features">Key Features</p>
+        <ul class="key-points">
+            <li> Interactive GUI built with JavaFX, featuring a clean 3x3 grid layout.</li>
+            <li>Score tracking and ability to store game results in a MySQL database.</li>
+            <li>Input validation and error handling to ensure smooth gameplay</li>
+            <li>Two-player gameplay with automatic win/draw detection and turn switching.</li>
+
+        </ul>
+        <p class="question">Why Auto Rent Pro?</p>
+        <ul class="key-points">
+            <li>Developed an understanding of event-driven programming using JavaFX.</li>
+            <li>Practiced building interactive desktop applications with real-time feedback.</li>
+            <li>Gained experience with SQL queries and database integration using JDBC.</li>
+            <li>Enhanced knowledge of object-oriented programming and code organization in Java.</li>
         </ul>
     </div>
-    <br><br>
-    <span>
-        <img src="../assets/copyright.png" alt="copyright" width="15">
-        2025 - Dilini Silva
-   </span>
-</footer>
+
+    <hr class="line">
+    <div class="tech-content">
+        <div>
+            <p>Technologies & Tools</p>
+            <div class="tools">
+                <div><img src="../assets/java.png" ></div>
+                <div><img src="../assets/mysql.png" ></div>
+                <div><img src="../assets/intelijidea.png" ></div>
+                <div><img src="../assets/scenebuilder.jpeg" ></div>
+                <div><img src="../assets/git.png" ></div>
+
+            </div>
+            <img src="../assets/github.png" alt="github" width="50" id="github-img">
+            <a href="https://github.com/dilizz713/tictactoegame.git">Click on Here</a>
+        </div>
+    </div>
+    <hr class="line">
+
+</div>
+
 
 </body>
 </html>
