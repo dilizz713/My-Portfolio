@@ -8,79 +8,85 @@
     I specialize in building modern, responsive websites that bring ideas to life.">
     <title>Dilini Silva</title>
     <link rel="icon" type="image/ico" href="../assets/favicon.ico">
-    <link rel="stylesheet" href="../style1.css">
+    <link rel="stylesheet" href="../style-new.css">
     <link rel="stylesheet" href="../assets/lib/normalize.css">
     <link rel="stylesheet" href="../assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 <body>
-<header class="header">
-    <img src="../assets/logo1.png" alt="logo" width="50">
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li>
-                <select onchange="location = this.value;">
-                    <option value="" selected disabled>About</option>
-                    <option value="about.html">About</option>
-                    <option value="educational-qualifications.html">Educational Qualifications</option>
-                </select>
-            </li>
-            <li>
-                <select onchange="location = this.value;">
-                    <option value="" selected disabled>Skills</option>
-                    <option value="about.html#skills">Skills</option>
-                    <option value="certificates.html">Certificates</option>
-                </select>
-            </li>
-            <li><a href="about.html#portfolio">Portfolio</a></li>
-            <li><a href="about.html#service">Service</a></li>
-            <li><a href="about.html#contact-me">Contact Me</a></li>
-        </ul>
-    </nav>
-</header>
+<section id="certificates">
+    <header class="header">
+        <img src="../assets/logo1.png" alt="logo" width="50">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="" selected disabled>About</option>
+                        <option value="#about">About</option>
+                        <option value="educational-qualifications.html">Educational Qualifications</option>
+                        <option value="gallery.html">Gallery</option>
+                    </select>
+                </li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="" selected disabled>Skills</option>
+                        <option value="#skills">Skills</option>
+                        <option value="certificates.html">Certificates</option>
+                    </select>
+                </li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" style="color: #ffffff;" id="menu-bar"></i>
+    </header>
 
-<section>
-    <div>
-        <div><img src="../assets/certificates/java_basic%20certificate.png" alt="java_basic_certificate" width="200"></div>
+    <div class="certificates-content">
         <div>
-            <h2>Java Basic Certificate</h2>
-            <h4>HackerRank</h4>
-            <p>
-                I successfully earned the Java (Basic) Certification from HackerRank, demonstrating my proficiency in
-                fundamental Java programming concepts. This certification validates my knowledge in areas such as
-                object-oriented programming, data structures, syntax, and problem-solving using Java.
-            </p>
-            <p>
-                By passing the skill certification test, I have proven my ability to write efficient and optimized
-                Java code, making me well-equipped for entry-level development roles and projects requiring Java expertise.
-            </p>
+            <div><img src="../assets/certificates/java_basic%20certificate.png" alt="java_basic_certificate" width="200"></div>
+            <div>
+                <h2>Java Basic Certificate</h2>
+                <h4>HackerRank</h4>
+                <p>
+                    I successfully earned the Java (Basic) Certification from HackerRank, demonstrating my proficiency in
+                    fundamental Java programming concepts. This certification validates my knowledge in areas such as
+                    object-oriented programming, data structures, syntax, and problem-solving using Java.
+                </p>
+                <p>
+                    By passing the skill certification test, I have proven my ability to write efficient and optimized
+                    Java code, making me well-equipped for entry-level development roles and projects requiring Java expertise.
+                </p>
+            </div>
+            <div>
+                <a href="java-certificate.html">View</a>
+            </div>
         </div>
+        <hr class="line">
+
         <div>
-            <a href="java-certificate.html">View</a>
+            <div> <img src="../assets/certificates/coderelly.png" alt="hackathon-certificate" width="200"></div>
+            <div>
+                <h2>Certificate of Participation - CodeRelly Hackathon</h2>
+                <h4>Informatics Institute of Technology ( IIT )</h4>
+                <p>
+                    I actively participated in CodeRally 5.0, a 24-hour competitive programming hackathon, where
+                    I collaborated with a team to solve complex coding challenges under time constraints.
+                    This experience enhanced my problem-solving skills, algorithmic thinking, and teamwork in a
+                    high-pressure environment.
+                </p>
+                <p>
+                    Participating in this hackathon strengthened my ability to develop innovative solutions
+                    efficiently and reinforced my passion for coding competitions.
+                </p>
+            </div>
+            <div>
+                <a href="java-certificate.html">View</a>
+            </div>
         </div>
+
     </div>
-
-    <div>
-        <div> <img src="../assets/certificates/coderelly.png" alt="hackathon-certificate" width="200"></div>
-        <div>
-            <h2>Certificate of Participation - CodeRelly Hackathon</h2>
-            <h4>Informatics Institute of Technology ( IIT )</h4>
-            <p>
-                I actively participated in CodeRally 5.0, a 24-hour competitive programming hackathon, where
-                I collaborated with a team to solve complex coding challenges under time constraints.
-                This experience enhanced my problem-solving skills, algorithmic thinking, and teamwork in a
-                high-pressure environment.
-            </p>
-            <p>
-                Participating in this hackathon strengthened my ability to develop innovative solutions
-                efficiently and reinforced my passion for coding competitions.
-            </p>
-        </div>
-        <div>
-            <a href="java-certificate.html">View</a>
-        </div>
-    </div>
-
 </section>
+
 </body>
 </html>

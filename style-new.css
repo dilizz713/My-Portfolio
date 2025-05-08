@@ -61,7 +61,8 @@ body {
 .highlight {
     color: #FF885B;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    animation: blink 0.7s step-end infinite;
 
 }
 
@@ -110,13 +111,12 @@ button:hover {
 
 .about-section {
     padding: 50px 20px;
-    height: 100vh;
 
 }
 
 .header {
     position: relative;
-    top: 10px;
+    top: 0px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -125,13 +125,15 @@ button:hover {
     margin: auto;
     background: #36383B;
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     padding: 10px 40px;
     gap: 30px;
     animation: fadeUp 1.2s ease-in-out;
 
 }
-
+.header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(255, 136, 91, 0.35);
+}
 .header > img {
     width: 50px;
     height: auto;
@@ -223,14 +225,18 @@ button:hover {
     margin: auto;
     background: #36383B;
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(255, 136, 91, 0.25), 0 8px 24px rgba(255, 136, 91, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 40px;
     gap: 30px;
     animation: fadeUp 1.2s ease-in-out;
 
 
 }
-
+#about:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(255, 136, 91, 0.35);
+}
 #image-side {
     flex: 1;
     min-width: 300px;
@@ -270,6 +276,7 @@ button:hover {
     font-size: 1.2rem;
     margin-bottom: 50px;
     color: white;
+
 }
 
 #skills {
@@ -277,6 +284,7 @@ button:hover {
     flex-direction: column;
     padding: 50px 20px;
     width: 100%;
+    margin-top: 100px;
 }
 
 #skills > h1 {
@@ -296,10 +304,14 @@ button:hover {
     margin: auto;
     background: #2C2C2E;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(255, 136, 91, 0.25), 0 8px 24px rgba(255, 136, 91, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 40px;
 }
-
+.skills-content:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(255, 136, 91, 0.35);
+}
 .skills-content > div {
     width: 150px;
     height: 150px;
@@ -309,15 +321,12 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 12px 25px rgba(255, 136, 91, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
-.skills-content > div:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(255, 136, 91, 0.3);
-    background-color: #2F2F33;
-}
+
 
 .skills-content img {
     width: 70px;
@@ -354,11 +363,15 @@ button:hover {
     margin: auto;
     background: #36383B;
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(255, 136, 91, 0.25), 0 8px 24px rgba(255, 136, 91, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 40px;
     gap: 30px;
 }
-
+.portfolio-content:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(255, 136, 91, 0.35);
+}
 .portfolio-content > div:hover {
     transform: translateY(-10px);
     background-color: #2F2F33;
@@ -413,11 +426,15 @@ button:hover {
     margin: auto;
     background: #36383B;
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(255, 136, 91, 0.25), 0 8px 24px rgba(255, 136, 91, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 40px;
     gap: 30px;
 }
-
+.service-content:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(255, 136, 91, 0.35);
+}
 .service-content > div {
     display: grid;
     grid-template-columns:repeat(2, 1fr);
@@ -485,11 +502,15 @@ button:hover {
     margin: auto;
     background: #36383B;
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     padding: 40px;
     gap: 30px;
+    box-shadow: 0 4px 12px rgba(255, 136, 91, 0.25), 0 8px 24px rgba(255, 136, 91, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(255, 136, 91, 0.35);
+}
 .first, .second, .third {
     display: flex;
     flex-wrap: wrap;
@@ -548,7 +569,6 @@ button:hover {
 
 #footer {
     padding: 50px 20px;
-
 }
 
 .footer-content {
@@ -562,11 +582,15 @@ button:hover {
     margin: auto;
     background: #36383B;
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     padding: 40px;
     gap: 30px;
+    box-shadow: 0 4px 12px rgba(255, 136, 91, 0.25), 0 8px 24px rgba(255, 136, 91, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.footer-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(255, 136, 91, 0.35);
+}
 .img-icon img {
     width: 20px;
     filter: brightness(1.2);
@@ -584,14 +608,13 @@ button:hover {
 }
 
 .info > div:nth-child(1) > img {
-    width: 50px;
+    width: 30px;
     margin-bottom: 20px;
 }
 
 .info > div:nth-child(2) {
-    margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     color: white;
 }
 
@@ -604,16 +627,19 @@ button:hover {
 }
 
 .footer-content > div:nth-child(2) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 60px;
-    background: #FF885B;
+    background:#1A1A1D;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 136, 91, 0.5);
 
 }
 
 .footer-content > div:nth-child(2) > div > img {
-    position: relative;
-    top: 5px;
+    width: 40px;
 
 
 }
@@ -632,32 +658,31 @@ button:hover {
     gap: 30px;
     height: 20px;
     color: white;
+    width: 100%;
 }
-
-.copyright > div:nth-child(1) {
-    width: 20px;
-    position: relative;
-    top: -15px;
+.copyright > div{
+    display: flex;
 }
+.copyright-tag{
+    width: 75px;
+    font-size: 0.8rem;
 
-.copyright > div:nth-child(1) > img {
-    width: 30px;
 }
-
-.copyright > div:nth-child(2) {
-    width: 800px;
-    position: relative;
-    top: -15px;
+.copyright > div:nth-child(2){
+    width: 35%;
+    text-align: center;
 }
-
-.copyright > div:nth-child(2) {
-    font-size: 0.9rem;
-    font-weight: bold;
+.copyright > div:nth-child(2) > div{
+    width: 40%;
 }
-
+.copyright > div:nth-child(3){
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
 
 /*----------------------------------------------------------*/
-#projects {
+#projects , #certificates{
     padding: 50px 20px;
     height: 100vh;
 }
@@ -947,8 +972,73 @@ button:hover {
     border-radius: 15px;
 
 }
-
-
+.certificates-content{
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    background: #36383B;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    gap: 30px;
+}
+.certificates-content > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.certificates-content > div > div >  img{
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.certificates-content > div > div:nth-child(2){
+    text-align: center;
+}
+.certificates-content > div > div:nth-child(2) > h2{
+   margin-bottom: 10px;
+    color:#FF5B8A ;
+}
+.certificates-content > div > div:nth-child(2) > h4{
+    margin-bottom: 10px;
+    color:white ;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.certificates-content > div > div:nth-child(2) > p{
+    margin-bottom: 10px;
+    color:white ;
+}
+.certificates-content > div > div:nth-child(3){
+    margin-top: 20px;
+}
+.certificates-content > div > div:nth-child(3) > a{
+    text-decoration: none;
+    background: #FF885B;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+.certificates-content > div > div:nth-child(3) > a:hover{
+    background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
+}
+.view-certificate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.view-certificate > img{
+    width: 50%;
+    border-radius: 50px;
+}
 @keyframes sliding {
     0%{
         transform: translateX(0%);
@@ -994,7 +1084,12 @@ button:hover {
     }
 
 }
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
 
+}
 @keyframes slideUp {
     from {
         transform: translateY(50px);
@@ -1159,13 +1254,29 @@ button:hover {
 
     }
 
-    .copyright > div:nth-child(1) {
-        width: 15px;
+    .copyright{
+        padding: 20px 50px;
+
     }
 
-    .copyright > div:nth-child(2) {
-        width: 650px;
+    .copyright-tag{
+        width: 75px;
+        font-size: 0.8rem;
+
     }
+    .copyright > div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+    .copyright > div:nth-child(2){
+        width: 60%;
+        font-size: 0.8rem;
+    }
+    .copyright > div:nth-child(2) > div{
+        width: 60%;
+    }
+
 
     #projects {
         padding: 20px 50px;
@@ -1457,33 +1568,31 @@ button:hover {
         top: 7px;
     }
 
-    .copyright {
-        height: 5px;
-        background: none;
-        color: white;
+    .copyright{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
 
     }
 
-    .copyright > div:nth-child(1) {
-        width: 20px;
-        height: 20px;
-        background: white;
-        border-radius: 50%;
-        border: 1px solid pink;
-    }
-
-    .copyright > div:nth-child(2) {
-        width: 200px;
+    .copyright-tag{
+        width: 75px;
+        font-size: 0.8rem;
 
     }
-
-    .copyright > div:nth-child(1) > img {
-        width: 20px;
+    .copyright > div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
     }
-
-    .copyright > div:nth-child(2) > p {
-
-        font-size: 1.0rem;
+    .copyright > div:nth-child(2){
+        display: flex;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .copyright > div:nth-child(2) > div{
+        width: 100%;
+        text-align: center;
     }
 
     #projects {

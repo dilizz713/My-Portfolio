@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../style-new.css">
     <link rel="stylesheet" href="../assets/lib/normalize.css">
     <link rel="stylesheet" href="../assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 <!-- about section-->
@@ -44,17 +46,17 @@
     </header>
     <div id="about">
         <div id="image-side">
-            <img src="../assets/myprofile.jpg" alt="profile" width="200">
+            <img src="../assets/myprofile.jpg" alt="profile" width="200" class="animate__animated animate__zoomIn animate__delay-0.5s">
         </div>
         <div id="main-content">
-            <h2>Hi , I'm </h2>
-            <h1><em>Dilini Silva</em></h1>
-            <p>A passionate web developer dedicated to crafting seamless,
+            <h2 class="animate__animated animate__zoomIn animate__delay-0.5s">Hi , I'm </h2>
+            <h1 class="animate__animated animate__fadeInDown animate__delay-1s"><em>Dilini Silva</em></h1>
+            <p class="animate__animated animate__fadeInDown animate__delay-2s">A passionate web developer dedicated to crafting seamless,
                 user-friendly web experiences. With a deep love for technology and an eye for design,
                 I specialize in building modern, responsive websites that bring ideas to life.
             </p>
             <a href="#more-about-me">
-                <button class="more-about-me-btn">More About Me</button>
+                <button class="more-about-me-btn animate__animated animate__bounceIn animate__delay-3s">More About Me</button>
             </a>
         </div>
 
@@ -106,58 +108,44 @@
     <h1>Skills</h1>
     <div class="skills-content">
 
-        <div>
-            <div> <p>Java</p></div>
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
+            <div><p>Java</p></div>
             <div><img src="../assets/java.png" alt="java" width="100px"></div>
         </div>
 
-        <div>
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
             <div><p>MySQL</p></div>
             <div><img src="../assets/mysql.png" alt="sql" width="80px"></div>
-
-
         </div>
 
-        <div>
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
             <div><p>HTML 5</p></div>
             <div><img src="../assets/html5.png" alt="html" width="80px"></div>
-
-
         </div>
 
-        <div>
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
             <div><p>CSS</p></div>
             <div><img src="../assets/css.png" alt="css" width="80px"></div>
-
-
         </div>
 
-        <div>
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
             <div><p>JS</p></div>
             <div><img src="../assets/js.png" alt="js" width="80px"></div>
-
-
         </div>
 
-        <div>
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
             <div><p>GIT</p></div>
             <div><img src="../assets/git.png" alt="git" width="80px"></div>
-
-
         </div>
 
-        <div>
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
             <div><p>UI/UX</p></div>
             <div><img src="../assets/figma.png" alt="ui-ux" width="80px"></div>
-
-
         </div>
 
-        <div>
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
             <div><p>PYTHON</p></div>
             <div><img src="../assets/python.png" alt="python" width="80px"></div>
-
-
         </div>
 
     </div>
@@ -184,7 +172,7 @@
     <h2>My Services</h2>
     <div class="service-content">
         <div>
-            <div>
+            <div data-aos="flip-left"  data-aos-duration="1000" data-aos-delay="0">
                 <img src="../assets/service-ui-ux.png" alt="ui-ux" width="150">
                 <h3>UI/UX Designing</h3>
                 <p>I create intuitive, user-centered designs that enhance the user experience.
@@ -193,7 +181,7 @@
                     appealing, focusing on seamless navigation and engagement.
                 </p>
             </div>
-            <div>
+            <div data-aos="flip-right" data-aos-duration="1000" data-aos-delay="500">
                 <img src="../assets/service-frontend.png" alt="frontend" width="150">
                 <h3>FrontEnd</h3>
                 <p>I bring designs to life with clean, responsive, and interactive interfaces. Using HTML, CSS, and
@@ -202,7 +190,7 @@
                     user experience across all devices.
                 </p>
             </div>
-            <div>
+            <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
                 <img src="../assets/service-backend.png" alt="backend" width="150">
                 <h3>BackEnd</h3>
                 <p>With Java and SQL, I develop reliable, scalable backend systems. I handle everything from server
@@ -211,18 +199,18 @@
                     efficiently.
                 </p>
             </div>
-            <div>
+            <div data-aos="flip-right" data-aos-duration="1000" data-aos-delay="1500">
                 <img src="../assets/service-freelancing.png" alt="freelancing" width="150">
                 <h3>Freelancing</h3>
                 <p>As a freelancer, I offer flexible, client-focused solutions. Whether you need UI/UX design, frontend,
-                    or backend development, I work closely with you to bring your vision to life on time and within budget,
+                    or backend development, I work closely with you to bring your vision to life on time and within
+                    budget,
                     delivering high-quality results.
                 </p>
             </div>
         </div>
 
     </div>
-
 </section>
 
 
@@ -289,9 +277,18 @@
 </section>
 
 <div class="copyright">
-    <div><img src="../assets/copyright.png" alt="copyright" width="15"></div>
-    <div><p>2025 - Dilini Silva</p></div>
+    <div><em class="copyright-tag">Copyright</em>2025 - Dilini Silva</div>
+    <div>
+        <div>Privacy Policy</div>
+        <div>Cookies</div>
+        <div>Terms & Conditions</div>
+    </div>
 </div>
 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
