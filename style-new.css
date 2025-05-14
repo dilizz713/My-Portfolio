@@ -484,7 +484,7 @@ button:hover {
 
 #contact-me {
     padding: 50px 20px;
-    border:1px solid blue;
+
 }
 
 #contact-me > h3 {
@@ -521,7 +521,6 @@ button:hover {
     margin-top: 10px;
 }*/
 form{
-    border: 1px solid white;
     margin: auto;
 }
 .first > div, .second > div, .third > div {
@@ -1213,7 +1212,7 @@ form{
 
     #contact-me {
         padding: 20px 50px;
-        border: 1px solid red;
+
 
     }
 
@@ -1473,7 +1472,6 @@ form{
 
     #contact-me {
         padding: 20px;
-        border:1px solid yellow;
 
     }
     .contact-form{
