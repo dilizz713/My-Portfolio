@@ -1263,9 +1263,6 @@ form {
         width: 150px;
     }
 
-    #footer-one {
-        border: 1px solid red;
-    }
 
     #projects {
         padding: 20px 50px;
@@ -1546,15 +1543,11 @@ form {
 
     #footer-one {
         padding: 0;
-        border: 1px solid yellow;
         overflow: visible;
 
     }
 
-    .design-content {
-        border: 5px solid yellow;
 
-    }
 
     .design-content > h1 {
         font-size: 4rem;
@@ -1566,7 +1559,7 @@ form {
     .footer-top > h1 {
         font-size: 2rem;
         width: 100%;
-        border: 1px solid green;
+
     }
 
     .footer-top > div {
