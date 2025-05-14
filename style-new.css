@@ -484,6 +484,7 @@ button:hover {
 
 #contact-me {
     padding: 50px 20px;
+    border:1px solid blue;
 }
 
 #contact-me > h3 {
@@ -499,6 +500,7 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
+    width: 100%;
     margin: auto;
     background: #36383B;
     border-radius: 20px;
@@ -506,44 +508,38 @@ button:hover {
     gap: 30px;
     box-shadow: 0 4px 12px rgba(255, 136, 91, 0.25), 0 8px 24px rgba(255, 136, 91, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 .contact-form:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 30px rgba(255, 136, 91, 0.35);
 }
-.first, .second, .third {
+/*.first, .second, .third {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
+}*/
+form{
+    border: 1px solid white;
+    margin: auto;
 }
+.first > div, .second > div, .third > div {
+    width:100%;
+    font-size: 1.0rem;
+    color: white;
 
-.first > div:first-child, .second > div:first-child, .third > div:first-child {
-    width: 100px;
-
-}
-
-.icon {
-    font-size: 3rem;
-    padding: 10px;
-}
-
-.first > div:nth-child(2) > label, .second > div:nth-child(2) > label, .third > div:nth-child(2) > label {
-    width: 700px;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #FF885B;
 }
 
 .input-type {
     width: 800px;
     height: 40px;
     border-radius: 15px;
-    margin-top: 10px;
     font-size: 1.2rem;
     background: #1A1A1D;
     color: white;
     padding: 10px;
+    margin-top: 10px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -557,7 +553,6 @@ button:hover {
 .text-area {
     height: 200px;
 }
-
 .submit-button {
     position: absolute;
     height: fit-content;
@@ -1218,6 +1213,7 @@ button:hover {
 
     #contact-me {
         padding: 20px 50px;
+        border: 1px solid red;
 
     }
 
@@ -1477,11 +1473,14 @@ button:hover {
 
     #contact-me {
         padding: 20px;
+        border:1px solid yellow;
 
     }
-
+    .contact-form{
+       min-width: 300px;
+    }
     .input-type {
-        width: 100%;
+        width:300px;
     }
 
     #contact-me > h3 {
@@ -1489,19 +1488,12 @@ button:hover {
 
     }
 
-    .first > div:first-child, .second > div:first-child, .third > div:first-child {
-        width: 50px;
-    }
-
-    .icon {
-        font-size: 1.5rem;
-    }
-
-    .first > div:nth-child(2) > label, .second > div:nth-child(2) > label, .third > div:nth-child(2) > label {
+    .first > div, .second > div, .third > div {
         font-size: 1.2rem;
+    }
 
+    .input-type{
         width: 300px;
-
     }
 
     .text-area {
