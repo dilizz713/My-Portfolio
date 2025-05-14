@@ -1493,7 +1493,7 @@ form{
     }
 
     .input-type{
-        width: 300px;
+        width: 100%;
     }
 
     .text-area {
