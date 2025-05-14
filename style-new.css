@@ -570,7 +570,6 @@ form {
 
 #footer {
     width: 100%;
-    border: 1px solid blue;
     padding: 0 20px;
     background: black;
 }
@@ -582,10 +581,6 @@ form {
     align-items: center;
     position: relative;
     top: 0;
-}
-
-.footer-content > div {
-    border: 1px solid green;
 }
 
 .footer-text {
@@ -654,7 +649,6 @@ form {
 .details > div {
     display: flex;
     justify-content: space-between;
-    border: 1px solid #FF885B;
 
 }
 
@@ -676,7 +670,6 @@ form {
 
 .details > div > div:last-child {
     width: 90%;
-    border: 1px solid #FF885B;
     margin-top: 20px;
     color: white;
 }
@@ -684,10 +677,13 @@ form {
 .social-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+    justify-content: left;
+    margin-top: 10px;
 
+}
+.footer-content > .line{
+    display: none;
+}
 .social-links > div {
     background: #FF885B;
     padding: 5px;
@@ -1361,7 +1357,6 @@ form {
     }
 
     #footer {
-        border: 1px solid red;
         margin-top: 20px;
     }
 
@@ -1587,7 +1582,6 @@ form {
     }
 
     #footer {
-        border: 1px solid yellow;
         margin-top: 20px;
     }
 
@@ -1606,11 +1600,19 @@ form {
         padding: 10px;
     }
 
+    .social-links{
+        justify-content: center;
+        text-align: center;
+
+    }
     .footer-icons {
         width: 100%;
         padding: 10px;
-    }
 
+    }
+    .footer-icons > p {
+        text-align: center;
+    }
     .copyright {
         padding: 10px;
     }
@@ -1623,6 +1625,9 @@ form {
         text-align: center;
     }
 
+    .footer-content > .line{
+        display: block;
+    }
     .project-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
