@@ -654,12 +654,11 @@ form {
 }
 
 .details > div > div:first-child {
-    background: #FF885B;
+   color: #FF885B;
     padding: 5px;
     margin: 10px;
     border-radius: 40%;
     font-size: 1.0rem;
-    box-shadow: 1px 1px 2px #FF885B;
 
 }
 
@@ -686,7 +685,6 @@ form {
     display: none;
 }
 .social-links > div {
-    background: #FF885B;
     padding: 5px;
     margin: 10px;
     border-radius: 40%;
@@ -696,17 +694,17 @@ form {
 }
 
 .social-links > div > i {
-    color: black;
+    color: white;
     font-size: 1.2rem;
     border: 2px solid black;
     border-radius: 40%;
     padding: 5px;
+}
+.social-links > div > i:hover {
+    color: #FF885B;
 
 }
 
-.social-links > div:hover {
-    background: linear-gradient(45deg, #FF5B8A, #FF00FF, #FF885B);
-}
 
 .footer-hr {
     width: 80%;
