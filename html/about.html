@@ -44,6 +44,22 @@
         </nav>
         <i class="fa-solid fa-bars" style="color: #ffffff;" id="menu-bar"></i>
     </header>
+
+    <div id="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="educational-qualifications.html">Educational Qualifications</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="certificates.html">Certificated</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+        <hr class="line">
+    </div>
+
     <div id="about">
         <div id="image-side">
             <img src="../assets/myprofile.jpg" alt="profile" width="200"
@@ -57,54 +73,13 @@
                 user-friendly web experiences. With a deep love for technology and an eye for design,
                 I specialize in building modern, responsive websites that bring ideas to life.
             </p>
-            <a href="#more-about-me">
-                <button class="more-about-me-btn animate__animated animate__bounceIn animate__delay-3s">More About Me
+            <a href="more-about-me.html">
+                <button class="more-about-me-btn animate__animated animate__bounceIn animate__delay-3s" id="more-about-me-btn">More About Me
                 </button>
             </a>
         </div>
-
-        <!-- more about me-->
-        <!--<div id="more-about-me">
-            <div>
-                <h2>About Me</h2>
-                <div>
-                    <img src="../assets/user.png" alt="user" width="35">
-                    Name - Dilini Silva
-                </div>
-                <br><br>
-                <div>
-                    <img src="../assets/anti-age.png" alt="age" width="35">
-                    Age - 23
-                </div>
-                <br><br>
-                <div>
-                    <img src="../assets/coronavirus.png" alt="nationality" width="35">
-                    Nationality - Sri Lanka
-                </div>
-                <br><br>
-                <div>
-                    <img src="../assets/location.png" alt="city" width="35">
-                    City - Panadura
-                </div>
-                <br><br>
-                <div>
-                    <img src="../assets/freelancing.png" alt="freelancing" width="35">
-                    Freelancing - Available
-                </div>
-                <br><br>
-            </div>
-            <div>
-                <h3>Languages</h3>
-                <div>
-                    <p>Sinhalese</p>
-                    <p>English</p>
-                    <p>Tamil</p>
-                </div>
-            </div>
-        </div>-->
     </div>
 </section>
-
 
 <!-- skills section-->
 <section id="skills">
@@ -329,8 +304,10 @@
     </div>
 </section>
 
-
+<script src="../lib/jquery-3.7.1.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../portfolio.js"></script>
+
 <script>
     AOS.init();
 </script>

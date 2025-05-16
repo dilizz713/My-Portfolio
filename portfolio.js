@@ -33,3 +33,14 @@ $(document).ready(function() {
 
     type();
 });
+
+$("#menu").css("display", "none");
+
+
+
+$('#menu-bar').on('click',function (){
+    $('#menu').toggle();
+})
+
+
+

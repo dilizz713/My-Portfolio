@@ -22,7 +22,7 @@
         <li>
           <select onchange="location = this.value;">
             <option value="" selected disabled>About</option>
-            <option value="#about">About</option>
+            <option value="about.html">About</option>
             <option value="educational-qualifications.html">Educational Qualifications</option>
             <option value="gallery.html">Gallery</option>
           </select>
@@ -30,17 +30,32 @@
         <li>
           <select onchange="location = this.value;">
             <option value="" selected disabled>Skills</option>
-            <option value="#skills">Skills</option>
+            <option value="about.html #skills">Skills</option>
             <option value="certificates.html">Certificates</option>
           </select>
         </li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
+        <li><a href="about.html #portfolio">Portfolio</a></li>
+        <li><a href="about.html #service">Service</a></li>
+        <li><a href="about.html #contact-me">Contact Me</a></li>
       </ul>
     </nav>
     <i class="fa-solid fa-bars" style="color: #ffffff;" id="menu-bar"></i>
   </header>
+
+  <div id="menu">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="educational-qualifications.html">Educational Qualifications</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html #skills">Skills</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="about.html #portfolio">Portfolio</a></li>
+      <li><a href="about.html #service">Service</a></li>
+      <li><a href="about.html #contact-me">Contact Me</a></li>
+    </ul>
+    <hr class="line">
+  </div>
 
   <div class="topic">
     <div><p>Assignment 01</p></div>
@@ -92,6 +107,9 @@
 
 </div>
 
+<script src="../lib/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../portfolio.js"></script>
 
 </body>
 </html>

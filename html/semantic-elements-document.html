@@ -23,21 +23,37 @@
           <option value="" selected disabled>About</option>
           <option value="about.html">About</option>
           <option value="educational-qualifications.html">Educational Qualifications</option>
+          <option value="gallery.html">Gallery</option>
         </select>
       </li>
       <li>
         <select onchange="location = this.value;">
           <option value="" selected disabled>Skills</option>
-          <option value="about.html#skills">Skills</option>
+          <option value="about.html #skills">Skills</option>
           <option value="certificates.html">Certificates</option>
         </select>
       </li>
-      <li><a href="about.html#portfolio">Portfolio</a></li>
-      <li><a href="about.html#service">Service</a></li>
-      <li><a href="about.html#contact-me">Contact Me</a></li>
+      <li><a href="about.html #portfolio">Portfolio</a></li>
+      <li><a href="about.html #service">Service</a></li>
+      <li><a href="about.html #contact-me">Contact Me</a></li>
     </ul>
   </nav>
 </header>
+
+<div id="menu">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="educational-qualifications.html">Educational Qualifications</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html #skills">Skills</a></li>
+    <li><a href="certificates.html">Certificated</a></li>
+    <li><a href="about.html #portfolio">Portfolio</a></li>
+    <li><a href="about.html #service">Service</a></li>
+    <li><a href="about.html #contact-me">Contact Me</a></li>
+  </ul>
+  <hr class="line">
+</div>
 
 <div>
   <p>HTML5 Semantic Elements</p>
@@ -85,6 +101,10 @@
         2025 - Dilini Silva
    </span>
 </footer>
+
+<script src="../lib/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../portfolio.js"></script>
 
 </body>
 </html>
