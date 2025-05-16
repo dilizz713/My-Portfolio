@@ -360,10 +360,8 @@ button:hover {
 .portfolio-content {
     position: relative;
     top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     max-width: 1200px;
     margin: auto;
     background: #36383B;
@@ -379,39 +377,24 @@ button:hover {
     box-shadow: 0 6px 30px rgba(255, 136, 91, 0.35);
 }
 
-.portfolio-content > div:hover {
-    transform: translateY(-10px);
-    background-color: #2F2F33;
-    box-shadow: 0 10px 25px rgba(255, 136, 91, 0.4);
-    border-color: #ffffff;
-}
-
-.portfolio-content > div {
-    width: 200px;
-    height: 180px;
-    border: 5px solid #FF885B;
-    border-radius: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.portfolio-content > div > a {
+.portfolio-content > div > a{
     position: relative;
-    top: 50px;
+    top:-150px;
     text-decoration: none;
-    font-size: 1.25rem;
-    color: white;
+    color:white;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
-
-.portfolio-content > div:hover {
-    background: #1A1A1D;
-    border: 5px solid white;
-
-}
-
-.portfolio-content > div > a:hover {
+.portfolio-content > div > a:hover{
     color: #FF885B;
 }
+.portfolio-content > div >img{
+    border-radius: 10%;
+    box-shadow: 0 4px 12px rgba(255, 136, 91, 0.25), 0 8px 24px rgba(255, 136, 91, 0.2);
+}
+.portfolio-content > div > img:hover{
 
+}
 #service {
     text-align: center;
     padding: 50px 20px;
@@ -1301,11 +1284,23 @@ form {
         padding: 20px 50px;
 
     }
+    .portfolio-content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .portfolio-content > div > img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     #service {
         padding: 20px 50px;
 
     }
+
+
 
     #contact-me {
         padding: 20px 50px;
@@ -1505,18 +1500,18 @@ form {
         border-radius: 20px;
     }
 
-    #portfolio {
+    #portfolio{
         padding: 20px;
-
     }
-
-    #portfolio > h1 {
-        font-size: 2.8rem;
-    }
-
-    .portfolio-content {
+    .portfolio-content{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .portfolio-content > div > img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #service {
