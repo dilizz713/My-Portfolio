@@ -1395,21 +1395,29 @@ form {
 .social-media > p{
     color: white;
     text-align: center;
+    margin-bottom: 15px;
 }
 .social-icons {
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 20%;
-}
 
+}
+.social-icons > div{
+    background: black;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(255, 136, 91, 0.25), 0 8px 24px rgba(255, 136, 91, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .social-icons > div > i {
-    color: #FF885B;
-    font-size: 1.5rem;
-    margin: 15px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 40%;
+
 }
 .social-icons > div > i:hover {
-    color: #FF5B8A;
+    color: #FF885B;
 }
 
 
