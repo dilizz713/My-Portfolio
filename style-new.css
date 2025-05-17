@@ -1151,8 +1151,6 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .left-side {
@@ -1279,6 +1277,76 @@ form {
     color: black;
 }
 
+
+/*-------------------------EDUCATIONAL QUALIFICATIONS----------------------------------------*/
+#educational-qualifications{
+    width: 100%;
+    padding: 50px 20px;
+    border: 1px solid blue;
+}
+#educational-qualifications-content{
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    border:1px solid green;
+    padding: 20px;
+
+}
+#educational-qualifications-content > h1{
+    text-align: center;
+    color:#FF885B;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.education-content{
+    display: grid;
+    justify-content: center;
+    margin: auto;
+}
+.education-content > .up-content{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.education-content > .up-content > div:nth-child(1){
+    background: #FF885B;
+    padding: 5px;
+    border-radius: 50%;
+}
+.education-content > .up-content > div > i{
+    font-size: 1.2rem;
+}
+.education-content > .up-content > .topic-p-tag{
+    background: #9AA6B2;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    left:50px;
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+}
+.down-content{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.down-content > div > h3{
+    position: relative;
+    left: 80px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.0rem;
+    padding-bottom: 5px;
+}
+.down-content > div > p{
+    color: #FFB05B;
+    position: relative;
+    left: 80px;
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+}
 
 @keyframes sliding {
     0% {
@@ -1588,6 +1656,17 @@ form {
         display: flex;
         justify-content: center;
         left: 0;
+    }
+
+    #educational-qualifications{
+        padding: 20px;
+        border: 1px solid red;
+    }
+    #educational-qualifications-content{
+        width: 70%;
+        border:1px solid hotpink;
+        padding: 20px;
+
     }
 }
 
@@ -1966,6 +2045,16 @@ form {
         justify-content: center;
         margin: auto;
     }
+    .left-side > div > .key {
+        width: 180px;
+    }
+    .left-side > div > .symbol {
+        width: 50px;
+    }
+    .left-side > div > .value {
+        width: 150px;
+    }
+
     .right-side{
         width: 60%;
     }
@@ -1973,6 +2062,39 @@ form {
         display: flex;
         justify-content: center;
         left: 0;
+    }
+
+    #educational-qualifications{
+        padding: 20px;
+        border: 1px solid yellow;
+    }
+    #educational-qualifications-content{
+        width: 90%;
+        border:1px solid red;
+        padding: 10px;
+
+    }
+    #educational-qualifications-content > h1{
+        font-size: 1.2rem;
+    }
+    .down-content > div > h3{
+       width: 180px;
+       left:30px;
+        border:1px solid blue;
+        font-size: 0.9rem;
+    }
+    .education-content > .up-content{
+       width: 100%;
+        border:1px solid blue;
+    }
+    .education-content > .up-content > div:nth-child(1){
+        margin-left: -20px;
+    }
+    .education-content > .up-content > .topic-p-tag{
+        left:10px;
+    }
+    .down-content > div > p{
+        left: 30px;
     }
 }
 

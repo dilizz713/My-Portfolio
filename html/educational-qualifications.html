@@ -8,79 +8,96 @@
     I specialize in building modern, responsive websites that bring ideas to life.">
   <title>Dilini Silva</title>
   <link rel="icon" type="image/ico" href="../assets/favicon.ico">
-  <link rel="stylesheet" href="../style1.css">
+  <link rel="stylesheet" href="../style-new.css">
   <link rel="stylesheet" href="../assets/lib/normalize.css">
   <link rel="stylesheet" href="../assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 <body>
-<header class="header">
-  <img src="../assets/logo1.png" alt="logo" width="50">
-  <nav>
+
+<div id="educational-qualifications">
+  <header class="header">
+    <img src="../assets/logo1.png" alt="logo" width="50">
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <select onchange="location = this.value;">
+            <option value="" selected disabled>About</option>
+            <option value="about.html">About</option>
+            <option value="educational-qualifications.html">Educational Qualifications</option>
+            <option value="gallery.html">Gallery</option>
+          </select>
+        </li>
+        <li>
+          <select onchange="location = this.value;">
+            <option value="" selected disabled>Skills</option>
+            <option value="about.html #skills">Skills</option>
+            <option value="certificates.html">Certificates</option>
+          </select>
+        </li>
+        <li><a href="about.html #portfolio">Portfolio</a></li>
+        <li><a href="about.html #service">Service</a></li>
+        <li><a href="about.html #contact-me">Contact Me</a></li>
+      </ul>
+    </nav>
+    <i class="fa-solid fa-bars" style="color: #ffffff;" id="menu-bar"></i>
+  </header>
+
+  <div id="menu">
     <ul>
       <li><a href="../index.html">Home</a></li>
-      <li>
-        <select onchange="location = this.value;">
-          <option value="" selected disabled>About</option>
-          <option value="about.html">About</option>
-          <option value="educational-qualifications.html">Educational Qualifications</option>
-          <option value="gallery.html">Gallery</option>
-        </select>
-      </li>
-      <li>
-        <select onchange="location = this.value;">
-          <option value="" selected disabled>Skills</option>
-          <option value="about.html #skills">Skills</option>
-          <option value="certificates.html">Certificates</option>
-        </select>
-      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="educational-qualifications.html">Educational Qualifications</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html #skills">Skills</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
       <li><a href="about.html #portfolio">Portfolio</a></li>
       <li><a href="about.html #service">Service</a></li>
       <li><a href="about.html #contact-me">Contact Me</a></li>
     </ul>
-  </nav>
-</header>
-
-<div id="menu">
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="educational-qualifications.html">Educational Qualifications</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="about.html #skills">Skills</a></li>
-    <li><a href="certificates.html">Certificated</a></li>
-    <li><a href="about.html #portfolio">Portfolio</a></li>
-    <li><a href="about.html #service">Service</a></li>
-    <li><a href="about.html #contact-me">Contact Me</a></li>
-  </ul>
-  <hr class="line">
-</div>
-
-<section>
-  <h1>Educational Qualifications</h1>
-  <div>
-    <span>
-      <img src="../assets/education.png" alt="education" width="35">
-      2025 - Present<br>
-      <strong>Graduate Diploma in Software Engineering </strong><br>
-      Institute of  Software Engineering (IJSE)
-    </span><br><br>
-    <span>
-      <img src="../assets/education.png" alt="education" width="35">
-      2020 - 2021<br>
-      <strong>G.C.E Advance Level - Physical Science </strong><br>
-      St. John’s College <br>
-      <strong>Results - CCS</strong>
-    </span><br><br>
-    <span>
-      <img src="../assets/education.png" alt="education" width="35">
-      2017 <br>
-      <strong>G.C.E Ordinary Level </strong><br>
-      St. John’s College  <br>
-      <strong>Results - 7A’s  2B’s </strong>
-    </span><br><br>
+    <hr class="line">
   </div>
 
-</section>
+  <div id="educational-qualifications-content">
+    <h1>Educational Qualifications</h1>
+    <div class="education-content">
+      <div class="up-content">
+        <div><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="topic-p-tag"><p>2025 - Present</p></div>
+      </div>
+      <div class="down-content">
+        <div><h3>Graduate Diploma in Software Engineering</h3></div>
+        <div><p>Institute of Software Engineering (IJSE)</p></div>
+      </div>
+
+      <div class="up-content">
+        <div><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="topic-p-tag"><p>202 - 2021</p></div>
+      </div>
+
+      <div class="down-content">
+        <div><h3>G.C.E Advanced Level - Physical Science</h3></div>
+        <div><p>St. John's College</p></div>
+        <div><h3>Results - CCS</h3></div>
+      </div>
+
+      <div class="up-content">
+        <div><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="topic-p-tag"><p>2017</p></div>
+      </div>
+
+      <div class="down-content">
+        <div><h3>G.C.E Ordinary Level</h3></div>
+        <div><p>St. John's College</p></div>
+        <div><h3>Results - 7A's 2B's</h3></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
 
 <script src="../lib/jquery-3.7.1.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
