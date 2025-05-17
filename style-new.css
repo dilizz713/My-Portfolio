@@ -1347,6 +1347,73 @@ form {
     padding-bottom: 5px;
 }
 
+
+/*--------------------GALLERY----------------------------------------*/
+#gallery{
+    width: 100%;
+    padding: 50px 20px;
+}
+
+#gallery-content > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gallery-content > div > div:nth-child(1) > img,
+#gallery-content > div > div:nth-child(7)> img{
+    width: 150px;
+    height: auto;
+}
+#gallery-content > div > div:nth-child(2) > img,
+#gallery-content > div > div:nth-child(6)> img{
+    width: 180px;
+    height: auto;
+}
+#gallery-content > div > div:nth-child(3)> img,
+#gallery-content > div > div:nth-child(5)> img{
+    width: 230px;
+    height: auto;
+}
+#gallery-content > div > div:nth-child(4)> img{
+    width:280px;
+    height: auto;
+}
+#gallery-content > div > div> img{
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #FF885B;
+}
+#gallery-content > h1{
+    text-align: center;
+    color:#FF885B;
+}
+
+.social-media{
+    width: 100%;
+    padding: 10px;
+}
+.social-media > p{
+    color: white;
+    text-align: center;
+}
+.social-icons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.social-icons > div > i {
+    color: #FF885B;
+    font-size: 1.5rem;
+    margin: 15px;
+}
+.social-icons > div > i:hover {
+    color: #FF5B8A;
+}
+
+
+
 @keyframes sliding {
     0% {
         transform: translateX(0%);
@@ -1664,6 +1731,41 @@ form {
         width: 70%;
         padding: 20px;
 
+    }
+
+    #gallery{
+        padding: 20px;
+    }
+    #gallery-content > .gallery-queue{
+       display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+    #gallery-content > div > div:nth-child(1) > img,
+    #gallery-content > div > div:nth-child(2) > img,
+    #gallery-content > div > div:nth-child(3) > img,
+    #gallery-content > div > div:nth-child(4) > img,
+    #gallery-content > div > div:nth-child(5) > img,
+    #gallery-content > div > div:nth-child(6) > img,
+    #gallery-content > div > div:nth-child(7)> img{
+        width: 180px;
+        height: auto;
+    }
+    .social-media > p{
+        text-align: center;
+        margin-right: 0;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .social-icons > div > i {
+        font-size: 1.5rem;
+        margin: 15px;
     }
 }
 
@@ -2089,9 +2191,47 @@ form {
     .down-content > div > p{
         left: 30px;
     }
+
+    #gallery{
+        padding: 20px;
+    }
+    #gallery-content > h1{
+        font-size: 1.2rem;
+        padding-top: 10px;
+    }
+    #gallery-content > .gallery-queue{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+    #gallery-content > div > div:nth-child(1) > img,
+    #gallery-content > div > div:nth-child(2) > img,
+    #gallery-content > div > div:nth-child(3) > img,
+    #gallery-content > div > div:nth-child(4) > img,
+    #gallery-content > div > div:nth-child(5) > img,
+    #gallery-content > div > div:nth-child(6) > img,
+    #gallery-content > div > div:nth-child(7)> img{
+        width: 180px;
+        height: auto;
+    }
 }
+.social-media > p{
+    text-align: center;
+    margin-right: 0;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: auto;
 
-
+}
+.social-icons > div > i {
+    color: white;
+    font-size: 1.5rem;
+    margin: 15px;
+}
 
 
 
