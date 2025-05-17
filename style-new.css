@@ -1282,13 +1282,11 @@ form {
 #educational-qualifications{
     width: 100%;
     padding: 50px 20px;
-    border: 1px solid blue;
 }
 #educational-qualifications-content{
     width: 60%;
     margin: auto;
     justify-content: center;
-    border:1px solid green;
     padding: 20px;
 
 }
@@ -1297,6 +1295,7 @@ form {
     color:#FF885B;
     font-weight: bold;
     text-decoration: underline;
+    font-size: 1.5rem;
 }
 
 .education-content{
@@ -1660,11 +1659,9 @@ form {
 
     #educational-qualifications{
         padding: 20px;
-        border: 1px solid red;
     }
     #educational-qualifications-content{
         width: 70%;
-        border:1px solid hotpink;
         padding: 20px;
 
     }
@@ -2066,11 +2063,9 @@ form {
 
     #educational-qualifications{
         padding: 20px;
-        border: 1px solid yellow;
     }
     #educational-qualifications-content{
         width: 90%;
-        border:1px solid red;
         padding: 10px;
 
     }
@@ -2080,12 +2075,10 @@ form {
     .down-content > div > h3{
        width: 180px;
        left:30px;
-        border:1px solid blue;
         font-size: 0.9rem;
     }
     .education-content > .up-content{
        width: 100%;
-        border:1px solid blue;
     }
     .education-content > .up-content > div:nth-child(1){
         margin-left: -20px;
