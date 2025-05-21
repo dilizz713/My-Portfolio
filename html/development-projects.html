@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="../style-new.css">
   <link rel="stylesheet" href="../assets/lib/normalize.css">
   <link rel="stylesheet" href="../assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 <section id="projects">
@@ -30,13 +32,13 @@
         <li>
           <select onchange="location = this.value;">
             <option value="" selected disabled>Skills</option>
-            <option value="about.html #skills">Skills</option>
+            <option value="about.html#skills">Skills</option>
             <option value="certificates.html">Certificates</option>
           </select>
         </li>
-        <li><a href="about.html #portfolio">Portfolio</a></li>
-        <li><a href="about.html #service">Service</a></li>
-        <li><a href="about.html #contact-me">Contact Me</a></li>
+        <li><a href="about.html#portfolio">Portfolio</a></li>
+        <li><a href="about.html#service">Service</a></li>
+        <li><a href="about.html#contact-me">Contact Me</a></li>
       </ul>
     </nav>
     <i class="fa-solid fa-bars" style="color: #ffffff;" id="menu-bar"></i>
@@ -47,11 +49,11 @@
       <li><a href="about.html">About</a></li>
       <li><a href="educational-qualifications.html">Educational Qualifications</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="about.html #skills">Skills</a></li>
+      <li><a href="about.html#skills">Skills</a></li>
       <li><a href="certificates.html">Certificated</a></li>
-      <li><a href="about.html #portfolio">Portfolio</a></li>
-      <li><a href="about.html #service">Service</a></li>
-      <li><a href="about.html #contact-me">Contact Me</a></li>
+      <li><a href="about.html#portfolio">Portfolio</a></li>
+      <li><a href="about.html#service">Service</a></li>
+      <li><a href="about.html#contact-me">Contact Me</a></li>
     </ul>
     <hr class="line">
   </div>
@@ -59,22 +61,22 @@
 
   <h2 class="project-topic">Development Projects</h2>
   <div class="project-content">
-    <div>
+    <div data-aos="zoom-in" data-aos-duration="2000">
       <img src="../assets/autorentpro.jpeg" alt="uiux" width="150">
       <h3>Auto Rent Pro</h3>
       <a href="auto-rent-pro.html">View</a>
     </div>
-    <div>
+    <div data-aos="zoom-in" data-aos-duration="2000">
       <img src="../assets/web-development.jpg" alt="ui" width="150">
       <h3>Project Name</h3>
       <a href="#">View</a>
     </div>
-    <div>
+    <div data-aos="zoom-in" data-aos-duration="2000">
       <img src="../assets/web-development.jpg" alt="ui" width="150">
       <h3>Project Name</h3>
       <a href="#">View</a>
     </div>
-    <div>
+    <div data-aos="zoom-in" data-aos-duration="2000">
       <img src="../assets/web-development.jpg" alt="ui" width="150">
       <h3>Project Name</h3>
       <a href="#">View</a>
@@ -86,6 +88,10 @@
 <script src="../lib/jquery-3.7.1.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../portfolio.js"></script>
+
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>

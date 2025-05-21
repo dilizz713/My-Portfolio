@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../style-new.css">
     <link rel="stylesheet" href="../assets/lib/normalize.css">
     <link rel="stylesheet" href="../assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 <section id="certificates">
@@ -30,13 +32,13 @@
                 <li>
                     <select onchange="location = this.value;">
                         <option value="" selected disabled>Skills</option>
-                        <option value="about.html #skills">Skills</option>
+                        <option value="about.html#skills">Skills</option>
                         <option value="certificates.html">Certificates</option>
                     </select>
                 </li>
-                <li><a href="about.html #portfolio">Portfolio</a></li>
-                <li><a href="about.html #service">Service</a></li>
-                <li><a href="about.html #contact-me">Contact Me</a></li>
+                <li><a href="about.html#portfolio">Portfolio</a></li>
+                <li><a href="about.html#service">Service</a></li>
+                <li><a href="about.html#contact-me">Contact Me</a></li>
             </ul>
         </nav>
         <i class="fa-solid fa-bars" style="color: #ffffff;" id="menu-bar"></i>
@@ -48,18 +50,18 @@
             <li><a href="about.html">About</a></li>
             <li><a href="educational-qualifications.html">Educational Qualifications</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html #skills">Skills</a></li>
+            <li><a href="about.html#skills">Skills</a></li>
             <li><a href="certificates.html">Certificated</a></li>
-            <li><a href="about.html #portfolio">Portfolio</a></li>
-            <li><a href="about.html #service">Service</a></li>
-            <li><a href="about.html #contact-me">Contact Me</a></li>
+            <li><a href="about.html#portfolio">Portfolio</a></li>
+            <li><a href="about.html#service">Service</a></li>
+            <li><a href="about.html#contact-me">Contact Me</a></li>
         </ul>
         <hr class="line">
     </div>
 
     <div class="certificates-content">
         <div>
-            <div><img src="../assets/certificates/java_basic%20certificate.png" alt="java_basic_certificate" width="200"></div>
+            <div data-aos="zoom-in" data-aos-duration="2000"><img src="../assets/certificates/java_basic%20certificate.png" alt="java_basic_certificate" width="200"></div>
             <div>
                 <h2>Java Basic Certificate</h2>
                 <h4>HackerRank</h4>
@@ -80,7 +82,7 @@
         <hr class="line">
 
         <div>
-            <div> <img src="../assets/certificates/coderelly.png" alt="hackathon-certificate" width="200"></div>
+            <div data-aos="zoom-in" data-aos-duration="2000"> <img src="../assets/certificates/coderelly.png" alt="hackathon-certificate" width="200"></div>
             <div>
                 <h2>Certificate of Participation - CodeRelly Hackathon</h2>
                 <h4>Informatics Institute of Technology ( IIT )</h4>
@@ -106,6 +108,10 @@
 <script src="../lib/jquery-3.7.1.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../portfolio.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>

@@ -390,7 +390,7 @@ button:hover {
 }
 
 .portfolio-content > div > a:hover {
-    color: #FF885B;
+    color: black;
 }
 
 .portfolio-content > div > img {
@@ -760,10 +760,11 @@ form {
 }
 
 .project-content > div {
-    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(255, 136, 91, 0.5);
     padding: 20px;
     height: 220px;
     border-radius: 20px;
+    background: black;
 }
 
 .project-content > div > img {
@@ -1041,6 +1042,23 @@ form {
     border-radius: 15px;
 
 }
+#doc-download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 20px;
+    padding:10px 5px;
+    border-radius: 10px;
+    background: #FF5B8A;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    font-weight: bold;
+}
+#doc-download:hover {
+    background: green;
+}
+
 
 .certificates-content {
     position: relative;
