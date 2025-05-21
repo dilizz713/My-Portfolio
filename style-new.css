@@ -685,7 +685,7 @@ form {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.social-links > div > i {
+.social-links > div  > i {
     color: white;
     font-size: 1.2rem;
     border: 2px solid black;
@@ -693,7 +693,7 @@ form {
     padding: 5px;
 }
 
-.social-links > div > i:hover {
+.social-links > div  >  i:hover {
     color: #FF885B;
 
 }
@@ -1410,13 +1410,13 @@ form {
     box-shadow: 0 4px 12px rgba(255, 136, 91, 0.25), 0 8px 24px rgba(255, 136, 91, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.social-icons > div > i {
+.social-icons > div > a > i {
     color: white;
     font-size: 1.2rem;
     border-radius: 40%;
 
 }
-.social-icons > div > i:hover {
+.social-icons > div >a >  i:hover {
     color: #FF885B;
 }
 

@@ -214,18 +214,21 @@
 <section id="contact-me">
     <h3><em>Get in touch with me now!</em></h3>
     <div class="contact-form">
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="dbfb5f08-e76c-4dea-bb9e-125e7b5290f6">
+            <input type="checkbox" name="botcheck" style="display: none;">
+
             <div class="first">
                 <div>
                     <label for="name">Your Name</label><br>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" class="input-type"><br>
+                    <input type="name" id="name" name="name" placeholder="Enter your name" class="input-type" required><br>
                 </div>
             </div>
             <br>
             <div class="second">
                 <div>
                     <label for="email">Email Address</label><br>
-                    <input type="text" class="input-type" id="email" name="email" placeholder="Enter your email"><br>
+                    <input type="email" class="input-type" id="email" name="email" placeholder="Enter your email" required><br>
                 </div>
 
             </div>
@@ -233,7 +236,7 @@
             <div class="third">
                 <div>
                     <label for="msg">Message</label><br>
-                    <input type="text" class="input-type text-area" id="msg" name="msg"><br>
+                    <textarea id="msg" class="input-type text-area" name="message" placeholder="Enter your message" required></textarea><br>
                 </div>
             </div>
             <br>
