@@ -1,10 +1,10 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-
 
 body {
     background: #1A1A1D;
@@ -115,8 +115,8 @@ button:hover {
 
 .about-section {
     padding: 50px 20px;
-
-
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .header {
