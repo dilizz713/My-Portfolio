@@ -60,6 +60,8 @@
         <hr class="line">
     </div>
 
+    <div class="scroll-up"><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"><i class="fa-solid fa-arrow-up"></i></a></div>
+
     <div id="about">
         <div id="image-side">
             <img src="../assets/myprofile.jpg" alt="profile" width="200"
@@ -345,6 +347,15 @@
     }
     setVh();
     window.addEventListener('resize', setVh);
+
+    window.addEventListener('scroll', function () {
+        const scrollUpBtn = document.querySelector('.scroll-up');
+        if (window.scrollY > 300) {
+            scrollUpBtn.style.display = 'block';
+        } else {
+            scrollUpBtn.style.display = 'none';
+        }
+    });
 </script>
 </body>
 </html>

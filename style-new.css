@@ -118,6 +118,29 @@ button:hover {
 
 }
 
+.scroll-up{
+    box-shadow: 2px 2px 2px #FF885B;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    background: black;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.scroll-up:hover {
+    transform: scale(1.05);
+
+}
+.scroll-up > a > i{
+    color: #FF885B;
+    font-size: 2rem;
+}
+
 .header {
     position: relative;
     top: 0px;
