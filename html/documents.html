@@ -11,10 +11,11 @@
   <link rel="stylesheet" href="../style-new.css">
   <link rel="stylesheet" href="../assets/lib/normalize.css">
   <link rel="stylesheet" href="../assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
-
-<div id="project-content">
+<section id="projects">
   <header class="header">
     <img src="../assets/logo1.png" alt="logo" width="50">
     <nav>
@@ -40,8 +41,8 @@
         <li><a href="about.html#contact-me">Contact Me</a></li>
       </ul>
     </nav>
+    <i class="fa-solid fa-bars" style="color: #ffffff;" id="menu-bar"></i>
   </header>
-
   <div id="menu">
     <ul>
       <li><a href="../index.html">Home</a></li>
@@ -57,35 +58,39 @@
     <hr class="line">
   </div>
 
-  <div class="topic">
-    <div><p>Semantic Elements</p></div>
-    <hr>
-    <div><p>Document</p></div>
-    <hr>
-    <div><p>2024</p></div>
-  </div>
+  <h2 class="project-topic">Documents</h2>
+  <div class="project-content">
+    <div data-aos="zoom-in" data-aos-duration="2000">
+      <img src="../assets/dsa.png" alt="uiux" width="150">
+      <h3>Data Structures</h3>
+      <a href="data-structures-document.html">View</a>
+    </div>
+    <div data-aos="zoom-in" data-aos-duration="2000">
+      <img src="../assets/semanticelemnts.png" alt="uiux" width="150">
+      <h3>Semantic Elements</h3>
+      <a href="semantic-elements-document.html">View</a>
+    </div>
+    <div data-aos="zoom-in" data-aos-duration="2000">
+      <img src="../assets/ajax.png" alt="ui" width="150">
+      <h3>Ajax</h3>
+      <a href="ajax-document.html">View</a>
+    </div>
+    <div data-aos="zoom-in" data-aos-duration="2000">
+      <img src="../assets/webtechnologies.png" alt="ui" width="150">
+      <h3>Web Technologies</h3>
+      <a href="web-tech-document.html">View</a>
+    </div>
 
-  <div class="overview">
-    <h2>Document Overview</h2>
-    <p>
-      My latest document that dives into semantic elements of CSS. This document covers the following topics:
-    </p>
-    <ul class="key-points">
-      <li>What are  HTML5 semantic elements?</li>
-      <li>Why use semantic elements? </li>
-      <li>Type of semantic elements.</li>
-
-    </ul>
-    <p>
-      Using semantic elements makes your code more readable, improves search engine rankings,
-      and enhances user experience.
-    </p>
-    <a href="../assets/documents/semantic-elements.pdf" download id="doc-download">Download</a>
   </div>
-</div>
+</section>
+
 <script src="../lib/jquery-3.7.1.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../portfolio.js"></script>
+
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>

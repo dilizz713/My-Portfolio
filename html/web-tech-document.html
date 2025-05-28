@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dilini Silva">
+    <meta name="description" content="I'm Dilini Silva.A passionate web developer dedicated to crafting seamless,user-friendly web experiences. With a deep love for technology and an eye for design,
+    I specialize in building modern, responsive websites that bring ideas to life.">
+    <title>Dilini Silva</title>
+    <link rel="icon" type="image/ico" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../style-new.css">
+    <link rel="stylesheet" href="../assets/lib/normalize.css">
+    <link rel="stylesheet" href="../assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+
+<div id="project-content">
+    <header class="header">
+        <img src="../assets/logo1.png" alt="logo" width="50">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="" selected disabled>About</option>
+                        <option value="about.html">About</option>
+                        <option value="educational-qualifications.html">Educational Qualifications</option>
+                        <option value="gallery.html">Gallery</option>
+                    </select>
+                </li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="" selected disabled>Skills</option>
+                        <option value="about.html#skills">Skills</option>
+                        <option value="certificates.html">Certificates</option>
+                    </select>
+                </li>
+                <li><a href="about.html#portfolio">Portfolio</a></li>
+                <li><a href="about.html#service">Service</a></li>
+                <li><a href="about.html#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="educational-qualifications.html">Educational Qualifications</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html#skills">Skills</a></li>
+            <li><a href="certificates.html">Certificated</a></li>
+            <li><a href="about.html#portfolio">Portfolio</a></li>
+            <li><a href="about.html#service">Service</a></li>
+            <li><a href="about.html#contact-me">Contact Me</a></li>
+        </ul>
+        <hr class="line">
+    </div>
+
+    <div class="topic">
+        <div><p>Web Technologies</p></div>
+        <hr>
+        <div><p>Document</p></div>
+        <hr>
+        <div><p>2025</p></div>
+    </div>
+
+    <div class="overview">
+        <h2>Document Overview</h2>
+        <p>
+            This Q&A-style document offers a comprehensive overview of essential web technologies used in front-end development.
+            Organized for clarity and quick reference, it covers fundamental concepts, syntax, use cases, and best practices related to HTML, CSS, JavaScript, Bootstrap, and jQuery.
+            Ideal for beginners and intermediate learners, the guide supports interview preparation, self-study, and revision.
+        </p>
+        <ul class="key-points">
+            <li>HTML: Basics of structure, elements, attributes, semantic tags, and forms.</li>
+            <li>CSS: Styling rules, selectors, layout models (Flexbox, Grid), and animations.</li>
+            <li>JavaScript: Core concepts like variables, functions, events, DOM manipulation, and ES6 features.</li>
+            <li>Bootstrap: Responsive design, components, grid system, and utility classes.</li>
+            <li>jQuery: Simplified JavaScript operations, event handling, effects, and AJAX integration.</li>
+        </ul>
+
+        <a href="../assets/documents/WebTechnologies.pdf" download id="doc-download">Download</a>
+    </div>
+</div>
+<script src="../lib/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../portfolio.js"></script>
+
+</body>
+</html>

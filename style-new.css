@@ -21,7 +21,7 @@ body {
     height: calc(var(--vh, 1vh) * 100);*/
     padding: 50px 20px;
     animation: fadeIn 1.5s ease;
-    margin-top: 120px;
+
 
 }
 
@@ -766,7 +766,6 @@ form {
 .project-content > div {
     box-shadow: 0 0 10px rgba(255, 136, 91, 0.5);
     padding: 20px;
-    height: 220px;
     border-radius: 20px;
     background: black;
 }
@@ -1593,6 +1592,7 @@ form {
         width: 100%;
         margin-left: auto;
 
+
     }
 
     #menu > ul {
@@ -1872,15 +1872,12 @@ form {
     }
 
     #menu {
-        display: block;
         width: 100%;
-        margin-left: auto;
-
     }
 
     #menu > ul {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         padding: 10px;
     }
 
@@ -1888,6 +1885,8 @@ form {
         text-align: left;
         list-style: none;
         padding: 5px;
+        font-size: 0.5rem;
+        margin-bottom: 5px;
     }
 
     #menu > ul li a {
